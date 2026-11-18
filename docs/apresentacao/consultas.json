@@ -1,0 +1,57 @@
+[
+ {
+  "shot": "neo4j_tamanho",
+  "query": "MATCH (n)\nRETURN labels(n)[0] AS rotulo, count(*) AS nos\nORDER BY nos DESC",
+  "text": "neo4j$\nMATCH (n) RETURN labels(n)[0] AS rotulo, count(*) AS nos ORDER BY nos DESC\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\nrotulo\nnos\n1\n\"Entity\"\n351\n2\n\"Chunk\"\n282\n3\n\"Article\"\n65\nStarted streaming 3 records after 21 ms and completed after 24 ms."
+ },
+ {
+  "shot": "neo4j_tipos",
+  "query": "MATCH (e:Entity)\nRETURN e.type AS tipo, count(*) AS entidades\nORDER BY entidades DESC",
+  "text": "neo4j$\nMATCH (e:Entity) RETURN e.type AS tipo, count(*) AS entidades ORDER BY entidades DESC\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\ntipo\nentidades\n1\n\"Game\"\n144\n2\n\"Company\"\n75\n3\n\"Platform\"\n25\n4\n\"Concept\"\n25\n5\n\"Event\"\n23\n6\n\"Person\"\n18\n7\n\"Genre\"\n18\n8\n\"Franchise\"\n16\n9\n\"Engine\"\n7\nStarted streaming 9 records after 31 ms and completed after 32 ms."
+ },
+ {
+  "shot": "neo4j_indices",
+  "query": "SHOW INDEXES\nYIELD name, type, labelsOrTypes, properties\nWHERE type <> 'LOOKUP'\nRETURN name, type, labelsOrTypes, properties",
+  "text": "neo4j$\nSHOW INDEXES YIELD name, type, labelsOrTypes, properties WHERE type <> 'LOOKUP' RETURN name, type, labelsOrTypes, properties\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\nname\ntype\nlabelsOrTypes\nproperties\n1\n\"article_fulltext\"\n\"FULLTEXT\"\n[\"Article\"]\n[\"title\", \"text\"]\n2\n\"article_id\"\n\"RANGE\"\n[\"Article\"]\n[\"doc_id\"]\n3\n\"article_title\"\n\"RANGE\"\n[\"Article\"]\n[\"title\"]\n4\n\"article_vector\"\n\"VECTOR\"\n[\"Article\"]\n[\"embedding\"]\n5\n\"chunk_id\"\n\"RANGE\"\n[\"Chunk\"]\n[\"id\"]\n6\n\"chunk_vector\"\n\"VECTOR\"\n[\"Chunk\"]\n[\"embedding\"]\n7\n\"entity_fulltext\"\n\"FULLTEXT\"\n[\"Entity\"]\n[\"name\", \"aliases_text\", \"description\"]\n8\n\"entity_id\"\n\"RANGE\"\n[\"Entity\"]\n[\"id\"]\n9\n\"entity_name\"\n\"RANGE\"\n[\"Entity\"]\n[\"name\"]\n10\n\"entity_pagerank\"\n\"RANGE\"\n[\"Entity\"]\n[\"pagerank\"]\n11\n\"entity_type\"\n\"RANGE\"\n[\"Entity\"]\n[\"type\"]\n12\n\"entity_vector\"\n\"VECTOR\"\n[\"Entity\"]\n[\"embedding\"]\nStarted streaming 12 records after 25 ms and completed after 27 ms."
+ },
+ {
+  "shot": "neo4j_esquema",
+  "query": "CALL db.schema.visualization()",
+  "text": "neo4j$\nCALL db.schema.visualization()\nRun\nGraph\nTable\nRaw\nPress Escape to clear input.\nResults overview\nNodes (12)\n* (12)\nArticle (1)\nChunk (1)\nCompany (1)\nConcept (1)\nEngine (1)\nEntity (1)\nEvent (1)\nFranchise (1)\nGame (1)\nGenre (1)\nPerson (1)\nPlatform (1)\nRelationships (68)\n* (68)\nAVAILABLE_ON (4)\nBASED_ON (8)\nCREATED_BY (6)\nDESCRIBES (3)\nDEVELOPED_BY (6)\nFEATURED_IN (4)\nHAS_FEATURE (4)\nHAS_GENRE (4)\nORGANIZED_BY (4)\nPART_OF (9)\nPUBLISHED_BY (4)\nSEQUEL_OF (4)\nSUBSIDIARY_OF (4)\nUSES_ENGINE (4)\nStarted streaming 1 record after 4 ms and completed after 6 ms."
+ },
+ {
+  "shot": "neo4j_proveniencia",
+  "query": "MATCH (a:Entity {name: 'Defense of the Ancients'})-[r:BASED_ON]->(b:Entity {name: 'Warcraft III: Reign of Chaos'})\nMATCH (art:Article {doc_id: r.doc_id})\nRETURN a.name AS origem, type(r) AS relacao, b.name AS destino, r.evidence AS evidencia, art.title AS artigo",
+  "text": "neo4j$\nMATCH (a:Entity {name: 'Defense of the Ancients'})-[r:BASED_ON]->(b:Entity {name: 'Warcraft III: Reign of Chaos'}) MATCH (art:Article {doc_id: r.doc_id}) RETURN a.name AS origem, type(r) AS relacao, b.name AS destino, r.evidence AS evidencia, art.title AS artigo\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\norigem\nrelacao\ndestino\nevidencia\nartigo\n1\n\"Defense of the Ancients\"\n\"BASED_ON\"\n\"Warcraft III: Reign of Chaos\"\n\"Video game modifications created with the World Editor, such as Defense of the Ancients\"\n\"Warcraft III: Reign of Chaos\"\nStarted streaming 1 record after 147 ms and completed after 149 ms."
+ },
+ {
+  "shot": "neo4j_vetor",
+  "query": "MATCH (c:Chunk)-[:PART_OF]->(:Article {title: 'Dota 2'})\nWITH c LIMIT 1\nCALL db.index.vector.queryNodes('chunk_vector', 5, c.embedding) YIELD node, score\nMATCH (node)-[:PART_OF]->(a:Article)\nRETURN a.title AS artigo, left(node.text, 70) AS trecho, round(score, 3) AS similaridade",
+  "text": "neo4j$\nMATCH (c:Chunk)-[:PART_OF]->(:Article {title: 'Dota 2'}) WITH c LIMIT 1 CALL db.index.vector.queryNodes('chunk_vector', 5, c.embedding) YIELD node, score MATCH (node)-[:PART_OF]->(a:Article) RETURN a.title AS artigo, left(node.text, 70) AS trecho, round(score, 3) AS similaridade\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\nartigo\ntrecho\nsimilaridade\n1\n\"Dota 2\"\n\"Dota 2 has been used in machine learning experiments, with a team of b\"\n1.0\n2\n\"Dota 2\"\n\"Dota 2 is a 2013 multiplayer online battle arena (MOBA) video game by \"\n0.935\n3\n\"Dota 2\"\n\"Development of Dota 2 began in 2009 when IceFrog, lead designer of Def\"\n0.923\n4\n\"Dota 2\"\n\"Valve supports the game as a service, selling loot boxes and a battle \"\n0.922\n5\n\"Dota Auto Chess\"\n\"Later in 2019, Drodo Studio developed a standalone version known simpl\"\n0.919\nStarted streaming 5 records after 90 ms and completed after 132 ms."
+ },
+ {
+  "shot": "neo4j_fulltext",
+  "query": "CALL db.index.fulltext.queryNodes('entity_fulltext', 'valv~1 OR \"warcraft iii\"') YIELD node, score\nRETURN node.type AS tipo, node.name AS entidade, round(score, 3) AS score\nLIMIT 6",
+  "text": "neo4j$\nCALL db.index.fulltext.queryNodes('entity_fulltext', 'valv~1 OR \"warcraft iii\"') YIELD node, score RETURN node.type AS tipo, node.name AS entidade, round(score, 3) AS score LIMIT 6\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\ntipo\nentidade\nscore\n1\n\"Game\"\n\"Warcraft III: Reforged\"\n10.502\n2\n\"Game\"\n\"Warcraft III: Reign of Chaos\"\n5.664\n3\n\"Company\"\n\"Valve\"\n5.082\n4\n\"Game\"\n\"Warcraft III: The Frozen Throne\"\n4.783\n5\n\"Event\"\n\"European Computer Trade Show\"\n3.49\n6\n\"Game\"\n\"Defense of the Ancients\"\n3.082\nStarted streaming 6 records after 29 ms and completed after 94 ms."
+ },
+ {
+  "shot": "neo4j_multihop",
+  "query": "MATCH p = (v:Entity {name: 'Valve'})<-[:DEVELOPED_BY]-(g:Game)-[:SEQUEL_OF]->(mod:Entity)-[:BASED_ON]->(w:Entity)\nWHERE w.name STARTS WITH 'Warcraft III'\nRETURN p",
+  "text": "neo4j$\nMATCH p = (v:Entity {name: 'Valve'})<-[:DEVELOPED_BY]-(g:Game)-[:SEQUEL_OF]->(mod:Entity)-[:BASED_ON]->(w:Entity) WHERE w.name STARTS WITH 'Warcraft III' RETURN p\nRun\nGraph\nTable\nRaw\nPress Escape to clear input.\nResults overview\nNodes (5)\n* (5)\nCompany (1)\nEntity (5)\nGame (4)\nRelationships (4)\n* (4)\nBASED_ON (2)\nDEVELOPED_BY (1)\nSEQUEL_OF (1)\nStarted streaming 2 records after 49 ms and completed after 57 ms."
+ },
+ {
+  "shot": "neo4j_caminho",
+  "query": "MATCH (a:Entity {name: 'League of Legends'}), (b:Entity {name: 'Dota 2'})\nMATCH p = shortestPath((a)-[:BASED_ON|SEQUEL_OF|DEVELOPED_BY|CREATED_BY|PUBLISHED_BY|SUBSIDIARY_OF*..6]-(b))\nRETURN p",
+  "text": "neo4j$\nMATCH (a:Entity {name: 'League of Legends'}), (b:Entity {name: 'Dota 2'}) MATCH p = shortestPath((a)-[:BASED_ON|SEQUEL_OF|DEVELOPED_BY|CREATED_BY|PUBLISHED_BY|SUBSIDIARY_OF*..6]-(b)) RETURN p\nRun\nGraph\nTable\nRaw\nPress Escape to clear input.\nResults overview\nNodes (3)\n* (3)\nEntity (3)\nGame (3)\nRelationships (2)\n* (2)\nBASED_ON (1)\nSEQUEL_OF (1)\nStarted streaming 1 record after 1.357 ms and completed after 1.359 ms.\nThis query builds a cartesian product between disconnected patterns."
+ },
+ {
+  "shot": "neo4j_pagerank",
+  "query": "MATCH (e:Entity)\nRETURN e.name AS entidade, e.type AS tipo, round(e.pagerank, 3) AS pagerank\nORDER BY pagerank DESC\nLIMIT 10",
+  "text": "neo4j$\nMATCH (e:Entity) RETURN e.name AS entidade, e.type AS tipo, round(e.pagerank, 3) AS pagerank ORDER BY pagerank DESC LIMIT 10\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\nentidade\ntipo\npagerank\n1\n\"Windows\"\n\"Platform\"\n7.393\n2\n\"Free-to-play\"\n\"Concept\"\n6.675\n3\n\"Half-Life\"\n\"Game\"\n5.969\n4\n\"Final Fantasy XIV\"\n\"Game\"\n4.861\n5\n\"Genshin Impact\"\n\"Game\"\n3.834\n6\n\"Arena of Valor\"\n\"Game\"\n3.817\n7\n\"PUBG: Battlegrounds\"\n\"Game\"\n3.809\n8\n\"PlayStation 4\"\n\"Platform\"\n3.687\n9\n\"Xbox One\"\n\"Platform\"\n3.675\n10\n\"Tom Clancy's Rainbow Six Siege\"\n\"Game\"\n3.662\nStarted streaming 10 records after 22 ms and completed after 24 ms."
+ },
+ {
+  "shot": "neo4j_louvain",
+  "query": "MATCH (e:Entity)\nWITH e.community AS comunidade, count(*) AS entidades, collect(e.name)[..5] AS exemplos\nRETURN comunidade, entidades, exemplos\nORDER BY entidades DESC\nLIMIT 8",
+  "text": "neo4j$\nMATCH (e:Entity) WITH e.community AS comunidade, count(*) AS entidades, collect(e.name)[..5] AS exemplos RETURN comunidade, entidades, exemplos ORDER BY entidades DESC LIMIT 8\nRun\nTable\nRaw\nPress Escape to clear input.\nGraph chip\ncomunidade\nentidades\nexemplos\n1\n63\n47\n[\"Dota 2\", \"Half-Life\", \"Counter-Strike: Global Offensive\", \"Counter-Strike 2\", \"Dota Underlords\"]\n2\n208\n41\n[\"PUBG: Battlegrounds\", \"Destiny 2\", \"Destiny\", \"The Elder Scrolls Online\", \"Grand Theft Auto Online\"]\n3\n156\n40\n[\"Arena of Valor\", \"Honor of Kings\", \"RuneScape\", \"Old School RuneScape\", \"PUBG Mobile\"]\n4\n24\n35\n[\"Apex Legends\", \"Overwatch\", \"Overwatch 2\", \"Smite\", \"Smite 2\"]\n5\n137\n33\n[\"Warcraft III: Reign of Chaos\", \"Defense of the Ancients\", \"Warcraft III: The Frozen Throne\", \"StarCraft\", \"Warcraft: Orcs & Humans\"]\n6\n148\n33\n[\"Clash of Clans\", \"Lineage II\", \"Lineage\", \"Lineage II: Goddess of Destruction\", \"Lineage 2: Revolution\"]\n7\n165\n23\n[\"Fortnite Battle Royale\", \"Z1 Battle Royale\", \"H1Z1\", \"Just Survive\", \"Fortnite\"]\n8\n18\n22\n[\"League of Legends\", \"Fortnite: Save the World\", \"Dota Auto Chess\", \"Teamfight Tactics\", \"Mahjong\"]\nStarted streaming 8 records after 40 ms and completed after 44 ms."
+ }
+]

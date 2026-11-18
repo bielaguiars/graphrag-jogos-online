@@ -11,3 +11,6 @@ docs/**/*.pdf
 !docs/**/sbc-template.pdf
 !docs/artigo/artigo.pdf
 !docs/slides/defesa-graphrag-jogos.pdf
+!docs/apresentacao/GraphRAG_Jogos_Online_apresentacao.pdf
+# falas da dupla: ficam só no computador
+docs/slides/falas-dupla*

@@ -27,7 +27,7 @@ pres.layout = "LAYOUT_16x9"; // 10 x 5.625 in
 pres.theme = { headFontFace: THEME.headFontFace, bodyFontFace: THEME.bodyFontFace };
 pres.title = "GraphRAG / KAG — Jogos Online";
 pres.subject = "Defesa do projeto final — Tendências em Ciência da Computação";
-pres.author = "Integrante 1 … Integrante 6";
+pres.author = "Biel Aguiar e Thiago Rocha";
 const C = pres.SchemeColor;
 // Papéis (tema escuro): dk1 = fundo, lt1 = texto, dk2 = cartão, lt2 = texto secundário.
 const BG = C.text1, TXT = C.background1, CARD = C.text2, MUTED = C.background2;
@@ -172,14 +172,14 @@ pres.addSection({ title: "Abertura" });
 {
   const s = pres.addSlide({ masterName: "Capa", sectionTitle: "Abertura" });
   fit("capa título", [{ t: "GraphRAG / KAG", s: 40, b: true, head: true, maxLines: 1 }, { t: "Jogos Online", s: 40, b: true, head: true, maxLines: 1 }], 5.9, 1.45, 0);
-  s.addText([{ text: "GraphRAG / KAG", options: { breakLine: true } }, { text: "Jogos Online", options: { color: BLUE } }], { placeholder: "title" });
+  s.addText([{ text: "GraphRAG / KAG", options: { breakLine: true } }, { text: "Jogos Online", options: { color: BLUE } }], { placeholder: "title", align: "left" });
   const sub = "Recuperação híbrida em grafo de conhecimento com mitigação de alucinações";
   fit("capa subtítulo", [{ t: sub, s: 17 }], 5.6, 0.75, 0);
   s.addText(sub, { placeholder: "subtitle" });
   const meta = [
     { t: "Tendências em Ciência da Computação", s: 14, b: true, after: 6 },
-    { t: "Integrante 1 · Integrante 2 · Integrante 3 · Integrante 4 · Integrante 5 · Integrante 6", s: 14, after: 6 },
-    { t: "[Instituição]  ·  18/11/2026", s: 14, c: MUTED },
+    { t: "Biel Aguiar · Thiago Rocha", s: 14, after: 6 },
+    { t: "Unipê Cruzeiro do Sul  ·  18/11/2026", s: 14, c: MUTED },
   ];
   fit("capa meta", meta, 5.6, 1.4, 0);
   s.addText(meta.map((p, k) => ({ text: p.t, options: { bold: !!p.b, color: p.c || TXT, paraSpaceAfter: p.after || 0, breakLine: k < meta.length - 1 } })), { placeholder: "meta" });
@@ -190,11 +190,6 @@ pres.addSection({ title: "Abertura" });
   const E = [[0, 2], [1, 2], [0, 1], [2, 4], [2, 5], [1, 3], [3, 5], [4, 6], [5, 6], [5, 7], [2, 3]];
   E.forEach(([a, b]) => edge(s, "rede aresta", N[a][0], N[a][1], N[b][0], N[b][1], { color: EDGE, width: 1.5 }));
   N.forEach(([x, y, d, c]) => node(s, "rede nó", x, y, d, c));
-  s.addNotes(
-    "Boa tarde. Somos o grupo de Integrante 1 a Integrante 6 e vamos apresentar o projeto final de Tendências em Ciência da Computação: um sistema GraphRAG, ou KAG, sobre jogos online. " +
-    "Em resumo: construímos um grafo de conhecimento no Neo4j a partir de 65 artigos da Wikipedia, recuperamos informação combinando busca vetorial, textual e travessia do grafo, e mostramos ao usuário de onde veio cada resposta. " +
-    "Nos próximos 15 minutos: o problema, a ideia, a arquitetura etapa por etapa, uma demonstração, a avaliação contra RAG vetorial e as limitações."
-  );
 }
 
 // ================= 2. Problema =================
@@ -217,12 +212,6 @@ pres.addSection({ title: "Problema e proposta" });
     { t: "Exemplo", s: 12, b: true, c: GOLD, after: 2 },
     { t: [{ t: "“Que jogo da Valve surgiu de um mod de Warcraft III?”", i: true }, { t: "  a resposta cruza três artigos", c: MUTED }], s: 16 },
   ], { x: 1.35, y: 4.0, w: 8.0, h: 0.85, valign: "middle" });
-  s.addNotes(
-    "O RAG tradicional divide os documentos em trechos, transforma cada trecho em vetor e devolve os mais parecidos com a pergunta. Isso funciona quando a resposta está num único trecho, mas tem dois limites. " +
-    "Primeiro, perguntas de vários saltos: cada fato está num documento diferente, e os trechos intermediários quase nunca são os mais parecidos com a pergunta. " +
-    "Segundo, não há critério para recusar: a busca sempre devolve os k vizinhos mais próximos, mesmo quando nada tem relação com a pergunta. " +
-    "Exemplo do nosso domínio: 'Que jogo da Valve surgiu de um mod de Warcraft III?' — a resposta passa por Dota 2, Defense of the Ancients e Warcraft III, em três artigos."
-  );
 }
 
 // ================= 3. Ideia =================
@@ -252,12 +241,6 @@ pres.addSection({ title: "Problema e proposta" });
     box(s, "benefício título", [{ t: k.h, s: 17, b: true, maxLines: 1 }], { x: k.x + 0.85, y: 3.42, w: 3.35, h: 0.4, valign: "middle" });
     box(s, "benefício texto", [{ t: k.b, s: 15 }], { x: k.x + 0.3, y: 3.95, w: 3.85, h: 0.85 });
   });
-  s.addNotes(
-    "A proposta do GraphRAG e do KAG é estruturar o conhecimento antes da consulta. Em vez de só fatiar o texto em vetores, extraímos entidades e relações e montamos um grafo. " +
-    "Isso traz dois ganhos que atacam exatamente os dois limites anteriores. Com relações explícitas, conseguimos seguir caminhos entre documentos. " +
-    "E a correspondência exata da pergunta com nós do grafo dá um sinal objetivo de que a pergunta toca a base — e, quando não toca, o sistema pode recusar. " +
-    "É a mesma linha do GraphRAG da Microsoft e do KAG, aplicada ao domínio de jogos online."
-  );
 }
 
 // ================= 4. Arquitetura =================
@@ -280,12 +263,6 @@ pres.addSection({ title: "Arquitetura" });
     if (i < 3) edge(s, "seta etapa", x + bw + 0.04, by + bh / 2, x + bw + gap - 0.04, by + bh / 2, { color: BLUE, arrow: true, width: 1.5 });
   });
   box(s, "rodapé técnico", [{ t: "Python 3.12  ·  Neo4j com GDS  ·  Streamlit + pyvis  ·  API FastAPI", s: 12, c: MUTED }], { x: 0.5, y: 4.66, w: 9.0, h: 0.28, valign: "middle" });
-  s.addNotes(
-    "O sistema tem quatro etapas. Primeiro, o Text-to-Graph: coletamos 65 artigos da Wikipedia, um LLM extrai entidades e relações tipadas, cada relação com a frase de evidência, e resolvemos nomes duplicados. " +
-    "Segundo, o grafo vai para o Neo4j no modelo LPG, com restrições, índices e os algoritmos PageRank e Louvain. " +
-    "Terceiro, a recuperação híbrida: liga a pergunta ao grafo por vetor, fulltext e dicionário, percorre o grafo em vários saltos, busca caminhos mínimos e gera uma resposta citada e verificada. " +
-    "Quarto, a interface em Streamlit mostra o subgrafo, as consultas Cypher, os nós consultados e o nível de confiança. Tudo em Python 3.12, com uma API FastAPI também."
-  );
 }
 
 // ================= 5. Corpus + Text-to-Graph =================
@@ -323,12 +300,6 @@ pres.addSection({ title: "Arquitetura" });
   const e2 = chips(["DEVELOPED_BY", "PUBLISHED_BY", "BASED_ON", "SEQUEL_OF", "CREATED_BY", "SUBSIDIARY_OF", "FEATURED_IN", "ORGANIZED_BY"], e1 + 0.65, 10, GOLD, CARD);
   if (e2 > 4.45) PROBLEMS.push(`slide 5: chips terminam em ${e2.toFixed(2)}in`);
   box(s, "extração nota", [{ t: "Extração por LLM (Claude) com JSON Schema derivado de modelos Pydantic", s: 12, c: MUTED }], { x: right.x, y: 4.47, w: right.w, h: 0.45, valign: "bottom" });
-  s.addNotes(
-    "O corpus é a introdução de 65 artigos da Wikipedia em inglês — Dota 2, League of Legends, Counter-Strike 2, Fortnite, Minecraft, World of Warcraft, campeonatos como The International — divididos em 282 trechos de três frases. " +
-    "A extração usa um LLM, o Claude, com saída estruturada: um JSON Schema derivado de modelos Pydantic, com nove tipos de entidade e treze tipos de relação. " +
-    "O ponto central é a evidência: cada relação traz a frase do texto que a sustenta, e um validador descarta qualquer relação cuja frase não aparece literalmente no artigo. É a primeira barreira contra alucinação. " +
-    "As 65 extrações somaram 811 entidades e 797 relações; nenhuma foi rejeitada pelo validador e uma foi descartada na carga porque origem e destino viraram o mesmo nó após a resolução."
-  );
 }
 
 // ================= 6. Resolução de entidades =================
@@ -357,12 +328,6 @@ pres.addSection({ title: "Arquitetura" });
     box(s, "grupo itens", g.items.map((t, k) => ({ t, s: 13, after: k < g.items.length - 1 ? 2 : 0 })), { x: 5.4, y: g.y + 0.45, w: 3.95, h: g.h - 0.52 });
   });
   box(s, "travas", [{ t: [{ t: "Travas: ", b: true, c: GOLD }, { t: "tipo · números · sufixos corporativos · subtítulo" }], s: 13, maxLines: 2 }], { x: 5.2, y: 4.47, w: 4.3, h: 0.46, valign: "middle" });
-  s.addNotes(
-    "O mesmo jogo ou empresa aparece com nomes diferentes em artigos diferentes: Valve e Valve Corporation, Warcraft III e Warcraft III: Reign of Chaos. Sem resolver isso, o grafo fica partido e os caminhos não se conectam. " +
-    "Usamos união-busca em três passos: chave lexical sempre dentro do mesmo tipo; aliases compatíveis por sigla, trigramas, sufixo corporativo ou título-base antes do subtítulo; e, por fim, semântica — cosseno de pelo menos 0,93 e trigramas de pelo menos 0,85. " +
-    "As travas evitam fusões erradas: nomes com números diferentes nunca se fundem, como Overwatch e Overwatch 2. A trava lexical no passo semântico veio de um erro real: só com embeddings, nomes curtos do mesmo campo eram fundidos. " +
-    "Resultado: 811 menções viraram 351 entidades, e 93 delas aparecem em mais de um artigo — são as pontes entre documentos."
-  );
 }
 
 // ================= 7. LPG no Neo4j =================
@@ -399,12 +364,6 @@ pres.addSection({ title: "Arquitetura" });
     const x = 5.12 + i * 1.45;
     box(s, "GDS", [{ t: v, s: sz, b: true, head: true, c: GOLD, maxLines: 1 }, { t: l, s: 12, c: MUTED }], { x, y: 3.82, w: 1.35, h: 1.0 });
   });
-  s.addNotes(
-    "O grafo segue o modelo de propriedades rotulado. Cada artigo descreve uma entidade; cada trecho pertence a um artigo; e as entidades se ligam por arestas tipadas — os 13 tipos de relação — e cada aresta guarda a evidência e o doc_id, que é a proveniência. " +
-    "O grafo carregado tem 65 artigos, 282 trechos, 351 entidades e 796 relações. " +
-    "No esquema: restrições de unicidade nos identificadores, índices range, índices fulltext do Lucene e três índices vetoriais de 384 dimensões com cosseno, usando o modelo multilingual-e5-small localmente — o que permite perguntar em português sobre textos em inglês. " +
-    "Com o GDS calculamos PageRank, usado para ordenar a vizinhança e para preferir caminhos por nós pouco centrais, e Louvain, que encontrou 24 comunidades com modularidade 0,53 — por exemplo, Valve e Counter-Strike, ou Blizzard, Warcraft e DotA."
-  );
 }
 
 // ================= 8. Recuperação híbrida =================
@@ -436,13 +395,6 @@ pres.addSection({ title: "Arquitetura" });
   ["SEQUEL_OF", "BASED_ON"].forEach((t, i) => {
     box(s, "rótulo aresta", [{ t, s: 11, b: true, c: GOLD, maxLines: 1 }], { x: 6.8, y: (ys[i] + ys[i + 1]) / 2 - 0.14, w: 2.0, h: 0.28, valign: "middle" });
   });
-  s.addNotes(
-    "Dada uma pergunta, a recuperação faz seis passos, e todas as consultas Cypher ficam registradas. " +
-    "Primeiro, liga a pergunta a entidades por três canais — vetorial, fulltext e um dicionário de nomes e aliases com glossário português-inglês — fundidos por Reciprocal Rank Fusion. " +
-    "As âncoras são as entidades citadas literalmente ou confirmadas pelos canais vetorial e fulltext ao mesmo tempo. A partir delas, travessia multi-hop de até dois saltos por padrão, e allShortestPaths entre pares de âncoras, preferindo caminhos por nós pouco centrais. " +
-    "O quinto passo, a consulta dirigida pela intenção, mapeia expressões como 'quem criou' em tipos de relação; entrou porque o corte por PageRank descartava fatos sobre pessoas e estúdios pequenos. Por fim, reordenamos e ficamos com as 30 melhores triplas e os quatro trechos mais próximos. " +
-    "No exemplo, o caminho Dota 2, sequência de Defense of the Ancients, baseado em Warcraft III, cruza três artigos."
-  );
 }
 
 // ================= 9. Mitigação de alucinações =================
@@ -471,13 +423,6 @@ pres.addSection({ title: "Arquitetura" });
     box(s, "segmento legenda", [{ t: cap, s: 11, c: MUTED, maxLines: 1 }], { x: sx, y: 4.58, w: w - 0.04, h: 0.26, margin: 0 });
     sx += w;
   });
-  s.addNotes(
-    "A mitigação de alucinações tem quatro camadas. Na ingestão, só entra no grafo a relação cuja evidência aparece literalmente no artigo. " +
-    "Na recuperação, a pergunta é considerada fora do domínio quando nenhuma entidade é citada e a maior similaridade fica abaixo do limiar de 0,924; nesse caso o sistema recusa antes de gerar. " +
-    "Na geração, o contexto numera triplas e trechos, o prompt exige citação em toda afirmação e, sem contexto suficiente, a resposta é 'Não encontrei essa informação no grafo.'; depois, um verificador remove citações para identificadores inexistentes. " +
-    "E o Text-to-Cypher roda sob trava de somente leitura: o filtro rejeita cláusulas de escrita e a consulta roda numa transação de leitura — mesmo que o filtro falhe, o banco rejeita a escrita. " +
-    "O nível de confiança combina ligação com peso 0,4, estrutura 0,3 e fundamentação 0,3."
-  );
 }
 
 // ================= 10. Demo multi-hop =================
@@ -505,12 +450,6 @@ function callouts(s, x, w, items) {
     ["Subgrafo usado", "23 nós e 30 arestas, cores por tipo, caminhos mínimos destacados"],
     ["Modo extrativo", "sem chave de API, a resposta sai direto das triplas"],
   ]);
-  s.addNotes(
-    "Aqui está a interface respondendo a pergunta de vários saltos: 'Que jogo da Valve surgiu de um mod de Warcraft III?'. " +
-    "À esquerda, a resposta extraída do grafo — este é o modo sem LLM, em que a resposta é montada direto das triplas — e cada frase cita a tripla de origem, como T1, T5, T30. " +
-    "À direita, o subgrafo usado na resposta, com 23 nós e 30 arestas, cores por tipo de entidade e os caminhos mínimos destacados. Dá para ver Dota 2 ligado a Defense of the Ancients, que se liga a Warcraft III. " +
-    "Na barra lateral, o usuário escolhe GraphRAG ou só vetorial, o número de saltos e se quer gerar com o Claude."
-  );
 }
 
 // ================= 11. Proveniência =================
@@ -523,12 +462,6 @@ function callouts(s, x, w, items) {
     ["Consultas Cypher", "todas as executadas, com parâmetros"],
     ["Triplas, nós e trechos", "com evidência, link e tempos de cada etapa"],
   ]);
-  s.addNotes(
-    "Esta é a parte de proveniência. Para a pergunta sobre o DayZ, o sistema mostra a confiança — aqui alta — e os três componentes: ligação, estrutura e fundamentação. " +
-    "Logo abaixo, as entidades ligadas à pergunta e por qual canal cada uma chegou: vetorial, fulltext, dicionário ou trecho. " +
-    "Na aba Cypher, aparecem todas as consultas executadas, com parâmetros — a busca vetorial de entidades, a fulltext, a de trechos e assim por diante. Nas outras abas ficam as triplas com evidência e link para o artigo, os nós consultados, os trechos e os tempos. " +
-    "A ideia é que nada na resposta seja caixa-preta: dá para auditar de onde veio cada afirmação."
-  );
 }
 
 // ================= 12. Avaliação =================
@@ -564,13 +497,6 @@ pres.addSection({ title: "Avaliação" });
       { t: l, s: 12, c: MUTED, maxLines: 1 },
     ], { x: 6.25, y, w: 3.25, h: 0.72 });
   });
-  s.addNotes(
-    "Comparamos o contexto produzido pelo GraphRAG com o de um RAG vetorial puro, que recupera os oito trechos mais próximos no mesmo índice e com o mesmo modelo de embeddings. Medimos o contexto, e não a resposta, porque é ele que determina o que qualquer gerador pode afirmar com respaldo. " +
-    "São 26 perguntas: 12 de um salto, 9 de dois ou mais saltos e 5 fora do domínio. " +
-    "O GraphRAG teve suporte completo em 100% das perguntas, contra 71,4% do vetorial. O ganho se concentra nos vários saltos: recall de 1,000 contra 0,769. Em um salto o vetorial também vai bem, 0,917. " +
-    "Fora do domínio, o grafo recusou as cinco perguntas; o vetorial respondeu todas com trechos sem relação. " +
-    "O custo: contexto cerca de três vezes maior, 7.159 contra 2.352 caracteres, e latência mediana de 320 contra 14 milissegundos — ainda pequena perto do tempo de geração de um LLM."
-  );
 }
 
 // ================= 13. Limitações =================
@@ -589,13 +515,6 @@ pres.addSection({ title: "Avaliação" });
     box(s, "limitação título", [{ t: h, s: 15, b: true }], { x: 1.3, y: y + 0.06, w: 2.75, h: 0.72, valign: "middle" });
     box(s, "limitação texto", [{ t: b, s: 14, c: TXT }], { x: 4.2, y: y + 0.06, w: 5.15, h: 0.72, valign: "middle" });
   });
-  s.addNotes(
-    "Precisamos ser honestos sobre as limitações. O conjunto de avaliação é pequeno e não independente: as perguntas foram escritas pela equipe a partir de fatos conhecidos do grafo. " +
-    "Além disso, dois ajustes — a consulta dirigida pela intenção e o limiar de recusa — foram feitos depois de observar falhas nesse mesmo conjunto. Então os 100% devem ser lidos como evidência de que o mecanismo funciona, não como estimativa de desempenho em perguntas novas. " +
-    "A medida é no contexto: ter o fato no contexto é necessário, mas não suficiente para uma resposta correta. " +
-    "E a extração foi validada automaticamente, mas não revisada manualmente por completo. " +
-    "Também usamos só as introduções dos artigos, e o limiar de recusa tem uma faixa estreita entre domínio e fora do domínio."
-  );
 }
 
 // ================= 14. Conclusão =================
@@ -624,12 +543,6 @@ pres.addSection({ title: "Encerramento" });
   [[0.62, 4.5, 0.2, BLUE], [0.95, 4.32, 0.14, MUTED], [1.0, 4.68, 0.12, GOLD]].forEach(([x, y, d, c], i, a) => { if (i) edge(s, "aresta fim", a[0][0], a[0][1], x, y); });
   [[0.62, 4.5, 0.2, BLUE], [0.95, 4.32, 0.14, MUTED], [1.0, 4.68, 0.12, GOLD]].forEach(([x, y, d, c]) => node(s, "nó fim", x, y, d, c));
   box(s, "obrigado", [{ t: [{ t: "Obrigado!  ", c: TXT }, { t: "Perguntas?", c: GOLD }], s: 30, b: true, head: true, maxLines: 1 }], { x: 1.25, y: 4.18, w: 8.25, h: 0.65, valign: "middle" });
-  s.addNotes(
-    "Para concluir: construímos um sistema GraphRAG/KAG completo sobre jogos online, da coleta na Wikipedia à interface com proveniência. " +
-    "A combinação de extração com evidência literal, resolução de entidades com travas, modelagem LPG com índices e algoritmos de grafo, e recuperação híbrida com caminhos mínimos permitiu juntar fatos de artigos diferentes que a busca vetorial não reúne, e deu ao sistema um critério objetivo para recusar perguntas fora da base. " +
-    "Como próximos passos: avaliar com perguntas independentes e com as respostas geradas, usar o texto completo dos artigos, resumir as comunidades Louvain para perguntas globais e atualizar o grafo de forma incremental. " +
-    "O código, os dados e as instruções estão no repositório. Obrigado — ficamos à disposição para perguntas."
-  );
 }
 
 if (PROBLEMS.length) {

@@ -1,0 +1,158 @@
+<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><title>GraphRAG Jogos Online</title><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'><style>
+@page { size: A4; margin: 22mm 20mm 22mm 20mm; }
+body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: #37352F; font-size: 14.5px; line-height: 1.55; }
+h1 { font-size: 38px; font-weight: 700; line-height: 1.15; margin: 0 0 18px; letter-spacing: -0.5px; }
+h2 { font-size: 26px; font-weight: 700; margin: 34px 0 10px; break-after: avoid; }
+h3 { font-size: 16px; font-weight: 600; margin: 22px 0 8px; break-after: avoid; }
+h3::before { content: "▼ "; font-size: 12px; color: #37352F; }
+p { margin: 6px 0; }
+ul { margin: 6px 0 6px 0; padding-left: 26px; }
+li { margin: 3px 0; }
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 85%;
+       background: rgba(135,131,120,0.15); color: #EB5757; padding: 1px 4px; border-radius: 3px; }
+pre { background: #F7F6F3; border-radius: 4px; padding: 18px 22px; margin: 8px 0 12px;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 11.5px; line-height: 1.6;
+      white-space: pre-wrap; word-break: break-word; break-inside: avoid; color: #37352F; }
+figure { margin: 8px 0 18px; break-inside: avoid; }
+figure img { width: 100%; border: 1px solid #E9E9E7; border-radius: 4px; display: block; }
+figcaption { font-size: 12px; color: #787774; margin-top: 4px; }
+.meta { color: #787774; }
+.item { break-inside: avoid; page-break-inside: avoid; padding-top: 2px; }
+.item figure img { max-height: 205mm; object-fit: contain; }
+</style></head><body><h1>GraphRAG / KAG — Jogos Online</h1>
+<p class="meta">Tendências em Ciência da Computação · Prof. Ricardo Roberto de Lima · 18/11/2026</p>
+<p class="meta"><b>Biel Aguiar e Thiago Rocha</b> · Unipê Cruzeiro do Sul</p>
+<p class="meta">Tudo roda localmente: Neo4j 5.26 (Docker) com Graph Data Science e APOC, embeddings multilingual-e5-small na própria máquina e interface em Streamlit. Sem chave de API, o sistema funciona em modo extrativo: a resposta é montada direto das triplas do grafo.</p>
+<h2>1 - Problema e dados</h2>
+<p>O RAG vetorial devolve os trechos mais parecidos com a pergunta. Isso falha em dois casos: perguntas de vários saltos, em que cada fato está num artigo diferente, e perguntas fora da base, que ele não sabe recusar. Pergunta-guia: <b>“Que jogo da Valve surgiu de um mod de Warcraft III?”</b> A resposta cruza três artigos: Dota 2, Defense of the Ancients e Warcraft III.</p>
+<ul><li><b>65 artigos</b> da Wikipedia em inglês sobre jogos online (MOBAs, battle royale, FPS, MMOs, mobile e campeonatos de e-sports), divididos em <b>282 trechos</b> de três frases.</li><li>Extração: <b>811 entidades</b> e <b>797 relações</b>; depois da resolução, <b>351 entidades canônicas</b>, 93 delas presentes em mais de um artigo (as pontes entre documentos).</li><li>Avaliação com 26 perguntas em português: 12 de um salto, 9 de dois ou mais saltos e 5 fora do domínio.</li></ul>
+<h2>2 - Arquitetura</h2>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/img/arquitetura.png"><figcaption>Text-to-Graph (Wikipedia → entidades e relações) → Neo4j LPG → recuperação híbrida → interface.</figcaption></figure>
+<h2>3 - Pilar 1: Text-to-Graph (NER/RE com LLM)</h2>
+<ul><li>Um LLM (Claude) extrai entidades e relações com saída estruturada: um JSON Schema gerado de modelos Pydantic, com <b>9 tipos de entidade</b> (Game, Company, Person, Genre, Platform, Engine, Franchise, Event, Concept) e <b>13 tipos de relação</b> (DEVELOPED_BY, BASED_ON, SEQUEL_OF, CREATED_BY, SUBSIDIARY_OF…).</li><li><b>Evidência literal:</b> cada relação traz a frase do artigo que a sustenta, e um validador descarta a relação se essa frase não aparece no texto. É a primeira barreira contra alucinação.</li><li><b>Resolução de entidades</b> em três passos (chave lexical, aliases compatíveis e semântica com cosseno ≥ 0,93), com travas: nomes com números diferentes nunca se fundem (Overwatch ≠ Overwatch 2).</li></ul>
+<div class='item'><h3>Proveniência: a relação guarda a frase de evidência e o artigo de origem</h3>
+<pre><span style="color:#A3195B">MATCH</span> (a:<span style="color:#2F6F9F">Entity</span> {name: <span style="color:#4D7C0F">&#x27;Defense of the Ancients&#x27;</span>})-[r:<span style="color:#2F6F9F">BASED_ON</span>]-&gt;(b:<span style="color:#2F6F9F">Entity</span> {name: <span style="color:#4D7C0F">&#x27;Warcraft III: Reign of Chaos&#x27;</span>})
+<span style="color:#A3195B">MATCH</span> (art:<span style="color:#2F6F9F">Article</span> {doc_id: r.doc_id})
+<span style="color:#A3195B">RETURN</span> a.name <span style="color:#A3195B">AS</span> origem, <span style="color:#B35C00">type</span>(r) <span style="color:#A3195B">AS</span> relacao, b.name <span style="color:#A3195B">AS</span> destino, r.evidence <span style="color:#A3195B">AS</span> evidencia, art.title <span style="color:#A3195B">AS</span> artigo</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_proveniencia.png"></figure>
+</div>
+<h2>4 - Pilar 2: modelo LPG no Neo4j</h2>
+<p><code>(:Article)-[:DESCRIBES]-&gt;(:Entity)</code>, <code>(:Chunk)-[:PART_OF]-&gt;(:Article)</code> e <code>(:Entity)-[:13 tipos {evidence, doc_id}]-&gt;(:Entity)</code>; cada entidade ganha também o rótulo do seu tipo (:Game, :Company…).</p>
+<div class='item'><h3>Constraints de unicidade e índices RANGE, FULLTEXT e VECTOR</h3>
+<pre><span style="color:#9B9A97">// Constraints de unicidade</span>
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">CONSTRAINT</span> article_id <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (a:<span style="color:#2F6F9F">Article</span>) <span style="color:#A3195B">REQUIRE</span> a.doc_id <span style="color:#A3195B">IS UNIQUE</span>;
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">CONSTRAINT</span> entity_id <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (e:<span style="color:#2F6F9F">Entity</span>) <span style="color:#A3195B">REQUIRE</span> e.id <span style="color:#A3195B">IS UNIQUE</span>;
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">CONSTRAINT</span> chunk_id <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (c:<span style="color:#2F6F9F">Chunk</span>) <span style="color:#A3195B">REQUIRE</span> c.id <span style="color:#A3195B">IS UNIQUE</span>;
+<span style="color:#9B9A97">// RANGE (B-tree) para filtros e ordenação</span>
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">INDEX</span> entity_name <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (e:<span style="color:#2F6F9F">Entity</span>) <span style="color:#A3195B">ON</span> (e.name);
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">INDEX</span> entity_pagerank <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (e:<span style="color:#2F6F9F">Entity</span>) <span style="color:#A3195B">ON</span> (e.pagerank);
+<span style="color:#9B9A97">// ... entity_type, article_title</span>
+<span style="color:#9B9A97">// FULLTEXT (Lucene)</span>
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">FULLTEXT</span> <span style="color:#A3195B">INDEX</span> entity_fulltext <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (e:<span style="color:#2F6F9F">Entity</span>) <span style="color:#A3195B">ON EACH</span> [e.name, e.aliases_text, e.description];
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">FULLTEXT</span> <span style="color:#A3195B">INDEX</span> article_fulltext <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (a:<span style="color:#2F6F9F">Article</span>) <span style="color:#A3195B">ON EACH</span> [a.title, a.text];
+<span style="color:#9B9A97">// VECTOR: 3 índices de 384 dimensões, cosseno (entity_vector, chunk_vector, article_vector)</span>
+<span style="color:#A3195B">CREATE</span> <span style="color:#A3195B">VECTOR</span> <span style="color:#A3195B">INDEX</span> chunk_vector <span style="color:#A3195B">IF NOT EXISTS</span> <span style="color:#A3195B">FOR</span> (n:<span style="color:#2F6F9F">Chunk</span>) <span style="color:#A3195B">ON</span> (n.embedding)
+<span style="color:#A3195B">OPTIONS</span> {indexConfig: {`vector.dimensions`: 384, `vector.similarity_function`: <span style="color:#4D7C0F">&#x27;cosine&#x27;</span>}};
+
+<span style="color:#9B9A97">// Conferindo</span>
+<span style="color:#A3195B">SHOW</span> <span style="color:#A3195B">INDEXES</span>
+<span style="color:#A3195B">YIELD</span> name, type, labelsOrTypes, properties
+<span style="color:#A3195B">WHERE</span> type &lt;&gt; <span style="color:#4D7C0F">&#x27;LOOKUP&#x27;</span>
+<span style="color:#A3195B">RETURN</span> name, type, labelsOrTypes, properties</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_indices.png"></figure>
+</div>
+<div class='item'><h3>Esquema do grafo (db.schema.visualization)</h3>
+<pre><span style="color:#A3195B">CALL</span> <span style="color:#B35C00">db.schema.visualization</span>()</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_esquema.png"></figure>
+</div>
+<div class='item'><h3>Tamanho do grafo carregado</h3>
+<pre><span style="color:#A3195B">MATCH</span> (n)
+<span style="color:#A3195B">RETURN</span> <span style="color:#B35C00">labels</span>(n)[0] <span style="color:#A3195B">AS</span> rotulo, <span style="color:#B35C00">count</span>(*) <span style="color:#A3195B">AS</span> nos
+<span style="color:#A3195B">ORDER BY</span> nos <span style="color:#A3195B">DESC</span>;
+
+<span style="color:#A3195B">MATCH</span> (e:<span style="color:#2F6F9F">Entity</span>)
+<span style="color:#A3195B">RETURN</span> e.type <span style="color:#A3195B">AS</span> tipo, <span style="color:#B35C00">count</span>(*) <span style="color:#A3195B">AS</span> entidades
+<span style="color:#A3195B">ORDER BY</span> entidades <span style="color:#A3195B">DESC</span></pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_tamanho.png"></figure>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_tipos.png"></figure>
+</div>
+<h2>5 - Pilar 3: recuperação híbrida e algoritmos de grafo</h2>
+<ul><li><b>Ligação de entidades</b> por três canais (vetor, fulltext e dicionário de nomes com glossário português-inglês), fundidos por Reciprocal Rank Fusion.</li><li><b>Travessia multi-hop</b> de até 2 saltos (até 3) a partir das âncoras e <b>allShortestPaths</b> entre elas, preferindo caminhos por nós pouco centrais.</li><li><b>Consulta por intenção:</b> “quem criou”, “subsidiária” viram tipos de relação. No fim, as 30 melhores triplas e os 4 trechos mais próximos formam o contexto.</li></ul>
+<div class='item'><h3>Busca vetorial nos trechos (índice VECTOR)</h3>
+<pre><span style="color:#A3195B">MATCH</span> (c:<span style="color:#2F6F9F">Chunk</span>)-[:<span style="color:#2F6F9F">PART_OF</span>]-&gt;(:<span style="color:#2F6F9F">Article</span> {title: <span style="color:#4D7C0F">&#x27;Dota 2&#x27;</span>})
+<span style="color:#A3195B">WITH</span> c <span style="color:#A3195B">LIMIT</span> 1
+<span style="color:#A3195B">CALL</span> <span style="color:#B35C00">db.index.vector.queryNodes</span>(<span style="color:#4D7C0F">&#x27;chunk_vector&#x27;</span>, 5, c.embedding) <span style="color:#A3195B">YIELD</span> node, score
+<span style="color:#A3195B">MATCH</span> (node)-[:<span style="color:#2F6F9F">PART_OF</span>]-&gt;(a:<span style="color:#2F6F9F">Article</span>)
+<span style="color:#A3195B">RETURN</span> a.title <span style="color:#A3195B">AS</span> artigo, <span style="color:#B35C00">left</span>(node.text, 70) <span style="color:#A3195B">AS</span> trecho, <span style="color:#B35C00">round</span>(score, 3) <span style="color:#A3195B">AS</span> similaridade</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_vetor.png"></figure>
+</div>
+<div class='item'><h3>Ligação de entidades com tolerância a erro (índice FULLTEXT)</h3>
+<pre><span style="color:#A3195B">CALL</span> <span style="color:#B35C00">db.index.fulltext.queryNodes</span>(<span style="color:#4D7C0F">&#x27;entity_fulltext&#x27;</span>, <span style="color:#4D7C0F">&#x27;valv~1 OR &quot;warcraft iii&quot;&#x27;</span>) <span style="color:#A3195B">YIELD</span> node, score
+<span style="color:#A3195B">RETURN</span> node.type <span style="color:#A3195B">AS</span> tipo, node.name <span style="color:#A3195B">AS</span> entidade, <span style="color:#B35C00">round</span>(score, 3) <span style="color:#A3195B">AS</span> score
+<span style="color:#A3195B">LIMIT</span> 6</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_fulltext.png"></figure>
+</div>
+<div class='item'><h3>Multi-hop: o jogo da Valve que veio de um mod de Warcraft III</h3>
+<pre><span style="color:#A3195B">MATCH</span> p = (v:<span style="color:#2F6F9F">Entity</span> {name: <span style="color:#4D7C0F">&#x27;Valve&#x27;</span>})&lt;-[:<span style="color:#2F6F9F">DEVELOPED_BY</span>]-(g:<span style="color:#2F6F9F">Game</span>)-[:<span style="color:#2F6F9F">SEQUEL_OF</span>]-&gt;(mod:<span style="color:#2F6F9F">Entity</span>)-[:<span style="color:#2F6F9F">BASED_ON</span>]-&gt;(w:<span style="color:#2F6F9F">Entity</span>)
+<span style="color:#A3195B">WHERE</span> w.name <span style="color:#A3195B">STARTS WITH</span> <span style="color:#4D7C0F">&#x27;Warcraft III&#x27;</span>
+<span style="color:#A3195B">RETURN</span> p</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_multihop.png"></figure>
+</div>
+<div class='item'><h3>Menor caminho entre League of Legends e Dota 2 (shortestPath)</h3>
+<pre><span style="color:#A3195B">MATCH</span> (a:<span style="color:#2F6F9F">Entity</span> {name: <span style="color:#4D7C0F">&#x27;League of Legends&#x27;</span>}), (b:<span style="color:#2F6F9F">Entity</span> {name: <span style="color:#4D7C0F">&#x27;Dota 2&#x27;</span>})
+<span style="color:#A3195B">MATCH</span> p = <span style="color:#B35C00">shortestPath</span>((a)-[:<span style="color:#2F6F9F">BASED_ON</span>|<span style="color:#2F6F9F">SEQUEL_OF</span>|<span style="color:#2F6F9F">DEVELOPED_BY</span>|<span style="color:#2F6F9F">CREATED_BY</span>|<span style="color:#2F6F9F">PUBLISHED_BY</span>|<span style="color:#2F6F9F">SUBSIDIARY_OF</span>*..6]-(b))
+<span style="color:#A3195B">RETURN</span> p</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_caminho.png"></figure>
+</div>
+<div class='item'><h3>PageRank (GDS): centralidade usada para ordenar a vizinhança</h3>
+<pre><span style="color:#A3195B">CALL</span> <span style="color:#B35C00">gds.graph.project</span>(<span style="color:#4D7C0F">&#x27;kg&#x27;</span>, [<span style="color:#4D7C0F">&#x27;Entity&#x27;</span>], {ALL: {type: <span style="color:#4D7C0F">&#x27;*&#x27;</span>, orientation: <span style="color:#4D7C0F">&#x27;UNDIRECTED&#x27;</span>}});
+<span style="color:#A3195B">CALL</span> <span style="color:#B35C00">gds.pageRank.write</span>(<span style="color:#4D7C0F">&#x27;kg&#x27;</span>, {writeProperty: <span style="color:#4D7C0F">&#x27;pagerank&#x27;</span>, maxIterations: 40});
+<span style="color:#A3195B">CALL</span> <span style="color:#B35C00">gds.louvain.write</span>(<span style="color:#4D7C0F">&#x27;kg&#x27;</span>, {writeProperty: <span style="color:#4D7C0F">&#x27;community&#x27;</span>});
+<span style="color:#9B9A97">// nesta carga: 23 comunidades, modularidade 0,53 (o Louvain varia um pouco a cada execução; no artigo foram 24)</span>
+
+<span style="color:#A3195B">MATCH</span> (e:<span style="color:#2F6F9F">Entity</span>)
+<span style="color:#A3195B">RETURN</span> e.name <span style="color:#A3195B">AS</span> entidade, e.type <span style="color:#A3195B">AS</span> tipo, <span style="color:#B35C00">round</span>(e.pagerank, 3) <span style="color:#A3195B">AS</span> pagerank
+<span style="color:#A3195B">ORDER BY</span> pagerank <span style="color:#A3195B">DESC</span>
+<span style="color:#A3195B">LIMIT</span> 10</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_pagerank.png"></figure>
+</div>
+<div class='item'><h3>Louvain (GDS): comunidades do grafo</h3>
+<pre><span style="color:#A3195B">MATCH</span> (e:<span style="color:#2F6F9F">Entity</span>)
+<span style="color:#A3195B">WITH</span> e.community <span style="color:#A3195B">AS</span> comunidade, <span style="color:#B35C00">count</span>(*) <span style="color:#A3195B">AS</span> entidades, <span style="color:#B35C00">collect</span>(e.name)[..5] <span style="color:#A3195B">AS</span> exemplos
+<span style="color:#A3195B">RETURN</span> comunidade, entidades, exemplos
+<span style="color:#A3195B">ORDER BY</span> entidades <span style="color:#A3195B">DESC</span>
+<span style="color:#A3195B">LIMIT</span> 8</pre>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/neo4j_louvain.png"></figure>
+</div>
+<h2>6 - Pilar 4: interface e explicabilidade</h2>
+<div class='item'><h3>“Que jogo da Valve surgiu de um mod de Warcraft III?” — resposta citada e subgrafo usado</h3>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/ui_multihop.png"><figcaption>Cada frase cita a tripla de origem [T1], [T2]…; à direita, os 23 nós e 30 arestas usados.</figcaption></figure>
+</div>
+<div class='item'><h3>Triplas citadas, com a frase de evidência de cada uma</h3>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/ui_triplas.png"></figure>
+</div>
+<div class='item'><h3>Consultas Cypher executadas para responder</h3>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/ui_cypher.png"></figure>
+</div>
+<div class='item'><h3>“Que jogo militar deu origem ao mod que virou o DayZ, e quem criou esse mod?”</h3>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/ui_dayz.png"></figure>
+</div>
+<div class='item'><h3>A mesma pergunta da Valve no modo só vetorial</h3>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/ui_vetorial.png"><figcaption>Só vetorial: o subgrafo tem 3 nós soltos e nenhuma aresta; sem a ponte entre Dota 2 e Warcraft III, o sistema não monta a resposta.</figcaption></figure>
+</div>
+<div class='item'><h3>Pergunta fora do domínio: o sistema recusa em vez de inventar</h3>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/ui_fora_dominio.png"><figcaption>“Qual é a capital da França?”: nenhuma entidade da base é citada e a similaridade fica abaixo do limiar, então a resposta é “Não encontrei essa informação no grafo”.</figcaption></figure>
+</div>
+<h2>7 - Redução de alucinação</h2>
+<ul><li><b>Na ingestão:</b> só entra no grafo a relação cuja frase de evidência aparece literalmente no artigo.</li><li><b>Na recuperação:</b> sem entidade citada e com similaridade abaixo de 0,924, a pergunta é tratada como fora do domínio e o sistema recusa antes de gerar.</li><li><b>Na geração:</b> toda afirmação cita uma tripla [T#] ou trecho [C#], e um verificador remove citações que não existem. Sem contexto suficiente, a resposta é “Não encontrei essa informação no grafo.”</li><li><b>Text-to-Cypher somente leitura:</b> o filtro bloqueia CREATE, MERGE, DELETE e SET, e a consulta roda numa transação de leitura. Confiança = ligação (0,4) + estrutura (0,3) + fundamentação (0,3).</li></ul>
+<h2>8 - Avaliação</h2>
+<ul><li>26 perguntas (12 de um salto, 9 de dois ou mais saltos e 5 fora do domínio), medindo o <b>contexto recuperado</b> contra um RAG vetorial puro no mesmo índice.</li><li><b>Suporte completo:</b> 100% no GraphRAG contra 71,4% no vetorial. <b>Recall em 2+ saltos:</b> 1,00 contra 0,77. <b>Recusa correta fora do domínio:</b> 100% contra 0%.</li><li>Custo: contexto cerca de 3 vezes maior (7.159 × 2.352 caracteres) e latência mediana de 320 ms contra 14 ms, ainda pequena perto do tempo de geração de um LLM.</li><li>Limitação: as perguntas foram escritas pela equipe a partir do grafo e dois ajustes foram feitos nesse mesmo conjunto, então os 100% mostram que o mecanismo funciona, não a taxa em perguntas novas.</li></ul>
+<figure><img src="file:///C:/Users/Biel%20Aguiar/projetos/graphrag-kag-arxiv/docs/apresentacao/prints/ui_avaliacao.png"></figure>
+<h2>9 - Como rodar</h2>
+<pre>docker compose up -d                       # Neo4j 5.26 + GDS + APOC
+cd backend
+uv sync                                    # dependências
+uv run python -m app.ingest.load --reset   # schema, carga, embeddings, PageRank e Louvain
+uv run streamlit run streamlit_app.py      # interface
+uv run python -m app.eval.run_eval         # avaliação GraphRAG × RAG vetorial</pre>
+<ul><li>Próximos passos: avaliar com perguntas independentes e com as respostas geradas, usar o texto completo dos artigos, resumir as comunidades do Louvain para perguntas globais e atualizar o grafo aos poucos.</li></ul></body></html>

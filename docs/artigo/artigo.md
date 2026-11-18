@@ -1,9 +1,8 @@
 ---
 title: "GraphRAG sobre Jogos Online: Recuperação Híbrida em Grafo de Conhecimento com Mitigação de Alucinações"
 title_en: "GraphRAG over Online Games: Hybrid Knowledge-Graph Retrieval with Hallucination Mitigation"
-authors: "Integrante 1, Integrante 2, Integrante 3, Integrante 4, Integrante 5, Integrante 6"
-address: "[Instituição] -- Bacharelado em Ciência da Computação -- [Cidade] -- [UF] -- Brasil"
-email: "{integrante1, integrante2, integrante3, integrante4, integrante5, integrante6}@[instituicao].edu.br"
+authors: "Biel Aguiar, Thiago Rocha"
+address: "Unipê Cruzeiro do Sul -- Ciência da Computação -- João Pessoa -- PB -- Brasil"
 ---
 
 ## Abstract

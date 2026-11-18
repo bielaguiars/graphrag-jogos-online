@@ -175,8 +175,8 @@ def to_tex(meta: dict, blocks: list[tuple]) -> str:
 """,
          r"\title{" + tex_escape(meta["title"]) + "}",
          r"\author{" + tex_escape(meta["authors"]).replace(", ", r", ") + "}",
-         r"\address{" + tex_escape(meta["address"]).replace("--", "--") + r"\\" + "\n  \\email{"
-         + tex_escape(meta["email"]) + "}}",
+         r"\address{" + tex_escape(meta["address"]).replace("--", "--")
+         + ((r"\\" + "\n  \\email{" + tex_escape(meta["email"]) + "}") if meta.get("email") else "") + "}",
          r"\begin{document}", r"\maketitle"]
     env = None
     for b in blocks:
@@ -265,7 +265,8 @@ def to_docx(meta: dict, blocks: list[tuple], bib: dict, out: Path) -> None:
     center(meta["title"], 16, bold=True)
     center(meta["authors"])
     center(meta["address"].replace("--", "–"), 10)
-    center(meta["email"], 10, italic=False)
+    if meta.get("email"):
+        center(meta["email"], 10, italic=False)
 
     n_sec = n_sub = n_fig = n_tab = n_lst = 0
     in_abs = False
