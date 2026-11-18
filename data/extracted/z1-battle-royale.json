@@ -1,0 +1,142 @@
+{
+  "doc_id": "z1-battle-royale",
+  "subject": "Z1 Battle Royale",
+  "entities": [
+    {
+      "name": "Z1 Battle Royale",
+      "type": "Game",
+      "aliases": [
+        "H1Z1: King of the Kill",
+        "King of the Kill"
+      ],
+      "description": "Jogo battle royale da Daybreak Game Company, antes chamado H1Z1 e King of the Kill."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero de sobrevivencia em que o ultimo jogador ou time vence."
+    },
+    {
+      "name": "Daybreak Game Company",
+      "type": "Company",
+      "aliases": [
+        "Daybreak"
+      ],
+      "description": "Desenvolvedora e publicadora de Z1 Battle Royale."
+    },
+    {
+      "name": "H1Z1",
+      "type": "Game",
+      "aliases": [],
+      "description": "Projeto original que foi dividido em Just Survive e King of the Kill em 2016."
+    },
+    {
+      "name": "Just Survive",
+      "type": "Game",
+      "aliases": [
+        "H1Z1: Just Survive"
+      ],
+      "description": "Projeto derivado do H1Z1 original focado em sobrevivencia."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Lancamento antecipado com o jogo em desenvolvimento."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play",
+        "F2P"
+      ],
+      "description": "Modelo em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony."
+    },
+    {
+      "name": "NantG Mobile",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa que assumiu temporariamente o desenvolvimento de Z1 Battle Royale."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Z1 Battle Royale",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "is a battle royale game developed and published by Daybreak Game Company"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "DEVELOPED_BY",
+      "target": "Daybreak Game Company",
+      "evidence": "is a battle royale game developed and published by Daybreak Game Company"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "PUBLISHED_BY",
+      "target": "Daybreak Game Company",
+      "evidence": "is a battle royale game developed and published by Daybreak Game Company"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "BASED_ON",
+      "target": "H1Z1",
+      "evidence": "after the original H1Z1 was spun off into two separate projects in early 2016"
+    },
+    {
+      "source": "Just Survive",
+      "type": "BASED_ON",
+      "target": "H1Z1",
+      "evidence": "after the original H1Z1 was spun off into two separate projects in early 2016"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "After three years of being in early access for Windows"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "After three years of being in early access for Windows"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "H1Z1 officially released as a free-to-play game in February 2018"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "later released for the PlayStation 4 in August 2018"
+    },
+    {
+      "source": "Z1 Battle Royale",
+      "type": "DEVELOPED_BY",
+      "target": "NantG Mobile",
+      "evidence": "development of the game was transferred to NantG Mobile"
+    }
+  ]
+}

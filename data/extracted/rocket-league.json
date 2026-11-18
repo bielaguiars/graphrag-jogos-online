@@ -1,0 +1,250 @@
+{
+  "doc_id": "rocket-league",
+  "subject": "Rocket League",
+  "entities": [
+    {
+      "name": "Rocket League",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de futebol com veiculos da Psyonix lancado em 2015."
+    },
+    {
+      "name": "Psyonix",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Rocket League, adquirida pela Epic Games."
+    },
+    {
+      "name": "Supersonic Acrobatic Rocket-Powered Battle-Cars",
+      "type": "Game",
+      "aliases": [
+        "Battle-Cars"
+      ],
+      "description": "Jogo de 2008 da Psyonix antecessor de Rocket League."
+    },
+    {
+      "name": "Vehicular soccer",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero de futebol jogado com veiculos."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-play"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console hibrido da Nintendo."
+    },
+    {
+      "name": "505 Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Distribuiu versoes fisicas de Rocket League a partir de 2016."
+    },
+    {
+      "name": "Warner Bros. Interactive Entertainment",
+      "type": "Company",
+      "aliases": [],
+      "description": "Distribuiu versoes fisicas de Rocket League apos a 505 Games."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [
+        "OS X",
+        "Mac OS X"
+      ],
+      "description": "Sistema operacional da Apple."
+    },
+    {
+      "name": "Linux",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional de codigo aberto."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "live service"
+      ],
+      "description": "Modelo de jogo mantido com atualizacoes continuas."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play",
+        "F2P"
+      ],
+      "description": "Modelo em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Epic Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa de jogos que adquiriu a Psyonix."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport"
+      ],
+      "description": "Competicao profissional de jogos eletronicos."
+    },
+    {
+      "name": "Rocket League Championship Series",
+      "type": "Event",
+      "aliases": [
+        "RLCS"
+      ],
+      "description": "Liga de esports de Rocket League da propria Psyonix."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Rocket League",
+      "type": "HAS_GENRE",
+      "target": "Vehicular soccer",
+      "evidence": "Rocket League is a 2015 vehicular soccer video game developed and published by Psyonix"
+    },
+    {
+      "source": "Rocket League",
+      "type": "DEVELOPED_BY",
+      "target": "Psyonix",
+      "evidence": "vehicular soccer video game developed and published by Psyonix"
+    },
+    {
+      "source": "Rocket League",
+      "type": "PUBLISHED_BY",
+      "target": "Psyonix",
+      "evidence": "vehicular soccer video game developed and published by Psyonix"
+    },
+    {
+      "source": "Rocket League",
+      "type": "SEQUEL_OF",
+      "target": "Supersonic Acrobatic Rocket-Powered Battle-Cars",
+      "evidence": "A sequel to 2008's Supersonic Acrobatic Rocket-Powered Battle-Cars"
+    },
+    {
+      "source": "Rocket League",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "including cross-platform play between all versions"
+    },
+    {
+      "source": "Rocket League",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "first released on the PlayStation 4 and Windows respectively in July 2015"
+    },
+    {
+      "source": "Rocket League",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "first released on the PlayStation 4 and Windows respectively in July 2015"
+    },
+    {
+      "source": "Rocket League",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "with ports for Xbox One and Nintendo Switch being released later on"
+    },
+    {
+      "source": "Rocket League",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "with ports for Xbox One and Nintendo Switch being released later on"
+    },
+    {
+      "source": "Rocket League",
+      "type": "PUBLISHED_BY",
+      "target": "505 Games",
+      "evidence": "distributed starting in 2016 by 505 Games and later by Warner Bros. Interactive Entertainment"
+    },
+    {
+      "source": "Rocket League",
+      "type": "PUBLISHED_BY",
+      "target": "Warner Bros. Interactive Entertainment",
+      "evidence": "distributed starting in 2016 by 505 Games and later by Warner Bros. Interactive Entertainment"
+    },
+    {
+      "source": "Rocket League",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "Versions for macOS and Linux were also released in 2016"
+    },
+    {
+      "source": "Rocket League",
+      "type": "AVAILABLE_ON",
+      "target": "Linux",
+      "evidence": "Versions for macOS and Linux were also released in 2016"
+    },
+    {
+      "source": "Rocket League",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "Rocket League is developed under the games as a service model"
+    },
+    {
+      "source": "Rocket League",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "It has been offered as free-to-play since 2020 when Epic Games acquired Psyonix"
+    },
+    {
+      "source": "Psyonix",
+      "type": "SUBSIDIARY_OF",
+      "target": "Epic Games",
+      "evidence": "since 2020 when Epic Games acquired Psyonix"
+    },
+    {
+      "source": "Rocket League",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "Rocket League has also been adopted as an esport"
+    },
+    {
+      "source": "Rocket League",
+      "type": "FEATURED_IN",
+      "target": "Rocket League Championship Series",
+      "evidence": "along with Psyonix's own Rocket League Championship Series (RLCS)"
+    },
+    {
+      "source": "Rocket League Championship Series",
+      "type": "ORGANIZED_BY",
+      "target": "Psyonix",
+      "evidence": "Psyonix's own Rocket League Championship Series (RLCS)"
+    }
+  ]
+}

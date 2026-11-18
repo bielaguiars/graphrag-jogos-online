@@ -1,0 +1,217 @@
+{
+  "doc_id": "counter-strike-global-offensive",
+  "subject": "Counter-Strike: Global Offensive",
+  "entities": [
+    {
+      "name": "Counter-Strike: Global Offensive",
+      "type": "Game",
+      "aliases": [
+        "CS:GO",
+        "Global Offensive"
+      ],
+      "description": "Jogo de tiro tatico multiplayer da Valve lancado em 2012."
+    },
+    {
+      "name": "Valve",
+      "type": "Company",
+      "aliases": [
+        "Valve Corporation"
+      ],
+      "description": "Empresa americana desenvolvedora e publicadora de jogos."
+    },
+    {
+      "name": "Hidden Path Entertainment",
+      "type": "Company",
+      "aliases": [],
+      "description": "Co-desenvolvedora de Counter-Strike: Global Offensive."
+    },
+    {
+      "name": "Counter-Strike series",
+      "type": "Franchise",
+      "aliases": [
+        "Counter-Strike"
+      ],
+      "description": "Serie de jogos de tiro tatico iniciada pela Valve."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [
+        "FPS"
+      ],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Tactical shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com enfase tatica e realista."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [
+        "OS X",
+        "Mac OS X"
+      ],
+      "description": "Sistema operacional da Apple."
+    },
+    {
+      "name": "PlayStation 3",
+      "type": "Platform",
+      "aliases": [
+        "PS3"
+      ],
+      "description": "Console da Sony."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "Xbox 360",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft."
+    },
+    {
+      "name": "Linux",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional de codigo aberto."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play",
+        "F2P"
+      ],
+      "description": "Modelo em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Steam",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma de distribuicao digital de jogos da Valve."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport"
+      ],
+      "description": "Competicao profissional de jogos eletronicos."
+    },
+    {
+      "name": "Counter-Strike 2",
+      "type": "Game",
+      "aliases": [
+        "CS2"
+      ],
+      "description": "Atualizacao de Counter-Strike: Global Offensive no motor Source 2."
+    },
+    {
+      "name": "Source 2",
+      "type": "Engine",
+      "aliases": [],
+      "description": "Sucessor do motor Source da Valve."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "multiplayer tactical first-person shooter developed by Valve and Hidden Path Entertainment"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "DEVELOPED_BY",
+      "target": "Hidden Path Entertainment",
+      "evidence": "multiplayer tactical first-person shooter developed by Valve and Hidden Path Entertainment"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "is a multiplayer tactical first-person shooter"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "HAS_GENRE",
+      "target": "Tactical shooter",
+      "evidence": "is a multiplayer tactical first-person shooter"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "PART_OF",
+      "target": "Counter-Strike series",
+      "evidence": "It is the fourth game in the Counter-Strike series."
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "released for OS X, PlayStation 3, Windows, and Xbox 360 in August 2012"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 3",
+      "evidence": "released for OS X, PlayStation 3, Windows, and Xbox 360 in August 2012"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "released for OS X, PlayStation 3, Windows, and Xbox 360 in August 2012"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox 360",
+      "evidence": "released for OS X, PlayStation 3, Windows, and Xbox 360 in August 2012"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "AVAILABLE_ON",
+      "target": "Linux",
+      "evidence": "and for Linux in 2014"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Valve transitioned the game to a free-to-play model"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "AVAILABLE_ON",
+      "target": "Steam",
+      "evidence": "one of the most played games on Valve's Steam platform"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "The game had an active esports scene"
+    },
+    {
+      "source": "Counter-Strike 2",
+      "type": "SEQUEL_OF",
+      "target": "Counter-Strike: Global Offensive",
+      "evidence": "Counter-Strike 2, a major update bringing the game to the Source 2 engine"
+    },
+    {
+      "source": "Counter-Strike 2",
+      "type": "USES_ENGINE",
+      "target": "Source 2",
+      "evidence": "Counter-Strike 2, a major update bringing the game to the Source 2 engine"
+    }
+  ]
+}

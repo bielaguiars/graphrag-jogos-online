@@ -1,0 +1,130 @@
+{
+  "doc_id": "dota-auto-chess",
+  "subject": "Dota Auto Chess",
+  "entities": [
+    {
+      "name": "Dota Auto Chess",
+      "type": "Game",
+      "aliases": [],
+      "description": "Mod de estrategia para Dota 2 que originou o genero auto battler."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modification"
+      ],
+      "description": "Modificacao de um jogo criada pela comunidade."
+    },
+    {
+      "name": "Dota 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "MOBA da Valve lancado em 2013."
+    },
+    {
+      "name": "Strategy",
+      "type": "Genre",
+      "aliases": [
+        "strategy video game"
+      ],
+      "description": "Genero de jogos de estrategia."
+    },
+    {
+      "name": "Drodo Studio",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estudio que criou Dota Auto Chess e Auto Chess."
+    },
+    {
+      "name": "Auto battler",
+      "type": "Genre",
+      "aliases": [
+        "auto chess"
+      ],
+      "description": "Genero de estrategia com batalhas automaticas."
+    },
+    {
+      "name": "Auto Chess",
+      "type": "Game",
+      "aliases": [],
+      "description": "Versao standalone de Dota Auto Chess feita pela Drodo Studio."
+    },
+    {
+      "name": "Valve",
+      "type": "Company",
+      "aliases": [
+        "Valve Corporation"
+      ],
+      "description": "Empresa americana desenvolvedora e publicadora de jogos."
+    },
+    {
+      "name": "Dota Underlords",
+      "type": "Game",
+      "aliases": [],
+      "description": "Auto battler standalone da Valve derivado de Dota Auto Chess."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Dota Auto Chess",
+      "type": "BASED_ON",
+      "target": "Dota 2",
+      "evidence": "Dota Auto Chess is a strategy video game mod for the video game Dota 2"
+    },
+    {
+      "source": "Dota Auto Chess",
+      "type": "BASED_ON",
+      "target": "Mod",
+      "evidence": "Dota Auto Chess is a strategy video game mod for the video game Dota 2"
+    },
+    {
+      "source": "Dota Auto Chess",
+      "type": "HAS_GENRE",
+      "target": "Strategy",
+      "evidence": "Dota Auto Chess is a strategy video game mod"
+    },
+    {
+      "source": "Dota Auto Chess",
+      "type": "DEVELOPED_BY",
+      "target": "Drodo Studio",
+      "evidence": "Developed by Drodo Studio and released in January 2019"
+    },
+    {
+      "source": "Dota Auto Chess",
+      "type": "HAS_GENRE",
+      "target": "Auto battler",
+      "evidence": "its popularity led to the rapid creation of the auto battler genre"
+    },
+    {
+      "source": "Auto Chess",
+      "type": "DEVELOPED_BY",
+      "target": "Drodo Studio",
+      "evidence": "Drodo Studio developed a standalone version known simply as Auto Chess"
+    },
+    {
+      "source": "Auto Chess",
+      "type": "BASED_ON",
+      "target": "Dota Auto Chess",
+      "evidence": "Drodo Studio developed a standalone version known simply as Auto Chess"
+    },
+    {
+      "source": "Dota Underlords",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "Valve, the developer of Dota 2, developed their own standalone version known as Dota Underlords"
+    },
+    {
+      "source": "Dota Underlords",
+      "type": "BASED_ON",
+      "target": "Dota Auto Chess",
+      "evidence": "developed their own standalone version known as Dota Underlords"
+    },
+    {
+      "source": "Dota 2",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "Valve, the developer of Dota 2"
+    }
+  ]
+}

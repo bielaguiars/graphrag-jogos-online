@@ -1,0 +1,175 @@
+{
+  "doc_id": "defense-of-the-ancients",
+  "subject": "Defense of the Ancients",
+  "entities": [
+    {
+      "name": "Defense of the Ancients",
+      "type": "Game",
+      "aliases": [
+        "DotA",
+        "DotA Allstars"
+      ],
+      "description": "Mod MOBA para Warcraft III, origem do gênero."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Gênero de batalha em arena online entre equipes multijogador."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modification"
+      ],
+      "description": "Modificação de um jogo criada por usuários."
+    },
+    {
+      "name": "Warcraft III: Reign of Chaos",
+      "type": "Game",
+      "aliases": [
+        "Reign of Chaos"
+      ],
+      "description": "Jogo de 2002 para o qual DotA foi criado como mod."
+    },
+    {
+      "name": "Warcraft III: The Frozen Throne",
+      "type": "Game",
+      "aliases": [
+        "The Frozen Throne"
+      ],
+      "description": "Expansão de 2003 de Warcraft III: Reign of Chaos."
+    },
+    {
+      "name": "Aeon of Strife",
+      "type": "Game",
+      "aliases": [],
+      "description": "Mapa customizado de StarCraft que deu origem a DotA."
+    },
+    {
+      "name": "StarCraft",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo para o qual foi criado o mapa Aeon of Strife."
+    },
+    {
+      "name": "IceFrog",
+      "type": "Person",
+      "aliases": [],
+      "description": "Designer pseudônimo que mantém DotA desde meados dos anos 2000."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa responsável pelo evento BlizzCon."
+    },
+    {
+      "name": "BlizzCon",
+      "type": "Event",
+      "aliases": [],
+      "description": "Evento da Blizzard Entertainment com torneios de DotA."
+    },
+    {
+      "name": "World Cyber Games",
+      "type": "Event",
+      "aliases": [],
+      "description": "Torneio mundial que incluiu DotA."
+    },
+    {
+      "name": "Valve",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora americana que adquiriu os direitos de DotA em 2009."
+    },
+    {
+      "name": "Dota 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequência de DotA lançada em 2013 pela Valve."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Defense of the Ancients",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "Defense of the Ancients (DotA) is a multiplayer online battle arena (MOBA) mod"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "HAS_FEATURE",
+      "target": "Mod",
+      "evidence": "is a multiplayer online battle arena (MOBA) mod for the video game Warcraft III: Reign of Chaos"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "BASED_ON",
+      "target": "Warcraft III: Reign of Chaos",
+      "evidence": "mod for the video game Warcraft III: Reign of Chaos (2002) and its expansion, The Frozen Throne (2003)"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "BASED_ON",
+      "target": "Warcraft III: The Frozen Throne",
+      "evidence": "mod for the video game Warcraft III: Reign of Chaos (2002) and its expansion, The Frozen Throne (2003)"
+    },
+    {
+      "source": "Warcraft III: The Frozen Throne",
+      "type": "SEQUEL_OF",
+      "target": "Warcraft III: Reign of Chaos",
+      "evidence": "Warcraft III: Reign of Chaos (2002) and its expansion, The Frozen Throne (2003)"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "BASED_ON",
+      "target": "Aeon of Strife",
+      "evidence": "DotA has its roots in the \"Aeon of Strife\" custom map for StarCraft."
+    },
+    {
+      "source": "Aeon of Strife",
+      "type": "BASED_ON",
+      "target": "StarCraft",
+      "evidence": "\"Aeon of Strife\" custom map for StarCraft"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "DEVELOPED_BY",
+      "target": "IceFrog",
+      "evidence": "the pseudonymous designer known as IceFrog maintaining the game since the mid-2000s"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "FEATURED_IN",
+      "target": "BlizzCon",
+      "evidence": "DotA became a feature at several worldwide tournaments, including Blizzard Entertainment's BlizzCon and the World Cyber Games."
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "FEATURED_IN",
+      "target": "World Cyber Games",
+      "evidence": "DotA became a feature at several worldwide tournaments, including Blizzard Entertainment's BlizzCon and the World Cyber Games."
+    },
+    {
+      "source": "BlizzCon",
+      "type": "ORGANIZED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "Blizzard Entertainment's BlizzCon"
+    },
+    {
+      "source": "Dota 2",
+      "type": "SEQUEL_OF",
+      "target": "Defense of the Ancients",
+      "evidence": "beginning with its sequel Dota 2 in 2013"
+    },
+    {
+      "source": "Dota 2",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "Valve acquired the intellectual property rights to DotA in 2009 to develop a franchise, beginning with its sequel Dota 2 in 2013"
+    }
+  ]
+}

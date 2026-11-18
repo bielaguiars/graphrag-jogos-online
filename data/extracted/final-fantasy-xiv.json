@@ -1,0 +1,259 @@
+{
+  "doc_id": "final-fantasy-xiv",
+  "subject": "Final Fantasy XIV",
+  "entities": [
+    {
+      "name": "Final Fantasy XIV",
+      "type": "Game",
+      "aliases": [
+        "A Realm Reborn",
+        "Version 2.0"
+      ],
+      "description": "MMORPG por assinatura da Square Enix relançado em 2013."
+    },
+    {
+      "name": "Square Enix",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Final Fantasy XIV."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "Gênero de RPG online massivamente multijogador."
+    },
+    {
+      "name": "Subscription",
+      "type": "Concept",
+      "aliases": [
+        "subscription-based"
+      ],
+      "description": "Modelo de negócio por assinatura."
+    },
+    {
+      "name": "Naoki Yoshida",
+      "type": "Person",
+      "aliases": [],
+      "description": "Diretor e produtor de Final Fantasy XIV."
+    },
+    {
+      "name": "PlayStation 3",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 3."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 4."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma macOS."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 5."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox Series X/S."
+    },
+    {
+      "name": "Nintendo Switch 2",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Nintendo Switch 2."
+    },
+    {
+      "name": "Final Fantasy XIV (2010)",
+      "type": "Game",
+      "aliases": [
+        "original Final Fantasy XIV"
+      ],
+      "description": "Versão original fracassada de 2010, substituída pelo relançamento."
+    },
+    {
+      "name": "Final Fantasy",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Série da qual Final Fantasy XIV é o jogo mais lucrativo."
+    },
+    {
+      "name": "Heavensward",
+      "type": "Game",
+      "aliases": [],
+      "description": "Pacote de expansão de Final Fantasy XIV."
+    },
+    {
+      "name": "Stormblood",
+      "type": "Game",
+      "aliases": [],
+      "description": "Pacote de expansão de Final Fantasy XIV."
+    },
+    {
+      "name": "Shadowbringers",
+      "type": "Game",
+      "aliases": [],
+      "description": "Pacote de expansão de Final Fantasy XIV."
+    },
+    {
+      "name": "Endwalker",
+      "type": "Game",
+      "aliases": [],
+      "description": "Pacote de expansão de Final Fantasy XIV."
+    },
+    {
+      "name": "Dawntrail",
+      "type": "Game",
+      "aliases": [],
+      "description": "Pacote de expansão de Final Fantasy XIV."
+    },
+    {
+      "name": "Evercold",
+      "type": "Game",
+      "aliases": [],
+      "description": "Pacote de expansão de Final Fantasy XIV."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Final Fantasy XIV",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "Final Fantasy XIV is a subscription-based massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix."
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "DEVELOPED_BY",
+      "target": "Square Enix",
+      "evidence": "Final Fantasy XIV is a subscription-based massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix."
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "PUBLISHED_BY",
+      "target": "Square Enix",
+      "evidence": "Final Fantasy XIV is a subscription-based massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix."
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "HAS_FEATURE",
+      "target": "Subscription",
+      "evidence": "Final Fantasy XIV is a subscription-based massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix."
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "CREATED_BY",
+      "target": "Naoki Yoshida",
+      "evidence": "Directed and produced by Naoki Yoshida"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 3",
+      "evidence": "released worldwide for PlayStation 3 and Windows in August 2013"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "released worldwide for PlayStation 3 and Windows in August 2013"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "subsequent support for PlayStation 4 in April 2014"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "macOS in July 2015"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "PlayStation 5 in May 2021"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "Xbox Series X/S in March 2024"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch 2",
+      "evidence": "Nintendo Switch 2 in August 2026"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "SEQUEL_OF",
+      "target": "Final Fantasy XIV (2010)",
+      "evidence": "it replaced the failed 2010 version"
+    },
+    {
+      "source": "Final Fantasy XIV",
+      "type": "PART_OF",
+      "target": "Final Fantasy",
+      "evidence": "became the most profitable Final Fantasy game to date"
+    },
+    {
+      "source": "Heavensward",
+      "type": "SEQUEL_OF",
+      "target": "Final Fantasy XIV",
+      "evidence": "including six major expansion packs: Heavensward (2015), Stormblood (2017), Shadowbringers (2019), Endwalker (2021), Dawntrail (2024) and Evercold (2027)"
+    },
+    {
+      "source": "Stormblood",
+      "type": "SEQUEL_OF",
+      "target": "Final Fantasy XIV",
+      "evidence": "including six major expansion packs: Heavensward (2015), Stormblood (2017), Shadowbringers (2019), Endwalker (2021), Dawntrail (2024) and Evercold (2027)"
+    },
+    {
+      "source": "Shadowbringers",
+      "type": "SEQUEL_OF",
+      "target": "Final Fantasy XIV",
+      "evidence": "including six major expansion packs: Heavensward (2015), Stormblood (2017), Shadowbringers (2019), Endwalker (2021), Dawntrail (2024) and Evercold (2027)"
+    },
+    {
+      "source": "Endwalker",
+      "type": "SEQUEL_OF",
+      "target": "Final Fantasy XIV",
+      "evidence": "including six major expansion packs: Heavensward (2015), Stormblood (2017), Shadowbringers (2019), Endwalker (2021), Dawntrail (2024) and Evercold (2027)"
+    },
+    {
+      "source": "Dawntrail",
+      "type": "SEQUEL_OF",
+      "target": "Final Fantasy XIV",
+      "evidence": "including six major expansion packs: Heavensward (2015), Stormblood (2017), Shadowbringers (2019), Endwalker (2021), Dawntrail (2024) and Evercold (2027)"
+    },
+    {
+      "source": "Evercold",
+      "type": "SEQUEL_OF",
+      "target": "Final Fantasy XIV",
+      "evidence": "including six major expansion packs: Heavensward (2015), Stormblood (2017), Shadowbringers (2019), Endwalker (2021), Dawntrail (2024) and Evercold (2027)"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "doc_id": "lineage-ii",
+  "subject": "Lineage II",
+  "entities": [
+    {
+      "name": "Lineage II",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMORPG para Windows, segundo jogo da série Lineage."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "Gênero de RPG online massivamente multijogador."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "Lineage series",
+      "type": "Franchise",
+      "aliases": [
+        "Lineage"
+      ],
+      "description": "Série de jogos da qual Lineage II faz parte."
+    },
+    {
+      "name": "Lineage",
+      "type": "Game",
+      "aliases": [],
+      "description": "Primeiro jogo da série, ambientado 150 anos depois de Lineage II."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Lineage II: Goddess of Destruction",
+      "type": "Game",
+      "aliases": [
+        "Goddess of Destruction"
+      ],
+      "description": "Versão de Lineage II que adotou o modelo free-to-play em 2011."
+    },
+    {
+      "name": "Lineage 2: Revolution",
+      "type": "Game",
+      "aliases": [],
+      "description": "Prequel mobile de Lineage II lançado em 2016."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Lineage II",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "Lineage II is a massively multiplayer online role-playing game (MMORPG) for Windows"
+    },
+    {
+      "source": "Lineage II",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "Lineage II is a massively multiplayer online role-playing game (MMORPG) for Windows"
+    },
+    {
+      "source": "Lineage II",
+      "type": "PART_OF",
+      "target": "Lineage series",
+      "evidence": "the second game in the Lineage series"
+    },
+    {
+      "source": "Lineage II",
+      "type": "SEQUEL_OF",
+      "target": "Lineage",
+      "evidence": "It is a prequel to Lineage and is set 150 years before the first game."
+    },
+    {
+      "source": "Lineage II",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Lineage II adopted a free-to-play model in Lineage II: Goddess of Destruction"
+    },
+    {
+      "source": "Lineage II: Goddess of Destruction",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Lineage II adopted a free-to-play model in Lineage II: Goddess of Destruction"
+    },
+    {
+      "source": "Lineage 2: Revolution",
+      "type": "SEQUEL_OF",
+      "target": "Lineage II",
+      "evidence": "A prequel, Lineage 2: Revolution, was released as a mobile game in 2016."
+    }
+  ]
+}

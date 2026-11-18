@@ -1,0 +1,158 @@
+{
+  "doc_id": "smite-video-game",
+  "subject": "Smite",
+  "entities": [
+    {
+      "name": "Smite",
+      "type": "Game",
+      "aliases": [],
+      "description": "MOBA gratuito em terceira pessoa de 2014 com deuses mitológicos."
+    },
+    {
+      "name": "Hi-Rez Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Smite."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Gênero de batalha em arena online entre equipes multijogador."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox One."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 4."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Nintendo Switch."
+    },
+    {
+      "name": "Amazon Luna",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Amazon Luna."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Competições profissionais de videogame."
+    },
+    {
+      "name": "Smite World Championship",
+      "type": "Event",
+      "aliases": [],
+      "description": "Campeonato anual milionário de Smite."
+    },
+    {
+      "name": "Smite 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequência de Smite anunciada em 2024."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Smite",
+      "type": "DEVELOPED_BY",
+      "target": "Hi-Rez Studios",
+      "evidence": "video game developed and published by Hi-Rez Studios"
+    },
+    {
+      "source": "Smite",
+      "type": "PUBLISHED_BY",
+      "target": "Hi-Rez Studios",
+      "evidence": "video game developed and published by Hi-Rez Studios"
+    },
+    {
+      "source": "Smite",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "free-to-play third-person multiplayer online battle arena (MOBA) video game"
+    },
+    {
+      "source": "Smite",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Smite is a 2014 free-to-play third-person multiplayer online battle arena"
+    },
+    {
+      "source": "Smite",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "for Microsoft Windows, Xbox One, PlayStation 4, Nintendo Switch, and Amazon Luna"
+    },
+    {
+      "source": "Smite",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "for Microsoft Windows, Xbox One, PlayStation 4, Nintendo Switch, and Amazon Luna"
+    },
+    {
+      "source": "Smite",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "for Microsoft Windows, Xbox One, PlayStation 4, Nintendo Switch, and Amazon Luna"
+    },
+    {
+      "source": "Smite",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "for Microsoft Windows, Xbox One, PlayStation 4, Nintendo Switch, and Amazon Luna"
+    },
+    {
+      "source": "Smite",
+      "type": "AVAILABLE_ON",
+      "target": "Amazon Luna",
+      "evidence": "for Microsoft Windows, Xbox One, PlayStation 4, Nintendo Switch, and Amazon Luna"
+    },
+    {
+      "source": "Smite",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "has a successful esports scene with multiple tournaments"
+    },
+    {
+      "source": "Smite",
+      "type": "FEATURED_IN",
+      "target": "Smite World Championship",
+      "evidence": "including the annual million-dollar Smite World Championship"
+    },
+    {
+      "source": "Smite 2",
+      "type": "SEQUEL_OF",
+      "target": "Smite",
+      "evidence": "A sequel, Smite 2, was first announced in January 2024"
+    }
+  ]
+}

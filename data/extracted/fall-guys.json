@@ -1,0 +1,228 @@
+{
+  "doc_id": "fall-guys",
+  "subject": "Fall Guys",
+  "entities": [
+    {
+      "name": "Fall Guys",
+      "type": "Game",
+      "aliases": [
+        "Fall Guys: Ultimate Knockout"
+      ],
+      "description": "Battle royale de plataforma gratuito de 2020 com personagens em forma de feijão."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Gênero em que vários jogadores competem até restar o último."
+    },
+    {
+      "name": "Platform game",
+      "type": "Genre",
+      "aliases": [
+        "platform"
+      ],
+      "description": "Gênero de jogo de plataforma."
+    },
+    {
+      "name": "Mediatonic",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora de Fall Guys."
+    },
+    {
+      "name": "Devolver Digital",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora original de Fall Guys."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 4."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "Epic Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa que adquiriu Fall Guys e o tornou gratuito."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Nintendo Switch."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 5."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox One."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox Series X/S."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-play"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "Battle pass",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Sistema de recompensas por níveis comprado por temporada."
+    },
+    {
+      "name": "Epic Games Store",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Loja da Epic Games pela qual Fall Guys chegou ao mobile."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Android."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma iOS."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Fall Guys",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Fall Guys (formerly known as Fall Guys: Ultimate Knockout) is a 2020 free-to-play platform battle royale game"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "Fall Guys (formerly known as Fall Guys: Ultimate Knockout) is a 2020 free-to-play platform battle royale game"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "HAS_GENRE",
+      "target": "Platform game",
+      "evidence": "Fall Guys (formerly known as Fall Guys: Ultimate Knockout) is a 2020 free-to-play platform battle royale game"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "DEVELOPED_BY",
+      "target": "Mediatonic",
+      "evidence": "developed by Mediatonic and originally published by Devolver Digital for the PlayStation 4 and Windows"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "PUBLISHED_BY",
+      "target": "Devolver Digital",
+      "evidence": "developed by Mediatonic and originally published by Devolver Digital for the PlayStation 4 and Windows"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "developed by Mediatonic and originally published by Devolver Digital for the PlayStation 4 and Windows"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "developed by Mediatonic and originally published by Devolver Digital for the PlayStation 4 and Windows"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "PUBLISHED_BY",
+      "target": "Epic Games",
+      "evidence": "It was acquired by Epic Games and subsequently made free-to-play on 21 June 2022"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "released on additional platforms including Nintendo Switch, PlayStation 5, Xbox One and Xbox Series X/S"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "released on additional platforms including Nintendo Switch, PlayStation 5, Xbox One and Xbox Series X/S"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "released on additional platforms including Nintendo Switch, PlayStation 5, Xbox One and Xbox Series X/S"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "released on additional platforms including Nintendo Switch, PlayStation 5, Xbox One and Xbox Series X/S"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "with full cross-platform play support among all platforms"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "HAS_FEATURE",
+      "target": "Battle pass",
+      "evidence": "the game adopted a paid battle pass system for its monetisation"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "Epic Games Store",
+      "evidence": "the game was released on mobile via the Epic Games Store, worldwide on Android and only in the European Union on iOS"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "the game was released on mobile via the Epic Games Store, worldwide on Android and only in the European Union on iOS"
+    },
+    {
+      "source": "Fall Guys",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "the game was released on mobile via the Epic Games Store, worldwide on Android and only in the European Union on iOS"
+    }
+  ]
+}

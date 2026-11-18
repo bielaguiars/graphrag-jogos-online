@@ -1,0 +1,120 @@
+{
+  "doc_id": "honor-of-kings",
+  "subject": "Honor of Kings",
+  "entities": [
+    {
+      "name": "Honor of Kings",
+      "type": "Game",
+      "aliases": [
+        "King's Glory",
+        "Wangzhe Rongyao",
+        "王者荣耀"
+      ],
+      "description": "MOBA mobile da TiMi Studio Group publicado pela Tencent."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Genero de arena de batalha online com times."
+    },
+    {
+      "name": "TiMi Studio Group",
+      "type": "Company",
+      "aliases": [
+        "TiMi"
+      ],
+      "description": "Estudio desenvolvedor de Honor of Kings."
+    },
+    {
+      "name": "Tencent",
+      "type": "Company",
+      "aliases": [
+        "Tencent Games"
+      ],
+      "description": "Empresa chinesa publicadora de jogos."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional mobile da Apple."
+    },
+    {
+      "name": "HarmonyOS NEXT",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional mobile da Huawei."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional mobile do Google."
+    },
+    {
+      "name": "Arena of Valor",
+      "type": "Game",
+      "aliases": [],
+      "description": "Adaptacao internacional de Honor of Kings lancada em 2016."
+    },
+    {
+      "name": "Level Infinite",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de Arena of Valor."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Honor of Kings",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "is a multiplayer online battle arena (MOBA) video game developed by TiMi Studio Group"
+    },
+    {
+      "source": "Honor of Kings",
+      "type": "DEVELOPED_BY",
+      "target": "TiMi Studio Group",
+      "evidence": "is a multiplayer online battle arena (MOBA) video game developed by TiMi Studio Group"
+    },
+    {
+      "source": "Honor of Kings",
+      "type": "PUBLISHED_BY",
+      "target": "Tencent",
+      "evidence": "published by Tencent Games for iOS, HarmonyOS NEXT, and Android"
+    },
+    {
+      "source": "Honor of Kings",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "published by Tencent Games for iOS, HarmonyOS NEXT, and Android"
+    },
+    {
+      "source": "Honor of Kings",
+      "type": "AVAILABLE_ON",
+      "target": "HarmonyOS NEXT",
+      "evidence": "published by Tencent Games for iOS, HarmonyOS NEXT, and Android"
+    },
+    {
+      "source": "Honor of Kings",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "published by Tencent Games for iOS, HarmonyOS NEXT, and Android"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "BASED_ON",
+      "target": "Honor of Kings",
+      "evidence": "an international adaptation, Arena of Valor, was released, utilizing the same game engine"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "PUBLISHED_BY",
+      "target": "Level Infinite",
+      "evidence": "Level Infinite, the publisher of Arena of Valor"
+    }
+  ]
+}

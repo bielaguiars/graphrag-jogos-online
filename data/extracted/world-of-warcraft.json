@@ -1,0 +1,145 @@
+{
+  "doc_id": "world-of-warcraft",
+  "subject": "World of Warcraft",
+  "entities": [
+    {
+      "name": "World of Warcraft",
+      "type": "Game",
+      "aliases": [
+        "WoW"
+      ],
+      "description": "MMORPG de 2004 da Blizzard ambientado no universo Warcraft, o mais popular do gênero."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Desenvolvedora e publicadora de World of Warcraft."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game",
+        "MMO"
+      ],
+      "description": "RPG online massivamente multiplayer."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores Mac."
+    },
+    {
+      "name": "Warcraft",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Franquia da Blizzard, uma das de maior faturamento da história."
+    },
+    {
+      "name": "Warcraft III: The Frozen Throne",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo anterior da série Warcraft, cujos eventos antecedem World of Warcraft."
+    },
+    {
+      "name": "EverQuest",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMORPG que inspirou World of Warcraft."
+    },
+    {
+      "name": "World of Warcraft: Classic",
+      "type": "Game",
+      "aliases": [
+        "WoW Classic"
+      ],
+      "description": "Versão vanilla de 2019 que recria o jogo original sem expansões."
+    },
+    {
+      "name": "World of Warcraft: Forever",
+      "type": "Game",
+      "aliases": [],
+      "description": "Terceiro ramo do jogo, lançado em 2026, que expande o cenário original de 2004."
+    }
+  ],
+  "relations": [
+    {
+      "source": "World of Warcraft",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "is a 2004 massively multiplayer online role-playing (MMORPG) video game developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "World of Warcraft",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "is a 2004 massively multiplayer online role-playing (MMORPG) video game developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "World of Warcraft",
+      "type": "PUBLISHED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "is a 2004 massively multiplayer online role-playing (MMORPG) video game developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "World of Warcraft",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "developed and published by Blizzard Entertainment for Windows and macOS"
+    },
+    {
+      "source": "World of Warcraft",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "developed and published by Blizzard Entertainment for Windows and macOS"
+    },
+    {
+      "source": "World of Warcraft",
+      "type": "PART_OF",
+      "target": "Warcraft",
+      "evidence": "Set in the Warcraft universe"
+    },
+    {
+      "source": "World of Warcraft",
+      "type": "SEQUEL_OF",
+      "target": "Warcraft III: The Frozen Throne",
+      "evidence": "approximately four years after the events of the previous game in the series, Warcraft III: The Frozen Throne"
+    },
+    {
+      "source": "Warcraft III: The Frozen Throne",
+      "type": "PART_OF",
+      "target": "Warcraft",
+      "evidence": "the previous game in the series, Warcraft III: The Frozen Throne"
+    },
+    {
+      "source": "World of Warcraft",
+      "type": "BASED_ON",
+      "target": "EverQuest",
+      "evidence": "World of Warcraft was inspired by other MMORPGs, particularly EverQuest"
+    },
+    {
+      "source": "World of Warcraft: Classic",
+      "type": "SEQUEL_OF",
+      "target": "World of Warcraft",
+      "evidence": "a vanilla version of the game titled World of Warcraft: Classic was launched"
+    },
+    {
+      "source": "World of Warcraft: Forever",
+      "type": "BASED_ON",
+      "target": "World of Warcraft",
+      "evidence": "World of Warcraft: Forever, a separate third branch of the game that expands upon its original 2004 setting"
+    }
+  ]
+}

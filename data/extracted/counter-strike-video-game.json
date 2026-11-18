@@ -1,0 +1,265 @@
+{
+  "doc_id": "counter-strike-video-game",
+  "subject": "Counter-Strike",
+  "entities": [
+    {
+      "name": "Counter-Strike",
+      "type": "Game",
+      "aliases": [
+        "Half-Life: Counter-Strike",
+        "Counter-Strike 1.6"
+      ],
+      "description": "Jogo de tiro tatico de 2000, primeiro da serie Counter-Strike."
+    },
+    {
+      "name": "Valve",
+      "type": "Company",
+      "aliases": [
+        "Valve Corporation"
+      ],
+      "description": "Empresa americana desenvolvedora e publicadora de jogos."
+    },
+    {
+      "name": "Sierra Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora do Counter-Strike original."
+    },
+    {
+      "name": "Counter-Strike series",
+      "type": "Franchise",
+      "aliases": [
+        "Counter-Strike"
+      ],
+      "description": "Serie de jogos de tiro tatico iniciada pela Valve."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [
+        "FPS"
+      ],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Tactical shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com enfase tatica e realista."
+    },
+    {
+      "name": "Minh Le",
+      "type": "Person",
+      "aliases": [],
+      "description": "Co-criador de Counter-Strike."
+    },
+    {
+      "name": "Jess Cliffe",
+      "type": "Person",
+      "aliases": [],
+      "description": "Co-criador de Counter-Strike."
+    },
+    {
+      "name": "Half-Life",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo cuja modificacao deu origem a Counter-Strike."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modification"
+      ],
+      "description": "Modificacao de um jogo criada pela comunidade."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "Xbox",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Primeiro console da Microsoft."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [
+        "OS X",
+        "Mac OS X"
+      ],
+      "description": "Sistema operacional da Apple."
+    },
+    {
+      "name": "Linux",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional de codigo aberto."
+    },
+    {
+      "name": "Counter-Strike: Condition Zero",
+      "type": "Game",
+      "aliases": [],
+      "description": "Campanha single-player da serie lancada em 2004."
+    },
+    {
+      "name": "Counter-Strike: Source",
+      "type": "Game",
+      "aliases": [],
+      "description": "Versao de Counter-Strike no motor Source lancada em 2004."
+    },
+    {
+      "name": "Source",
+      "type": "Engine",
+      "aliases": [
+        "Source engine"
+      ],
+      "description": "Motor grafico da Valve."
+    },
+    {
+      "name": "Counter-Strike: Global Offensive",
+      "type": "Game",
+      "aliases": [
+        "CS:GO",
+        "Global Offensive"
+      ],
+      "description": "Jogo da serie Counter-Strike lancado em 2012."
+    },
+    {
+      "name": "Counter-Strike 2",
+      "type": "Game",
+      "aliases": [
+        "CS2"
+      ],
+      "description": "Atualizacao de Counter-Strike: Global Offensive no motor Source 2."
+    },
+    {
+      "name": "Source 2",
+      "type": "Engine",
+      "aliases": [],
+      "description": "Sucessor do motor Source da Valve."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Counter-Strike",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "developed by Valve Corporation and published by Sierra Studios"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "PUBLISHED_BY",
+      "target": "Sierra Studios",
+      "evidence": "developed by Valve Corporation and published by Sierra Studios"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "is a 2000 tactical first-person shooter game"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "HAS_GENRE",
+      "target": "Tactical shooter",
+      "evidence": "is a 2000 tactical first-person shooter game"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "PART_OF",
+      "target": "Counter-Strike series",
+      "evidence": "It is the first installment in the Counter-Strike series."
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "CREATED_BY",
+      "target": "Minh Le",
+      "evidence": "Minh Le and Jess Cliffe planned a game based on counter-terrorism in 1998"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "CREATED_BY",
+      "target": "Jess Cliffe",
+      "evidence": "Minh Le and Jess Cliffe planned a game based on counter-terrorism in 1998"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "BASED_ON",
+      "target": "Half-Life",
+      "evidence": "Their initial version of the game started as a modification for Half-Life"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "BASED_ON",
+      "target": "Mod",
+      "evidence": "Their initial version of the game started as a modification for Half-Life"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "Counter-Strike was released by Valve for Microsoft Windows in November 2000"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox",
+      "evidence": "Several remakes and ports were released on Xbox, as well as OS X and Linux"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "Several remakes and ports were released on Xbox, as well as OS X and Linux"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "AVAILABLE_ON",
+      "target": "Linux",
+      "evidence": "Several remakes and ports were released on Xbox, as well as OS X and Linux"
+    },
+    {
+      "source": "Counter-Strike: Condition Zero",
+      "type": "SEQUEL_OF",
+      "target": "Counter-Strike",
+      "evidence": "multiple subsequent installments were released. The first of these was Counter-Strike: Condition Zero"
+    },
+    {
+      "source": "Counter-Strike: Source",
+      "type": "SEQUEL_OF",
+      "target": "Counter-Strike",
+      "evidence": "Counter-Strike: Source came out later that year"
+    },
+    {
+      "source": "Counter-Strike: Source",
+      "type": "USES_ENGINE",
+      "target": "Source",
+      "evidence": "Counter-Strike: Source came out later that year, which ran on Valve's Source engine"
+    },
+    {
+      "source": "Counter-Strike: Global Offensive",
+      "type": "PART_OF",
+      "target": "Counter-Strike series",
+      "evidence": "Counter-Strike: Global Offensive was launched, giving the franchise new game modes"
+    },
+    {
+      "source": "Counter-Strike 2",
+      "type": "SEQUEL_OF",
+      "target": "Counter-Strike: Global Offensive",
+      "evidence": "Counter-Strike 2, developed in the Source 2 engine, was released in 2023 as an update to Global Offensive"
+    },
+    {
+      "source": "Counter-Strike 2",
+      "type": "USES_ENGINE",
+      "target": "Source 2",
+      "evidence": "Counter-Strike 2, developed in the Source 2 engine"
+    }
+  ]
+}

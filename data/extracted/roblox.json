@@ -1,0 +1,119 @@
+{
+  "doc_id": "roblox",
+  "subject": "Roblox",
+  "entities": [
+    {
+      "name": "Roblox",
+      "type": "Game",
+      "aliases": [],
+      "description": "Plataforma de jogos online e sistema de criação em que usuários programam e jogam jogos criados por outros usuários."
+    },
+    {
+      "name": "Roblox Corporation",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa que desenvolve a plataforma Roblox."
+    },
+    {
+      "name": "David Baszucki",
+      "type": "Person",
+      "aliases": [],
+      "description": "Um dos desenvolvedores originais do Roblox, em 2004."
+    },
+    {
+      "name": "Erik Cassel",
+      "type": "Person",
+      "aliases": [],
+      "description": "Um dos desenvolvedores originais do Roblox, em 2004."
+    },
+    {
+      "name": "Roblox Studio",
+      "type": "Engine",
+      "aliases": [],
+      "description": "Motor de jogo da plataforma Roblox, usado com a linguagem Luau."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play",
+        "F2P"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito e monetizado por compras opcionais."
+    },
+    {
+      "name": "Robux",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Moeda virtual do Roblox usada em compras dentro do jogo."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransaction",
+        "in-game purchases"
+      ],
+      "description": "Pequenas compras com dinheiro real dentro do jogo."
+    },
+    {
+      "name": "User-generated content",
+      "type": "Concept",
+      "aliases": [
+        "UGC",
+        "user-created games"
+      ],
+      "description": "Conteúdo de jogo criado pelos próprios usuários."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Roblox",
+      "type": "DEVELOPED_BY",
+      "target": "Roblox Corporation",
+      "evidence": "game creation system developed by Roblox Corporation"
+    },
+    {
+      "source": "Roblox",
+      "type": "DEVELOPED_BY",
+      "target": "David Baszucki",
+      "evidence": "It was developed by David Baszucki and Erik Cassel in 2004"
+    },
+    {
+      "source": "Roblox",
+      "type": "DEVELOPED_BY",
+      "target": "Erik Cassel",
+      "evidence": "It was developed by David Baszucki and Erik Cassel in 2004"
+    },
+    {
+      "source": "Roblox",
+      "type": "USES_ENGINE",
+      "target": "Roblox Studio",
+      "evidence": "the platform's game engine, Roblox Studio"
+    },
+    {
+      "source": "Roblox",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "While Roblox is free-to-play, it features in-game purchases done through its virtual currency known as Robux"
+    },
+    {
+      "source": "Roblox",
+      "type": "HAS_FEATURE",
+      "target": "Robux",
+      "evidence": "it features in-game purchases done through its virtual currency known as Robux"
+    },
+    {
+      "source": "Roblox",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "its alleged exploitative practices toward children and microtransactions"
+    },
+    {
+      "source": "Roblox",
+      "type": "HAS_FEATURE",
+      "target": "User-generated content",
+      "evidence": "allows users to program and play games created by themselves or other users"
+    }
+  ]
+}

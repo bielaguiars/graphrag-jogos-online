@@ -1,0 +1,156 @@
+{
+  "doc_id": "minecraft",
+  "subject": "Minecraft",
+  "entities": [
+    {
+      "name": "Minecraft",
+      "type": "Game",
+      "aliases": [
+        "Bedrock Edition",
+        "Java Edition",
+        "Pocket Edition"
+      ],
+      "description": "Jogo sandbox de blocos da Mojang Studios, o mais vendido de todos os tempos."
+    },
+    {
+      "name": "Sandbox",
+      "type": "Genre",
+      "aliases": [
+        "sandbox game"
+      ],
+      "description": "Gênero de mundo aberto com liberdade de criação."
+    },
+    {
+      "name": "Mojang Studios",
+      "type": "Company",
+      "aliases": [
+        "Mojang"
+      ],
+      "description": "Empresa sueca que desenvolve e publica Minecraft."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Lançamento público de um jogo ainda em desenvolvimento."
+    },
+    {
+      "name": "Markus Persson",
+      "type": "Person",
+      "aliases": [
+        "Notch"
+      ],
+      "description": "Criador original de Minecraft."
+    },
+    {
+      "name": "Jens Bergensten",
+      "type": "Person",
+      "aliases": [
+        "Jeb"
+      ],
+      "description": "Assumiu o desenvolvimento de Minecraft após o lançamento completo."
+    },
+    {
+      "name": "Microsoft",
+      "type": "Company",
+      "aliases": [],
+      "description": "Comprou a Mojang e a propriedade intelectual de Minecraft em 2014."
+    },
+    {
+      "name": "Xbox Game Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Detém os direitos de publicação da Bedrock Edition de Minecraft."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-play"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modification"
+      ],
+      "description": "Modificação de um jogo criada por usuários."
+    },
+    {
+      "name": "Minecon",
+      "type": "Event",
+      "aliases": [],
+      "description": "Convenção anual dedicada a Minecraft."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Minecraft",
+      "type": "HAS_GENRE",
+      "target": "Sandbox",
+      "evidence": "Minecraft is a sandbox video game developed and published by the Swedish company Mojang Studios."
+    },
+    {
+      "source": "Minecraft",
+      "type": "DEVELOPED_BY",
+      "target": "Mojang Studios",
+      "evidence": "Minecraft is a sandbox video game developed and published by the Swedish company Mojang Studios."
+    },
+    {
+      "source": "Minecraft",
+      "type": "PUBLISHED_BY",
+      "target": "Mojang Studios",
+      "evidence": "Minecraft is a sandbox video game developed and published by the Swedish company Mojang Studios."
+    },
+    {
+      "source": "Minecraft",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "Following its initial public alpha release as an early access title on 17 May 2009"
+    },
+    {
+      "source": "Minecraft",
+      "type": "CREATED_BY",
+      "target": "Markus Persson",
+      "evidence": "Originally created by Markus \"Notch\" Persson using the Java programming language"
+    },
+    {
+      "source": "Minecraft",
+      "type": "DEVELOPED_BY",
+      "target": "Jens Bergensten",
+      "evidence": "Jens \"Jeb\" Bergensten was handed control over the game's development following its full release"
+    },
+    {
+      "source": "Mojang Studios",
+      "type": "SUBSIDIARY_OF",
+      "target": "Microsoft",
+      "evidence": "In November 2014, Mojang and the Minecraft intellectual property were purchased by Microsoft for US$2.5 billion"
+    },
+    {
+      "source": "Minecraft",
+      "type": "PUBLISHED_BY",
+      "target": "Xbox Game Studios",
+      "evidence": "Xbox Game Studios holds the publishing rights for the Bedrock Edition"
+    },
+    {
+      "source": "Minecraft",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "the Bedrock Edition, the unified cross-platform version"
+    },
+    {
+      "source": "Minecraft",
+      "type": "HAS_FEATURE",
+      "target": "Mod",
+      "evidence": "user-generated content, such as modifications, servers, player skins, texture packs, and custom maps"
+    },
+    {
+      "source": "Minecraft",
+      "type": "FEATURED_IN",
+      "target": "Minecon",
+      "evidence": "annual Minecon conventions have played prominent roles in popularizing it"
+    }
+  ]
+}

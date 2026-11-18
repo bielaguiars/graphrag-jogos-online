@@ -1,0 +1,174 @@
+{
+  "doc_id": "sea-of-thieves",
+  "subject": "Sea of Thieves",
+  "entities": [
+    {
+      "name": "Sea of Thieves",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de aventura pirata multijogador de 2018 da Rare."
+    },
+    {
+      "name": "Action-adventure",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Gênero que combina ação e aventura."
+    },
+    {
+      "name": "Rare",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora de Sea of Thieves."
+    },
+    {
+      "name": "Activision",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de Sea of Thieves segundo o texto."
+    },
+    {
+      "name": "Eve Online",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMO de PC cujos jogadores inspiraram a Rare."
+    },
+    {
+      "name": "DayZ",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de PC cujos jogadores inspiraram a Rare."
+    },
+    {
+      "name": "Rust",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de PC cujos jogadores inspiraram a Rare."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox One."
+    },
+    {
+      "name": "Xbox Game Pass",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Serviço de assinatura de jogos do Xbox."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox Series X/S."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 5."
+    },
+    {
+      "name": "Gregg Mayles",
+      "type": "Person",
+      "aliases": [],
+      "description": "Designer veterano que dirigiu Sea of Thieves."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "game as a service"
+      ],
+      "description": "Modelo em que o jogo recebe atualizações contínuas após o lançamento."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Sea of Thieves",
+      "type": "HAS_GENRE",
+      "target": "Action-adventure",
+      "evidence": "Sea of Thieves is a 2018 action-adventure game developed by Rare and published by Activision."
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "DEVELOPED_BY",
+      "target": "Rare",
+      "evidence": "Sea of Thieves is a 2018 action-adventure game developed by Rare and published by Activision."
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "PUBLISHED_BY",
+      "target": "Activision",
+      "evidence": "Sea of Thieves is a 2018 action-adventure game developed by Rare and published by Activision."
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "BASED_ON",
+      "target": "Eve Online",
+      "evidence": "Rare was inspired by players of PC games such as Eve Online (2003), DayZ (2018), and Rust (2018)"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "BASED_ON",
+      "target": "DayZ",
+      "evidence": "Rare was inspired by players of PC games such as Eve Online (2003), DayZ (2018), and Rust (2018)"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "BASED_ON",
+      "target": "Rust",
+      "evidence": "Rare was inspired by players of PC games such as Eve Online (2003), DayZ (2018), and Rust (2018)"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "Sea of Thieves was released in March 2018 for Windows and Xbox One"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "Sea of Thieves was released in March 2018 for Windows and Xbox One"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Game Pass",
+      "evidence": "one of the earliest first-party games released for Xbox Game Pass subscribers"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "Rare envisioned Sea of Thieves as a \"game as a service\""
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "A native Xbox Series X/S version of the game was released on 13 March 2024"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "the game was released for the PlayStation 5 on 30 April 2024"
+    },
+    {
+      "source": "Sea of Thieves",
+      "type": "CREATED_BY",
+      "target": "Gregg Mayles",
+      "evidence": "Sea of Thieves was the final Rare title to be directed by veteran designer Gregg Mayles"
+    }
+  ]
+}

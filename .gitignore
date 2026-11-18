@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+docs/**/*.aux
+docs/**/*.log
+docs/**/*.out
+docs/**/*.pdf
+!docs/**/sbc-template.pdf
+!docs/artigo/artigo.pdf
+!docs/slides/defesa-graphrag-jogos.pdf

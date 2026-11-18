@@ -1,0 +1,318 @@
+{
+  "doc_id": "fortnite",
+  "subject": "Fortnite",
+  "entities": [
+    {
+      "name": "Fortnite",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo online e plataforma de jogos da Epic Games."
+    },
+    {
+      "name": "Epic Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora americana de jogos e do Unreal Engine."
+    },
+    {
+      "name": "Fortnite Battle Royale",
+      "type": "Game",
+      "aliases": [
+        "Battle Royale"
+      ],
+      "description": "Modo battle royale de Fortnite para ate 100 jogadores."
+    },
+    {
+      "name": "Fortnite Save the World",
+      "type": "Game",
+      "aliases": [
+        "Save the World"
+      ],
+      "description": "Modo cooperativo de defesa de torres e sobrevivencia."
+    },
+    {
+      "name": "Fortnite Creative",
+      "type": "Game",
+      "aliases": [
+        "Creative"
+      ],
+      "description": "Modo de criacao livre de mundos e arenas."
+    },
+    {
+      "name": "Lego Fortnite",
+      "type": "Game",
+      "aliases": [],
+      "description": "Colecao de jogos de mundo aberto em parceria com a Lego."
+    },
+    {
+      "name": "Fortnite Festival",
+      "type": "Game",
+      "aliases": [],
+      "description": "Modo de jogo ritmico de Fortnite."
+    },
+    {
+      "name": "Rocket Racing",
+      "type": "Game",
+      "aliases": [],
+      "description": "Modo de corrida de Fortnite."
+    },
+    {
+      "name": "Fortnite Ballistic",
+      "type": "Game",
+      "aliases": [],
+      "description": "Modo de tiro tatico em primeira pessoa de Fortnite."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero em que jogadores lutam ate restar o ultimo sobrevivente."
+    },
+    {
+      "name": "Tactical shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com enfase em tatica e realismo."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [
+        "early access"
+      ],
+      "description": "Lancamento do jogo ainda em desenvolvimento para o publico."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "crossplay"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Sony."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Microsoft."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel do Google."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel da Apple."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console hibrido da Nintendo."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de nona geracao da Sony."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [
+        "Xbox Series X and S"
+      ],
+      "description": "Consoles de nona geracao da Microsoft."
+    },
+    {
+      "name": "Nintendo Switch 2",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console sucessor do Nintendo Switch."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Fortnite",
+      "type": "DEVELOPED_BY",
+      "target": "Epic Games",
+      "evidence": "developed and released by Epic Games"
+    },
+    {
+      "source": "Fortnite",
+      "type": "PUBLISHED_BY",
+      "target": "Epic Games",
+      "evidence": "developed and released by Epic Games"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "BASED_ON",
+      "target": "Fortnite",
+      "evidence": "seven distinct game mode versions that otherwise share the same general gameplay and game engine"
+    },
+    {
+      "source": "Fortnite Save the World",
+      "type": "BASED_ON",
+      "target": "Fortnite",
+      "evidence": "seven distinct game mode versions that otherwise share the same general gameplay and game engine"
+    },
+    {
+      "source": "Fortnite Creative",
+      "type": "BASED_ON",
+      "target": "Fortnite",
+      "evidence": "seven distinct game mode versions that otherwise share the same general gameplay and game engine"
+    },
+    {
+      "source": "Lego Fortnite",
+      "type": "BASED_ON",
+      "target": "Fortnite",
+      "evidence": "seven distinct game mode versions that otherwise share the same general gameplay and game engine"
+    },
+    {
+      "source": "Fortnite Festival",
+      "type": "BASED_ON",
+      "target": "Fortnite",
+      "evidence": "seven distinct game mode versions that otherwise share the same general gameplay and game engine"
+    },
+    {
+      "source": "Rocket Racing",
+      "type": "BASED_ON",
+      "target": "Fortnite",
+      "evidence": "seven distinct game mode versions that otherwise share the same general gameplay and game engine"
+    },
+    {
+      "source": "Fortnite Ballistic",
+      "type": "BASED_ON",
+      "target": "Fortnite",
+      "evidence": "seven distinct game mode versions that otherwise share the same general gameplay and game engine"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "Fortnite Battle Royale, a battle royale game in which up to 100 players fight to be the last person standing"
+    },
+    {
+      "source": "Fortnite Ballistic",
+      "type": "HAS_GENRE",
+      "target": "Tactical shooter",
+      "evidence": "Fortnite Ballistic (2024–2026), a tactical first-person shooter"
+    },
+    {
+      "source": "Fortnite",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "All game modes are free-to-play."
+    },
+    {
+      "source": "Fortnite Save the World",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "Save the World and Battle Royale were released in 2017 as early access titles"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "Save the World and Battle Royale were released in 2017 as early access titles"
+    },
+    {
+      "source": "Fortnite",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "Most game modes support cross-platform play between the various supported devices."
+    },
+    {
+      "source": "Fortnite Save the World",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "Save the World is available for macOS, PlayStation 4, Windows, and Xbox One"
+    },
+    {
+      "source": "Fortnite Save the World",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "Save the World is available for macOS, PlayStation 4, Windows, and Xbox One"
+    },
+    {
+      "source": "Fortnite Save the World",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "Save the World is available for macOS, PlayStation 4, Windows, and Xbox One"
+    },
+    {
+      "source": "Fortnite Save the World",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "Save the World is available for macOS, PlayStation 4, Windows, and Xbox One"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "Battle Royale and Creative were released for all those platforms as well as Android and iOS devices and Nintendo Switch"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "Battle Royale and Creative were released for all those platforms as well as Android and iOS devices and Nintendo Switch"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "Battle Royale and Creative were released for all those platforms as well as Android and iOS devices and Nintendo Switch"
+    },
+    {
+      "source": "Fortnite",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "The game also launched with the release of the ninth-generation PlayStation 5, Xbox Series X/S, and Nintendo Switch 2 consoles"
+    },
+    {
+      "source": "Fortnite",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "The game also launched with the release of the ninth-generation PlayStation 5, Xbox Series X/S, and Nintendo Switch 2 consoles"
+    },
+    {
+      "source": "Fortnite",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch 2",
+      "evidence": "The game also launched with the release of the ninth-generation PlayStation 5, Xbox Series X/S, and Nintendo Switch 2 consoles"
+    }
+  ]
+}

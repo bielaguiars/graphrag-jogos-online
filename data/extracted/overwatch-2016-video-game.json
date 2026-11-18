@@ -1,0 +1,256 @@
+{
+  "doc_id": "overwatch-2016-video-game",
+  "subject": "Overwatch",
+  "entities": [
+    {
+      "name": "Overwatch",
+      "type": "Game",
+      "aliases": [
+        "Overwatch Classic"
+      ],
+      "description": "Hero shooter da Blizzard lancado em 2016."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Empresa desenvolvedora e publicadora de jogos."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [
+        "FPS"
+      ],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Hero shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com personagens de habilidades unicas."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "live service"
+      ],
+      "description": "Modelo de jogo mantido com atualizacoes continuas."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console hibrido da Nintendo."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-play"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "Loot boxes",
+      "type": "Concept",
+      "aliases": [
+        "loot box"
+      ],
+      "description": "Caixas de itens aleatorios vendidas no jogo."
+    },
+    {
+      "name": "Titan",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMORPG cancelado da Blizzard em 2014 que deu origem a Overwatch."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "RPG online massivamente multijogador."
+    },
+    {
+      "name": "Team Fortress 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de tiro em primeira pessoa em equipe que inspirou Overwatch."
+    },
+    {
+      "name": "BlizzCon",
+      "type": "Event",
+      "aliases": [],
+      "description": "Evento da Blizzard onde Overwatch foi revelado em 2014."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport"
+      ],
+      "description": "Competicao profissional de jogos eletronicos."
+    },
+    {
+      "name": "Overwatch League",
+      "type": "Event",
+      "aliases": [],
+      "description": "Liga global de esports de Overwatch financiada pela Blizzard."
+    },
+    {
+      "name": "Overwatch 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sucessor free-to-play de Overwatch lancado em 2022/2023."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Lancamento antecipado com o jogo em desenvolvimento."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Overwatch",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "is a 2016 live service multiplayer first-person shooter video game by Blizzard Entertainment"
+    },
+    {
+      "source": "Overwatch",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "is a 2016 live service multiplayer first-person shooter video game"
+    },
+    {
+      "source": "Overwatch",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "is a 2016 live service multiplayer first-person shooter video game"
+    },
+    {
+      "source": "Overwatch",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "first released for PlayStation 4, Windows, and Xbox One in May 2016"
+    },
+    {
+      "source": "Overwatch",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "first released for PlayStation 4, Windows, and Xbox One in May 2016"
+    },
+    {
+      "source": "Overwatch",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "first released for PlayStation 4, Windows, and Xbox One in May 2016"
+    },
+    {
+      "source": "Overwatch",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "Nintendo Switch in October 2019"
+    },
+    {
+      "source": "Overwatch",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "with cross-platform play supported across all platforms"
+    },
+    {
+      "source": "Overwatch",
+      "type": "HAS_GENRE",
+      "target": "Hero shooter",
+      "evidence": "Described as a \"hero shooter\""
+    },
+    {
+      "source": "Overwatch",
+      "type": "HAS_FEATURE",
+      "target": "Loot boxes",
+      "evidence": "optional loot boxes to purchase cosmetic items"
+    },
+    {
+      "source": "Overwatch",
+      "type": "BASED_ON",
+      "target": "Titan",
+      "evidence": "Some elements of Overwatch borrowed concepts from the canceled Titan project"
+    },
+    {
+      "source": "Titan",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "the 2014 cancellation of a massively multiplayer online role-playing game, Titan"
+    },
+    {
+      "source": "Overwatch",
+      "type": "BASED_ON",
+      "target": "Team Fortress 2",
+      "evidence": "inspired by the success of team-based first-person shooters like Team Fortress 2"
+    },
+    {
+      "source": "Overwatch",
+      "type": "FEATURED_IN",
+      "target": "BlizzCon",
+      "evidence": "Overwatch was unveiled at the 2014 BlizzCon event"
+    },
+    {
+      "source": "Overwatch",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "The game was a popular esport"
+    },
+    {
+      "source": "Overwatch",
+      "type": "FEATURED_IN",
+      "target": "Overwatch League",
+      "evidence": "with Blizzard funding and producing the global Overwatch League"
+    },
+    {
+      "source": "Overwatch League",
+      "type": "ORGANIZED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "with Blizzard funding and producing the global Overwatch League"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "SEQUEL_OF",
+      "target": "Overwatch",
+      "evidence": "its sequel, Overwatch 2, was released in an early access state the next day"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "its sequel, Overwatch 2, was released in an early access state the next day"
+    }
+  ]
+}

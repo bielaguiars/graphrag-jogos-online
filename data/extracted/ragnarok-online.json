@@ -1,0 +1,93 @@
+{
+  "doc_id": "ragnarok-online",
+  "subject": "Ragnarok Online",
+  "entities": [
+    {
+      "name": "Ragnarok Online",
+      "type": "Game",
+      "aliases": [
+        "Ragnarök",
+        "The Final Destiny of the Gods"
+      ],
+      "description": "MMORPG sul-coreano da Gravity lancado em 2002."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "RPG online massivamente multijogador."
+    },
+    {
+      "name": "Gravity",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa sul-coreana criadora de Ragnarok Online."
+    },
+    {
+      "name": "Ragnarok",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Manhwa de Lee Myung-jin que originou Ragnarok Online."
+    },
+    {
+      "name": "Lee Myung-jin",
+      "type": "Person",
+      "aliases": [],
+      "description": "Autor do manhwa Ragnarok."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "Ragnarok Online 2: Legend of the Second",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequencia de Ragnarok Online."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Ragnarok Online",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "massive multiplayer online role-playing game (MMORPG) created by Gravity"
+    },
+    {
+      "source": "Ragnarok Online",
+      "type": "DEVELOPED_BY",
+      "target": "Gravity",
+      "evidence": "(MMORPG) created by Gravity based on the manhwa Ragnarok"
+    },
+    {
+      "source": "Ragnarok Online",
+      "type": "BASED_ON",
+      "target": "Ragnarok",
+      "evidence": "based on the manhwa Ragnarok by Lee Myung-jin"
+    },
+    {
+      "source": "Ragnarok",
+      "type": "CREATED_BY",
+      "target": "Lee Myung-jin",
+      "evidence": "the manhwa Ragnarok by Lee Myung-jin"
+    },
+    {
+      "source": "Ragnarok Online",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "released in South Korea on 31 August 2002 for Microsoft Windows"
+    },
+    {
+      "source": "Ragnarok Online 2: Legend of the Second",
+      "type": "SEQUEL_OF",
+      "target": "Ragnarok Online",
+      "evidence": "a sequel game, Ragnarok Online 2: Legend of the Second"
+    }
+  ]
+}

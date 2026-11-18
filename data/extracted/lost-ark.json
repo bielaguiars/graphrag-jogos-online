@@ -1,0 +1,31 @@
+{
+  "doc_id": "lost-ark",
+  "subject": "Lost Ark",
+  "entities": [
+    {
+      "name": "Lost Ark",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo eletronico de 2019; o artigo e uma pagina de desambiguacao."
+    },
+    {
+      "name": "Ark of the Covenant",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Artefato religioso considerado perdido."
+    },
+    {
+      "name": "Noah's Ark",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Arca de Noe, descrita em buscas pela arca."
+    },
+    {
+      "name": "Searches for Noah's Ark",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Buscas pela Arca de Noe."
+    }
+  ],
+  "relations": []
+}

@@ -1,0 +1,330 @@
+{
+  "doc_id": "half-life-video-game",
+  "subject": "Half-Life",
+  "entities": [
+    {
+      "name": "Half-Life",
+      "type": "Game",
+      "aliases": [],
+      "description": "FPS de 1998 da Valve, primeiro jogo da série Half-Life."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [
+        "FPS"
+      ],
+      "description": "Gênero de tiro em primeira pessoa."
+    },
+    {
+      "name": "Valve",
+      "type": "Company",
+      "aliases": [
+        "Valve Corporation"
+      ],
+      "description": "Desenvolvedora de Half-Life, seu produto de estreia."
+    },
+    {
+      "name": "Sierra Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de Half-Life."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "Half-Life series",
+      "type": "Franchise",
+      "aliases": [
+        "Half-Life"
+      ],
+      "description": "Série de jogos iniciada por Half-Life."
+    },
+    {
+      "name": "GoldSrc",
+      "type": "Engine",
+      "aliases": [],
+      "description": "Motor de Half-Life, versão modificada do motor de Quake."
+    },
+    {
+      "name": "Marc Laidlaw",
+      "type": "Person",
+      "aliases": [],
+      "description": "Romancista de ficção científica contratado para escrever o enredo de Half-Life."
+    },
+    {
+      "name": "PlayStation 2",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 2."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [
+        "OS X"
+      ],
+      "description": "Plataforma macOS."
+    },
+    {
+      "name": "Linux",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Linux."
+    },
+    {
+      "name": "Source",
+      "type": "Engine",
+      "aliases": [
+        "Source engine"
+      ],
+      "description": "Motor seguinte da Valve, usado em Half-Life: Source."
+    },
+    {
+      "name": "Half-Life: Source",
+      "type": "Game",
+      "aliases": [],
+      "description": "Port de Half-Life para o motor Source, de 2004."
+    },
+    {
+      "name": "Black Mesa",
+      "type": "Game",
+      "aliases": [],
+      "description": "Remake feito por fãs de Half-Life, lançado em 2020."
+    },
+    {
+      "name": "Counter-Strike",
+      "type": "Game",
+      "aliases": [],
+      "description": "Mod de Half-Life que virou jogo independente em 2000."
+    },
+    {
+      "name": "Day of Defeat",
+      "type": "Game",
+      "aliases": [],
+      "description": "Mod de Half-Life que virou jogo independente em 2003."
+    },
+    {
+      "name": "Sven Co-op",
+      "type": "Game",
+      "aliases": [],
+      "description": "Mod de Half-Life que virou jogo independente em 1999."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modification"
+      ],
+      "description": "Modificação de um jogo criada por usuários."
+    },
+    {
+      "name": "Half-Life: Opposing Force",
+      "type": "Game",
+      "aliases": [
+        "Opposing Force"
+      ],
+      "description": "Expansão de 1999 de Half-Life feita pela Gearbox Software."
+    },
+    {
+      "name": "Half-Life: Blue Shift",
+      "type": "Game",
+      "aliases": [
+        "Blue Shift"
+      ],
+      "description": "Expansão de 2001 de Half-Life feita pela Gearbox Software."
+    },
+    {
+      "name": "Gearbox Software",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora das expansões de Half-Life."
+    },
+    {
+      "name": "Half-Life 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequência de Half-Life lançada em 2004."
+    },
+    {
+      "name": "Half-Life 2: Episode One",
+      "type": "Game",
+      "aliases": [
+        "Episode One"
+      ],
+      "description": "Sequência da série Half-Life lançada em 2006."
+    },
+    {
+      "name": "Half-Life 2: Episode Two",
+      "type": "Game",
+      "aliases": [
+        "Episode Two"
+      ],
+      "description": "Sequência da série Half-Life lançada em 2007."
+    },
+    {
+      "name": "Half-Life: Alyx",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequência da série Half-Life lançada em 2020."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Half-Life",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "Half-Life is a 1998 first-person shooter (FPS) game developed by Valve Corporation"
+    },
+    {
+      "source": "Half-Life",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "game developed by Valve Corporation and published by Sierra Studios for Windows"
+    },
+    {
+      "source": "Half-Life",
+      "type": "PUBLISHED_BY",
+      "target": "Sierra Studios",
+      "evidence": "game developed by Valve Corporation and published by Sierra Studios for Windows"
+    },
+    {
+      "source": "Half-Life",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "game developed by Valve Corporation and published by Sierra Studios for Windows"
+    },
+    {
+      "source": "Half-Life",
+      "type": "PART_OF",
+      "target": "Half-Life series",
+      "evidence": "the first game in the Half-Life series"
+    },
+    {
+      "source": "Half-Life",
+      "type": "USES_ENGINE",
+      "target": "GoldSrc",
+      "evidence": "Half-Life runs on the engine GoldSrc, a heavily modified version of the Quake engine"
+    },
+    {
+      "source": "Half-Life",
+      "type": "CREATED_BY",
+      "target": "Marc Laidlaw",
+      "evidence": "The science fiction novelist Marc Laidlaw was hired to craft the plot and assist with design."
+    },
+    {
+      "source": "Half-Life",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 2",
+      "evidence": "It was ported to the PlayStation 2 in 2001"
+    },
+    {
+      "source": "Half-Life",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "and to OS X and Linux in 2013"
+    },
+    {
+      "source": "Half-Life",
+      "type": "AVAILABLE_ON",
+      "target": "Linux",
+      "evidence": "and to OS X and Linux in 2013"
+    },
+    {
+      "source": "Half-Life: Source",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "Valve ported Half-Life to its next game engine, Source, as Half-Life: Source in 2004."
+    },
+    {
+      "source": "Half-Life: Source",
+      "type": "USES_ENGINE",
+      "target": "Source",
+      "evidence": "Valve ported Half-Life to its next game engine, Source, as Half-Life: Source in 2004."
+    },
+    {
+      "source": "Black Mesa",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "In 2020, a fanmade remake, Black Mesa, was released."
+    },
+    {
+      "source": "Half-Life",
+      "type": "HAS_FEATURE",
+      "target": "Mod",
+      "evidence": "Half-Life inspired numerous fan-made mods"
+    },
+    {
+      "source": "Counter-Strike",
+      "type": "BASED_ON",
+      "target": "Half-Life",
+      "evidence": "fan-made mods, some of which became standalone games, such as Counter-Strike (2000), Day of Defeat (2003), and Sven Co-op (1999)"
+    },
+    {
+      "source": "Day of Defeat",
+      "type": "BASED_ON",
+      "target": "Half-Life",
+      "evidence": "fan-made mods, some of which became standalone games, such as Counter-Strike (2000), Day of Defeat (2003), and Sven Co-op (1999)"
+    },
+    {
+      "source": "Sven Co-op",
+      "type": "BASED_ON",
+      "target": "Half-Life",
+      "evidence": "fan-made mods, some of which became standalone games, such as Counter-Strike (2000), Day of Defeat (2003), and Sven Co-op (1999)"
+    },
+    {
+      "source": "Half-Life: Opposing Force",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "It was followed by the expansion packs Opposing Force (1999) and Blue Shift (2001), developed by Gearbox Software"
+    },
+    {
+      "source": "Half-Life: Blue Shift",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "It was followed by the expansion packs Opposing Force (1999) and Blue Shift (2001), developed by Gearbox Software"
+    },
+    {
+      "source": "Half-Life: Opposing Force",
+      "type": "DEVELOPED_BY",
+      "target": "Gearbox Software",
+      "evidence": "It was followed by the expansion packs Opposing Force (1999) and Blue Shift (2001), developed by Gearbox Software"
+    },
+    {
+      "source": "Half-Life: Blue Shift",
+      "type": "DEVELOPED_BY",
+      "target": "Gearbox Software",
+      "evidence": "It was followed by the expansion packs Opposing Force (1999) and Blue Shift (2001), developed by Gearbox Software"
+    },
+    {
+      "source": "Half-Life 2",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "and the sequels Half-Life 2 (2004), Episode One (2006), Episode Two (2007) and Half-Life: Alyx (2020)"
+    },
+    {
+      "source": "Half-Life 2: Episode One",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "and the sequels Half-Life 2 (2004), Episode One (2006), Episode Two (2007) and Half-Life: Alyx (2020)"
+    },
+    {
+      "source": "Half-Life 2: Episode Two",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "and the sequels Half-Life 2 (2004), Episode One (2006), Episode Two (2007) and Half-Life: Alyx (2020)"
+    },
+    {
+      "source": "Half-Life: Alyx",
+      "type": "SEQUEL_OF",
+      "target": "Half-Life",
+      "evidence": "and the sequels Half-Life 2 (2004), Episode One (2006), Episode Two (2007) and Half-Life: Alyx (2020)"
+    }
+  ]
+}

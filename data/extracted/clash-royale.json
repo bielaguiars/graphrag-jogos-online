@@ -1,0 +1,146 @@
+{
+  "doc_id": "clash-royale",
+  "subject": "Clash Royale",
+  "entities": [
+    {
+      "name": "Clash Royale",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo movel de estrategia em tempo real da Supercell."
+    },
+    {
+      "name": "Supercell",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora finlandesa de jogos moveis."
+    },
+    {
+      "name": "Real-time strategy",
+      "type": "Genre",
+      "aliases": [
+        "RTS"
+      ],
+      "description": "Genero de estrategia jogado em tempo real."
+    },
+    {
+      "name": "Collectible card game",
+      "type": "Genre",
+      "aliases": [
+        "digital collectible card game"
+      ],
+      "description": "Jogo de cartas colecionaveis."
+    },
+    {
+      "name": "Tower defense",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero de defender estruturas contra ondas de inimigos."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Genero de batalha entre equipes em arena."
+    },
+    {
+      "name": "Clash of Clans",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de estrategia movel da Supercell."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransactions"
+      ],
+      "description": "Compras de itens dentro do jogo com dinheiro real."
+    },
+    {
+      "name": "Battle pass",
+      "type": "Concept",
+      "aliases": [
+        "Pass Royale"
+      ],
+      "description": "Sistema de recompensas por temporada."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Clash Royale",
+      "type": "DEVELOPED_BY",
+      "target": "Supercell",
+      "evidence": "a 2016 real-time strategy mobile game developed and published by Supercell"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "PUBLISHED_BY",
+      "target": "Supercell",
+      "evidence": "a 2016 real-time strategy mobile game developed and published by Supercell"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "HAS_GENRE",
+      "target": "Real-time strategy",
+      "evidence": "a 2016 real-time strategy mobile game developed and published by Supercell"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "HAS_GENRE",
+      "target": "Collectible card game",
+      "evidence": "combines elements of collectible card games, tower defense, and multiplayer online battle arena (MOBA)"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "HAS_GENRE",
+      "target": "Tower defense",
+      "evidence": "combines elements of collectible card games, tower defense, and multiplayer online battle arena (MOBA)"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "combines elements of collectible card games, tower defense, and multiplayer online battle arena (MOBA)"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "BASED_ON",
+      "target": "Clash of Clans",
+      "evidence": "the game is the first spin-off of Clash of Clans, another title developed by Supercell"
+    },
+    {
+      "source": "Clash of Clans",
+      "type": "DEVELOPED_BY",
+      "target": "Supercell",
+      "evidence": "the game is the first spin-off of Clash of Clans, another title developed by Supercell"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "It uses a free-to-play monetization model, including microtransactions"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "It uses a free-to-play monetization model, including microtransactions"
+    },
+    {
+      "source": "Clash Royale",
+      "type": "HAS_FEATURE",
+      "target": "Battle pass",
+      "evidence": "a monthly battle pass called"
+    }
+  ]
+}

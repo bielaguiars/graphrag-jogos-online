@@ -1,0 +1,170 @@
+{
+  "doc_id": "black-desert-online",
+  "subject": "Black Desert Online",
+  "entities": [
+    {
+      "name": "Black Desert Online",
+      "type": "Game",
+      "aliases": [
+        "Black Desert",
+        "Black Desert Console",
+        "검은사막"
+      ],
+      "description": "MMORPG sandbox de fantasia de 2015 da Pearl Abyss."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "Gênero de RPG online massivamente multijogador."
+    },
+    {
+      "name": "Sandbox",
+      "type": "Genre",
+      "aliases": [
+        "sandbox-oriented"
+      ],
+      "description": "Gênero de mundo aberto com liberdade de criação."
+    },
+    {
+      "name": "Pearl Abyss",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora coreana de Black Desert Online."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "Black Desert Mobile",
+      "type": "Game",
+      "aliases": [],
+      "description": "Versão mobile de Black Desert lançada em 2019."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox One."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 4."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Buy-to-play",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Modelo de negócio com compra única do jogo."
+    },
+    {
+      "name": "Crimson Desert",
+      "type": "Game",
+      "aliases": [],
+      "description": "Projeto iniciado como prequel de Black Desert que virou IP independente."
+    },
+    {
+      "name": "Kakao Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Antiga publicadora de Black Desert Online até 2021."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Black Desert Online",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "a 2015 sandbox-oriented fantasy massively multiplayer online role-playing game (MMORPG) developed by Korean video game developer Pearl Abyss"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "HAS_GENRE",
+      "target": "Sandbox",
+      "evidence": "a 2015 sandbox-oriented fantasy massively multiplayer online role-playing game (MMORPG) developed by Korean video game developer Pearl Abyss"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "DEVELOPED_BY",
+      "target": "Pearl Abyss",
+      "evidence": "a 2015 sandbox-oriented fantasy massively multiplayer online role-playing game (MMORPG) developed by Korean video game developer Pearl Abyss"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "originally published for Microsoft Windows in 2015"
+    },
+    {
+      "source": "Black Desert Mobile",
+      "type": "BASED_ON",
+      "target": "Black Desert Online",
+      "evidence": "A mobile version titled Black Desert Mobile was initially released in Asia by early 2019"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "The Xbox One and PlayStation 4 versions, known simply as Black Desert"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "The Xbox One and PlayStation 4 versions, known simply as Black Desert"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "The game is free-to-play in some parts of the world"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "HAS_FEATURE",
+      "target": "Buy-to-play",
+      "evidence": "follows a buy-to-play business model in other editions"
+    },
+    {
+      "source": "Crimson Desert",
+      "type": "SEQUEL_OF",
+      "target": "Black Desert Online",
+      "evidence": "Pearl Abyss began work on a prequel to the timeline of Black Desert, titled Crimson Desert"
+    },
+    {
+      "source": "Crimson Desert",
+      "type": "DEVELOPED_BY",
+      "target": "Pearl Abyss",
+      "evidence": "Pearl Abyss began work on a prequel to the timeline of Black Desert, titled Crimson Desert"
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "PUBLISHED_BY",
+      "target": "Kakao Games",
+      "evidence": "In 2021, Kakao Games stopped services and Pearl Abyss took back the publishing rights."
+    },
+    {
+      "source": "Black Desert Online",
+      "type": "PUBLISHED_BY",
+      "target": "Pearl Abyss",
+      "evidence": "In 2021, Kakao Games stopped services and Pearl Abyss took back the publishing rights."
+    }
+  ]
+}

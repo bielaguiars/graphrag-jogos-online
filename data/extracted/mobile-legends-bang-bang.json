@@ -1,0 +1,234 @@
+{
+  "doc_id": "mobile-legends-bang-bang",
+  "subject": "Mobile Legends: Bang Bang",
+  "entities": [
+    {
+      "name": "Mobile Legends: Bang Bang",
+      "type": "Game",
+      "aliases": [
+        "MLBB",
+        "Mobile Legends",
+        "ML",
+        "Mobile Legends: 5v5 MOBA"
+      ],
+      "description": "MOBA free-to-play para celulares da Moonton, lançado em 2016 e muito popular no Sudeste Asiático."
+    },
+    {
+      "name": "Moonton",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora chinesa de Mobile Legends: Bang Bang, adquirida pelo Savvy Games Group em 2026."
+    },
+    {
+      "name": "Savvy Games Group",
+      "type": "Company",
+      "aliases": [],
+      "description": "Grupo saudita de jogos que adquiriu a Moonton em 2026."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Gênero de arena de batalha online em que dois times disputam a destruição da base inimiga."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play",
+        "F2P"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito e monetizado por compras opcionais."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional móvel da Apple."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional móvel do Google."
+    },
+    {
+      "name": "HarmonyOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional móvel da Huawei."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport",
+        "e-sports"
+      ],
+      "description": "Competição profissional de jogos eletrônicos."
+    },
+    {
+      "name": "Mobile Legends: Bang Bang Professional League",
+      "type": "Event",
+      "aliases": [
+        "MPL"
+      ],
+      "description": "Ligas regionais de Mobile Legends criadas pela Moonton que classificam para o mundial."
+    },
+    {
+      "name": "Mobile Legends World Championship",
+      "type": "Event",
+      "aliases": [
+        "Mobile Legends World Championships",
+        "M7 World Championship"
+      ],
+      "description": "Campeonato mundial de Mobile Legends; a edição M7 de 2026 foi o torneio de esports mobile mais assistido da história."
+    },
+    {
+      "name": "Southeast Asian Games",
+      "type": "Event",
+      "aliases": [
+        "SEA Games"
+      ],
+      "description": "Jogos do Sudeste Asiático, que tiveram Mobile Legends no primeiro evento de esports com medalhas em 2019."
+    },
+    {
+      "name": "Esports Nations Cup",
+      "type": "Event",
+      "aliases": [
+        "ENC"
+      ],
+      "description": "Torneio de seleções nacionais de esports de 2026 que tem Mobile Legends entre seus títulos."
+    },
+    {
+      "name": "Asian Games",
+      "type": "Event",
+      "aliases": [],
+      "description": "Jogos Asiáticos, nos quais Mobile Legends estreia como modalidade com medalha em 2026."
+    },
+    {
+      "name": "Esports World Cup",
+      "type": "Event",
+      "aliases": [
+        "EWC"
+      ],
+      "description": "Evento de esports de 2026 em que o MLBB Mid-Season Cup bateu recorde de audiência."
+    },
+    {
+      "name": "League of Legends",
+      "type": "Game",
+      "aliases": [
+        "LoL"
+      ],
+      "description": "MOBA da Riot Games com o qual Mobile Legends foi criticado por semelhanças, gerando processos."
+    },
+    {
+      "name": "Riot Games",
+      "type": "Company",
+      "aliases": [
+        "Riot"
+      ],
+      "description": "Empresa que processou a Moonton por suposta violação de direitos autorais e fez acordo em 2024."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "is a multiplayer online battle arena (MOBA) game developed and published by Chinese developer Moonton"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "DEVELOPED_BY",
+      "target": "Moonton",
+      "evidence": "is a multiplayer online battle arena (MOBA) game developed and published by Chinese developer Moonton"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "PUBLISHED_BY",
+      "target": "Moonton",
+      "evidence": "is a multiplayer online battle arena (MOBA) game developed and published by Chinese developer Moonton"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "MLBB has been free-to-play and is monetized through purchasable character and cosmetic customization"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "is available for iOS, Android and HarmonyOS"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "is available for iOS, Android and HarmonyOS"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "AVAILABLE_ON",
+      "target": "HarmonyOS",
+      "evidence": "is available for iOS, Android and HarmonyOS"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "Moonton has tapped into the esports scene"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "FEATURED_IN",
+      "target": "Mobile Legends: Bang Bang Professional League",
+      "evidence": "several regional tournaments dubbed as Mobile Legends: Bang Bang Professional League (MPL)"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang Professional League",
+      "type": "ORGANIZED_BY",
+      "target": "Moonton",
+      "evidence": "Moonton has tapped into the esports scene with the creation of several regional tournaments"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "FEATURED_IN",
+      "target": "Mobile Legends World Championship",
+      "evidence": "serves as a qualifier for the Mobile Legends World Championships"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "FEATURED_IN",
+      "target": "Southeast Asian Games",
+      "evidence": "the inaugural esports medal event at the 2019 Southeast Asian Games (SEA Games)"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "FEATURED_IN",
+      "target": "Esports Nations Cup",
+      "evidence": "national teams will compete in at the inaugural Esports Nations Cup 2026 (ENC)"
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "FEATURED_IN",
+      "target": "Asian Games",
+      "evidence": "The game will also debut as a medaled event at the 2026 Asian Games."
+    },
+    {
+      "source": "Mobile Legends: Bang Bang",
+      "type": "FEATURED_IN",
+      "target": "Esports World Cup",
+      "evidence": "MLBB Mid-Season Cup (MSC) also set a viewership record at the 2026 Esports World Cup (EWC)"
+    },
+    {
+      "source": "Moonton",
+      "type": "SUBSIDIARY_OF",
+      "target": "Savvy Games Group",
+      "evidence": "Moonton was acquired by the Saudi-based Savvy Games Group"
+    }
+  ]
+}

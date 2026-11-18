@@ -1,0 +1,150 @@
+{
+  "doc_id": "diablo-iv",
+  "subject": "Diablo IV",
+  "entities": [
+    {
+      "name": "Diablo IV",
+      "type": "Game",
+      "aliases": [],
+      "description": "RPG de acao de 2023 da Blizzard, quarto da serie Diablo."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Desenvolvedora e publicadora americana de jogos."
+    },
+    {
+      "name": "Action role-playing game",
+      "type": "Genre",
+      "aliases": [
+        "action RPG"
+      ],
+      "description": "RPG com combate em tempo real."
+    },
+    {
+      "name": "Diablo",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie de RPGs de acao da Blizzard."
+    },
+    {
+      "name": "BlizzCon",
+      "type": "Event",
+      "aliases": [
+        "Blizzcon"
+      ],
+      "description": "Convencao anual da Blizzard Entertainment."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Sony."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de nona geracao da Sony."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Microsoft."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [
+        "Xbox Series X and S"
+      ],
+      "description": "Consoles de nona geracao da Microsoft."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "Diablo V",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequencia de Diablo IV em desenvolvimento."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Diablo IV",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "PUBLISHED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "HAS_GENRE",
+      "target": "Action role-playing game",
+      "evidence": "a 2023 action role-playing game"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "PART_OF",
+      "target": "Diablo",
+      "evidence": "It is the fourth main installment in the Diablo series."
+    },
+    {
+      "source": "Diablo IV",
+      "type": "FEATURED_IN",
+      "target": "BlizzCon",
+      "evidence": "Announced at BlizzCon 2019"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "for the PlayStation 4 and PlayStation 5, Xbox One and Xbox Series X and S, and Microsoft Windows"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "for the PlayStation 4 and PlayStation 5, Xbox One and Xbox Series X and S, and Microsoft Windows"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "for the PlayStation 4 and PlayStation 5, Xbox One and Xbox Series X and S, and Microsoft Windows"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "for the PlayStation 4 and PlayStation 5, Xbox One and Xbox Series X and S, and Microsoft Windows"
+    },
+    {
+      "source": "Diablo IV",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "for the PlayStation 4 and PlayStation 5, Xbox One and Xbox Series X and S, and Microsoft Windows"
+    },
+    {
+      "source": "Diablo V",
+      "type": "SEQUEL_OF",
+      "target": "Diablo IV",
+      "evidence": "A sequel, Diablo V, is in development."
+    }
+  ]
+}

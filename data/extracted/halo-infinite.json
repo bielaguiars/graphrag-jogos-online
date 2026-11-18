@@ -1,0 +1,133 @@
+{
+  "doc_id": "halo-infinite",
+  "subject": "Halo Infinite",
+  "entities": [
+    {
+      "name": "Halo Infinite",
+      "type": "Game",
+      "aliases": [
+        "Infinite"
+      ],
+      "description": "First-person shooter de 2021 da 343 Industries, sexta entrada principal da série Halo."
+    },
+    {
+      "name": "343 Industries",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora de Halo Infinite."
+    },
+    {
+      "name": "Xbox Game Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de Halo Infinite."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [
+        "FPS"
+      ],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Halo",
+      "type": "Franchise",
+      "aliases": [
+        "Halo series"
+      ],
+      "description": "Série de jogos de tiro da qual Halo Infinite é a sexta entrada principal."
+    },
+    {
+      "name": "Halo 5: Guardians",
+      "type": "Game",
+      "aliases": [],
+      "description": "Entrada principal de 2015 da série Halo, anterior a Halo Infinite."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play",
+        "F2P"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito e monetizado por compras opcionais."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de oitava geração."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Consoles da Microsoft de nona geração."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Halo Infinite",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "Halo Infinite is a 2021 first-person shooter game developed by 343 Industries and published by Xbox Game Studios."
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "DEVELOPED_BY",
+      "target": "343 Industries",
+      "evidence": "Halo Infinite is a 2021 first-person shooter game developed by 343 Industries and published by Xbox Game Studios."
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "PUBLISHED_BY",
+      "target": "Xbox Game Studios",
+      "evidence": "Halo Infinite is a 2021 first-person shooter game developed by 343 Industries and published by Xbox Game Studios."
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "PART_OF",
+      "target": "Halo",
+      "evidence": "It is the sixth mainline installment in the Halo series"
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "SEQUEL_OF",
+      "target": "Halo 5: Guardians",
+      "evidence": "the sixth mainline installment in the Halo series, following Halo 5: Guardians (2015)"
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "the multiplayer portion of the game is free-to-play"
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "released on December 8, 2021, for Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "released on December 8, 2021, for Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Halo Infinite",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "released on December 8, 2021, for Windows, Xbox One, and Xbox Series X/S"
+    }
+  ]
+}

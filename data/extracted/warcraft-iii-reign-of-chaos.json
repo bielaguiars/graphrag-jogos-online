@@ -1,0 +1,202 @@
+{
+  "doc_id": "warcraft-iii-reign-of-chaos",
+  "subject": "Warcraft III: Reign of Chaos",
+  "entities": [
+    {
+      "name": "Warcraft III: Reign of Chaos",
+      "type": "Game",
+      "aliases": [
+        "Warcraft III"
+      ],
+      "description": "Jogo de estrategia em tempo real da Blizzard de 2002."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Empresa desenvolvedora e publicadora de jogos."
+    },
+    {
+      "name": "Real-time strategy",
+      "type": "Genre",
+      "aliases": [
+        "RTS"
+      ],
+      "description": "Genero de estrategia em tempo real."
+    },
+    {
+      "name": "Warcraft: Orcs & Humans",
+      "type": "Game",
+      "aliases": [],
+      "description": "Primeiro jogo da serie Warcraft."
+    },
+    {
+      "name": "Warcraft II: Tides of Darkness",
+      "type": "Game",
+      "aliases": [],
+      "description": "Segundo jogo da serie Warcraft."
+    },
+    {
+      "name": "Warcraft",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie e universo ficcional de fantasia da Blizzard."
+    },
+    {
+      "name": "Warcraft III: The Frozen Throne",
+      "type": "Game",
+      "aliases": [
+        "The Frozen Throne"
+      ],
+      "description": "Pacote de expansao de Warcraft III lancado em 2003."
+    },
+    {
+      "name": "Battle.net",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma online de jogos da Blizzard."
+    },
+    {
+      "name": "Warcraft Adventures: Lord of the Clans",
+      "type": "Game",
+      "aliases": [
+        "Lord of the Clans"
+      ],
+      "description": "Jogo de aventura cancelado da Blizzard."
+    },
+    {
+      "name": "Warcraft II: Beyond the Dark Portal",
+      "type": "Game",
+      "aliases": [],
+      "description": "Expansao de Warcraft II lancada em 1996."
+    },
+    {
+      "name": "European Computer Trade Show",
+      "type": "Event",
+      "aliases": [],
+      "description": "Feira de jogos onde Warcraft III foi apresentado em 1999."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modification"
+      ],
+      "description": "Modificacao de um jogo criada pela comunidade."
+    },
+    {
+      "name": "Defense of the Ancients",
+      "type": "Game",
+      "aliases": [
+        "DotA"
+      ],
+      "description": "Mod comunitario de Warcraft III que originou o genero MOBA."
+    },
+    {
+      "name": "Warcraft III: Reforged",
+      "type": "Game",
+      "aliases": [],
+      "description": "Remaster de Warcraft III e sua expansao lancado em 2020."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "developed and published by Blizzard Entertainment released in July 2002"
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "PUBLISHED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "developed and published by Blizzard Entertainment released in July 2002"
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "HAS_GENRE",
+      "target": "Real-time strategy",
+      "evidence": "high fantasy real-time strategy computer video game"
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "SEQUEL_OF",
+      "target": "Warcraft: Orcs & Humans",
+      "evidence": "It is the second sequel to Warcraft: Orcs & Humans"
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "SEQUEL_OF",
+      "target": "Warcraft II: Tides of Darkness",
+      "evidence": "second sequel to Warcraft: Orcs & Humans, after Warcraft II: Tides of Darkness"
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "PART_OF",
+      "target": "Warcraft",
+      "evidence": "the third game set in the Warcraft fictional universe"
+    },
+    {
+      "source": "Warcraft III: The Frozen Throne",
+      "type": "SEQUEL_OF",
+      "target": "Warcraft III: Reign of Chaos",
+      "evidence": "An expansion pack, The Frozen Throne, was released in July 2003."
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "AVAILABLE_ON",
+      "target": "Battle.net",
+      "evidence": "Blizzard's Battle.net gaming platform"
+    },
+    {
+      "source": "Warcraft II: Beyond the Dark Portal",
+      "type": "PART_OF",
+      "target": "Warcraft",
+      "evidence": "Warcraft II: Beyond the Dark Portal, the last in the Warcraft saga"
+    },
+    {
+      "source": "Warcraft Adventures: Lord of the Clans",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "Blizzard began development of a point-and-click adventure game called Warcraft Adventures: Lord of the Clans"
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "FEATURED_IN",
+      "target": "European Computer Trade Show",
+      "evidence": "presented to the public at the European Computer Trade Show in September 1999"
+    },
+    {
+      "source": "Warcraft III: Reign of Chaos",
+      "type": "HAS_FEATURE",
+      "target": "Mod",
+      "evidence": "Video game modifications created with the World Editor"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "BASED_ON",
+      "target": "Warcraft III: Reign of Chaos",
+      "evidence": "Video game modifications created with the World Editor, such as Defense of the Ancients"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "BASED_ON",
+      "target": "Mod",
+      "evidence": "Video game modifications created with the World Editor, such as Defense of the Ancients"
+    },
+    {
+      "source": "Warcraft III: Reforged",
+      "type": "SEQUEL_OF",
+      "target": "Warcraft III: Reign of Chaos",
+      "evidence": "a remastered version of both Warcraft III and its expansion, The Frozen Throne, called Warcraft III: Reforged"
+    },
+    {
+      "source": "Warcraft III: Reforged",
+      "type": "PUBLISHED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "In 2020, Blizzard released a remastered version"
+    }
+  ]
+}

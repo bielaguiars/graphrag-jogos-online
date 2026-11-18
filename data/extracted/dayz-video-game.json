@@ -1,0 +1,136 @@
+{
+  "doc_id": "dayz-video-game",
+  "subject": "DayZ",
+  "entities": [
+    {
+      "name": "DayZ",
+      "type": "Game",
+      "aliases": [
+        "DayZ standalone"
+      ],
+      "description": "Jogo de sobrevivência multiplayer online da Bohemia Interactive, versão standalone do mod de Arma 2."
+    },
+    {
+      "name": "DayZ mod",
+      "type": "Game",
+      "aliases": [],
+      "description": "Mod de Arma 2 criado por Dean Hall que originou o jogo standalone DayZ."
+    },
+    {
+      "name": "Arma 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo para o qual o mod DayZ foi criado."
+    },
+    {
+      "name": "Bohemia Interactive",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de DayZ."
+    },
+    {
+      "name": "Dean Hall",
+      "type": "Person",
+      "aliases": [],
+      "description": "Criador do mod DayZ, que entrou na Bohemia Interactive para fazer a versão standalone."
+    },
+    {
+      "name": "Survival",
+      "type": "Genre",
+      "aliases": [
+        "survival game"
+      ],
+      "description": "Gênero em que o jogador precisa coletar recursos e sobreviver a ameaças."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Modelo de lançamento em que o jogo é vendido e jogado ainda em desenvolvimento."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de oitava geração."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony de oitava geração."
+    }
+  ],
+  "relations": [
+    {
+      "source": "DayZ",
+      "type": "DEVELOPED_BY",
+      "target": "Bohemia Interactive",
+      "evidence": "developed and published by Bohemia Interactive"
+    },
+    {
+      "source": "DayZ",
+      "type": "PUBLISHED_BY",
+      "target": "Bohemia Interactive",
+      "evidence": "developed and published by Bohemia Interactive"
+    },
+    {
+      "source": "DayZ",
+      "type": "HAS_GENRE",
+      "target": "Survival",
+      "evidence": "DayZ is a multiplayer online survival video game"
+    },
+    {
+      "source": "DayZ",
+      "type": "BASED_ON",
+      "target": "DayZ mod",
+      "evidence": "It is the standalone game based on the mod of the same name for Arma 2."
+    },
+    {
+      "source": "DayZ mod",
+      "type": "BASED_ON",
+      "target": "Arma 2",
+      "evidence": "the mod of the same name for Arma 2"
+    },
+    {
+      "source": "DayZ mod",
+      "type": "CREATED_BY",
+      "target": "Dean Hall",
+      "evidence": "the mod's creator, Dean Hall, joined Bohemia Interactive"
+    },
+    {
+      "source": "DayZ",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "Following a five-year-long early access period for Windows"
+    },
+    {
+      "source": "DayZ",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "Following a five-year-long early access period for Windows"
+    },
+    {
+      "source": "DayZ",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "was released for the Xbox One and PlayStation 4 in 2019"
+    },
+    {
+      "source": "DayZ",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "was released for the Xbox One and PlayStation 4 in 2019"
+    }
+  ]
+}

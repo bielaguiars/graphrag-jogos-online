@@ -1,0 +1,99 @@
+{
+  "doc_id": "clash-of-clans",
+  "subject": "Clash of Clans",
+  "entities": [
+    {
+      "name": "Clash of Clans",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo mobile de estrategia free-to-play da Supercell lancado em 2012."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play",
+        "F2P"
+      ],
+      "description": "Modelo em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Strategy",
+      "type": "Genre",
+      "aliases": [
+        "strategy video game"
+      ],
+      "description": "Genero de jogos de estrategia."
+    },
+    {
+      "name": "Supercell",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa finlandesa de jogos mobile."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional mobile da Apple."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional mobile do Google."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Clash of Clans",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Clash of Clans is a 2012 free-to-play mobile strategy video game"
+    },
+    {
+      "source": "Clash of Clans",
+      "type": "HAS_GENRE",
+      "target": "Strategy",
+      "evidence": "free-to-play mobile strategy video game developed and published by Supercell"
+    },
+    {
+      "source": "Clash of Clans",
+      "type": "DEVELOPED_BY",
+      "target": "Supercell",
+      "evidence": "free-to-play mobile strategy video game developed and published by Supercell"
+    },
+    {
+      "source": "Clash of Clans",
+      "type": "PUBLISHED_BY",
+      "target": "Supercell",
+      "evidence": "free-to-play mobile strategy video game developed and published by Supercell"
+    },
+    {
+      "source": "Clash of Clans",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "It was released for iOS on 2 August 2012"
+    },
+    {
+      "source": "Clash of Clans",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "Android on 7 October 2013"
+    },
+    {
+      "source": "Clash of Clans",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "later Windows on 23 October 2023"
+    }
+  ]
+}

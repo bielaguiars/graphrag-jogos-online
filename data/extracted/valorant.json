@@ -1,0 +1,146 @@
+{
+  "doc_id": "valorant",
+  "subject": "Valorant",
+  "entities": [
+    {
+      "name": "Valorant",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de tiro tatico com herois da Riot Games."
+    },
+    {
+      "name": "Riot Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora americana de jogos."
+    },
+    {
+      "name": "Tactical shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com enfase em tatica e realismo."
+    },
+    {
+      "name": "Hero shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com personagens de habilidades unicas."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Counter-Strike",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie de jogos de tiro tatico que inspirou Valorant."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de nona geracao da Sony."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [
+        "Xbox Series X and S"
+      ],
+      "description": "Consoles de nona geracao da Microsoft."
+    },
+    {
+      "name": "Valorant Mobile",
+      "type": "Game",
+      "aliases": [],
+      "description": "Versao movel de Valorant lancada na China em 2025."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Valorant",
+      "type": "DEVELOPED_BY",
+      "target": "Riot Games",
+      "evidence": "developed and published by Riot Games"
+    },
+    {
+      "source": "Valorant",
+      "type": "PUBLISHED_BY",
+      "target": "Riot Games",
+      "evidence": "developed and published by Riot Games"
+    },
+    {
+      "source": "Valorant",
+      "type": "HAS_GENRE",
+      "target": "Tactical shooter",
+      "evidence": "first-person tactical hero shooter video game"
+    },
+    {
+      "source": "Valorant",
+      "type": "HAS_GENRE",
+      "target": "Hero shooter",
+      "evidence": "first-person tactical hero shooter video game"
+    },
+    {
+      "source": "Valorant",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "first-person tactical hero shooter video game"
+    },
+    {
+      "source": "Valorant",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "A free-to-play game, Valorant takes inspiration from the Counter-Strike series"
+    },
+    {
+      "source": "Valorant",
+      "type": "BASED_ON",
+      "target": "Counter-Strike",
+      "evidence": "A free-to-play game, Valorant takes inspiration from the Counter-Strike series"
+    },
+    {
+      "source": "Valorant",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "the game was released on June 2, 2020, for Windows"
+    },
+    {
+      "source": "Valorant",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "It was ported to the PlayStation 5 and Xbox Series X/S in June 2024"
+    },
+    {
+      "source": "Valorant",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "It was ported to the PlayStation 5 and Xbox Series X/S in June 2024"
+    },
+    {
+      "source": "Valorant Mobile",
+      "type": "BASED_ON",
+      "target": "Valorant",
+      "evidence": "A mobile version, Valorant Mobile"
+    }
+  ]
+}

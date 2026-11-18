@@ -1,0 +1,124 @@
+{
+  "doc_id": "path-of-exile",
+  "subject": "Path of Exile",
+  "entities": [
+    {
+      "name": "Path of Exile",
+      "type": "Game",
+      "aliases": [],
+      "description": "RPG de acao gratuito de 2013 da Grinding Gear Games."
+    },
+    {
+      "name": "Grinding Gear Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora neozelandesa de Path of Exile."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Action role-playing game",
+      "type": "Genre",
+      "aliases": [
+        "action RPG"
+      ],
+      "description": "RPG com combate em tempo real."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Microsoft."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Sony."
+    },
+    {
+      "name": "Path of Exile 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequencia de Path of Exile lancada em acesso antecipado em 2024."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [
+        "early access"
+      ],
+      "description": "Lancamento do jogo ainda em desenvolvimento para o publico."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Path of Exile",
+      "type": "DEVELOPED_BY",
+      "target": "Grinding Gear Games",
+      "evidence": "developed and published by Grinding Gear Games"
+    },
+    {
+      "source": "Path of Exile",
+      "type": "PUBLISHED_BY",
+      "target": "Grinding Gear Games",
+      "evidence": "developed and published by Grinding Gear Games"
+    },
+    {
+      "source": "Path of Exile",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "a 2013 free-to-play action role-playing video game"
+    },
+    {
+      "source": "Path of Exile",
+      "type": "HAS_GENRE",
+      "target": "Action role-playing game",
+      "evidence": "a 2013 free-to-play action role-playing video game"
+    },
+    {
+      "source": "Path of Exile",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "released for Microsoft Windows in October 23, 2013"
+    },
+    {
+      "source": "Path of Exile",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "A version for Xbox One was released in August 2017"
+    },
+    {
+      "source": "Path of Exile",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "a PlayStation 4 version was released in March 2019"
+    },
+    {
+      "source": "Path of Exile 2",
+      "type": "SEQUEL_OF",
+      "target": "Path of Exile",
+      "evidence": "A sequel, Path of Exile 2, was released to early access on December 6, 2024."
+    },
+    {
+      "source": "Path of Exile 2",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "A sequel, Path of Exile 2, was released to early access on December 6, 2024."
+    }
+  ]
+}

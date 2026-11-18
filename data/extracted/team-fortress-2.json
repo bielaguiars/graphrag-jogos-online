@@ -1,0 +1,246 @@
+{
+  "doc_id": "team-fortress-2",
+  "subject": "Team Fortress 2",
+  "entities": [
+    {
+      "name": "Team Fortress 2",
+      "type": "Game",
+      "aliases": [
+        "TF2"
+      ],
+      "description": "Jogo de tiro multijogador baseado em classes da Valve."
+    },
+    {
+      "name": "Valve",
+      "type": "Company",
+      "aliases": [
+        "Valve Corporation"
+      ],
+      "description": "Desenvolvedora americana de jogos e dona da Steam."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Team Fortress",
+      "type": "Game",
+      "aliases": [],
+      "description": "Mod de 1996 para Quake que originou a serie."
+    },
+    {
+      "name": "Quake",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de tiro em primeira pessoa que recebeu o mod Team Fortress."
+    },
+    {
+      "name": "Team Fortress Classic",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de 1999 antecessor de Team Fortress 2."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "Xbox 360",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de setima geracao da Microsoft."
+    },
+    {
+      "name": "PlayStation 3",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de setima geracao da Sony."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores."
+    },
+    {
+      "name": "Linux",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional de codigo aberto."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Steam",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Loja e plataforma digital de distribuicao de jogos da Valve."
+    },
+    {
+      "name": "John Cook",
+      "type": "Person",
+      "aliases": [],
+      "description": "Co-lider do desenvolvimento de Team Fortress 2."
+    },
+    {
+      "name": "Robin Walker",
+      "type": "Person",
+      "aliases": [],
+      "description": "Co-lider do desenvolvimento de Team Fortress 2."
+    },
+    {
+      "name": "Source",
+      "type": "Engine",
+      "aliases": [],
+      "description": "Motor grafico da Valve."
+    },
+    {
+      "name": "Hero shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com personagens de habilidades unicas."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransactions"
+      ],
+      "description": "Compras de itens dentro do jogo com dinheiro real."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Team Fortress 2",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "developed and published by Valve Corporation"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "PUBLISHED_BY",
+      "target": "Valve",
+      "evidence": "developed and published by Valve Corporation"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "a 2007 multiplayer first-person shooter game"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "SEQUEL_OF",
+      "target": "Team Fortress",
+      "evidence": "It is the sequel to the 1996 Team Fortress mod for Quake and the 1999 game Team Fortress Classic."
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "SEQUEL_OF",
+      "target": "Team Fortress Classic",
+      "evidence": "It is the sequel to the 1996 Team Fortress mod for Quake and the 1999 game Team Fortress Classic."
+    },
+    {
+      "source": "Team Fortress",
+      "type": "BASED_ON",
+      "target": "Quake",
+      "evidence": "the 1996 Team Fortress mod for Quake"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "released in October 2007 as part of The Orange Box for Windows and the Xbox 360"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox 360",
+      "evidence": "released in October 2007 as part of The Orange Box for Windows and the Xbox 360"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 3",
+      "evidence": "was ported to the PlayStation 3 in December 2007"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "updated to support macOS in June 2010 and Linux in February 2013"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "AVAILABLE_ON",
+      "target": "Linux",
+      "evidence": "updated to support macOS in June 2010 and Linux in February 2013"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "It was made free-to-play in June 2011"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "AVAILABLE_ON",
+      "target": "Steam",
+      "evidence": "distributed online through Valve's digital retailer, Steam"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "CREATED_BY",
+      "target": "John Cook",
+      "evidence": "Its development was led by John Cook and Robin Walker, the developers of the original Team Fortress mod"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "CREATED_BY",
+      "target": "Robin Walker",
+      "evidence": "Its development was led by John Cook and Robin Walker, the developers of the original Team Fortress mod"
+    },
+    {
+      "source": "Team Fortress",
+      "type": "CREATED_BY",
+      "target": "John Cook",
+      "evidence": "Its development was led by John Cook and Robin Walker, the developers of the original Team Fortress mod"
+    },
+    {
+      "source": "Team Fortress",
+      "type": "CREATED_BY",
+      "target": "Robin Walker",
+      "evidence": "Its development was led by John Cook and Robin Walker, the developers of the original Team Fortress mod"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "USES_ENGINE",
+      "target": "Source",
+      "evidence": "Finally released on Valve's game engine, Source, in 2007"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "HAS_GENRE",
+      "target": "Hero shooter",
+      "evidence": "considered the main forerunner to the now-highly popular hero shooter genre"
+    },
+    {
+      "source": "Team Fortress 2",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "its main source of revenue is microtransactions for in-game cosmetics"
+    }
+  ]
+}

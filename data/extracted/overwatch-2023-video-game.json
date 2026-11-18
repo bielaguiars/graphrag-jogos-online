@@ -1,0 +1,199 @@
+{
+  "doc_id": "overwatch-2023-video-game",
+  "subject": "Overwatch 2",
+  "entities": [
+    {
+      "name": "Overwatch 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Hero shooter free-to-play da Blizzard de 2023, sucessor de Overwatch, renomeado Overwatch em 2026."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Empresa desenvolvedora e publicadora de jogos."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [
+        "FPS"
+      ],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Hero shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com personagens de habilidades unicas."
+    },
+    {
+      "name": "Overwatch",
+      "type": "Game",
+      "aliases": [
+        "Overwatch Classic"
+      ],
+      "description": "Hero shooter da Blizzard lancado em 2016."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play",
+        "F2P"
+      ],
+      "description": "Modelo em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console hibrido da Nintendo."
+    },
+    {
+      "name": "Nintendo Switch 2",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sucessor do Nintendo Switch."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [
+        "PS5"
+      ],
+      "description": "Console da Sony."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-play"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Lancamento antecipado com o jogo em desenvolvimento."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Overwatch 2",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "is a 2023 first-person hero shooter video game by Blizzard Entertainment"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "is a 2023 first-person hero shooter video game"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "HAS_GENRE",
+      "target": "Hero shooter",
+      "evidence": "is a 2023 first-person hero shooter video game"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "SEQUEL_OF",
+      "target": "Overwatch",
+      "evidence": "As a sequel and replacement to the original 2016 Overwatch"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "The game is free-to-play on Nintendo Switch"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "free-to-play on Nintendo Switch, Nintendo Switch 2, PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch 2",
+      "evidence": "free-to-play on Nintendo Switch, Nintendo Switch 2, PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "free-to-play on Nintendo Switch, Nintendo Switch 2, PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "free-to-play on Nintendo Switch, Nintendo Switch 2, PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "free-to-play on Nintendo Switch, Nintendo Switch 2, PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "free-to-play on Nintendo Switch, Nintendo Switch 2, PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "free-to-play on Nintendo Switch, Nintendo Switch 2, PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "features full cross-platform play"
+    },
+    {
+      "source": "Overwatch 2",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "it released in early access in October 2022"
+    }
+  ]
+}

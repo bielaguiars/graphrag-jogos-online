@@ -1,0 +1,160 @@
+{
+  "doc_id": "grand-theft-auto-online",
+  "subject": "Grand Theft Auto Online",
+  "entities": [
+    {
+      "name": "Grand Theft Auto Online",
+      "type": "Game",
+      "aliases": [
+        "GTA Online"
+      ],
+      "description": "Jogo de ação e aventura multiplayer online da Rockstar, componente online de Grand Theft Auto V."
+    },
+    {
+      "name": "Rockstar North",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estúdio que desenvolveu Grand Theft Auto Online."
+    },
+    {
+      "name": "Rockstar Games",
+      "type": "Company",
+      "aliases": [
+        "Rockstar"
+      ],
+      "description": "Publicadora de Grand Theft Auto Online."
+    },
+    {
+      "name": "Action-adventure",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Gênero que combina ação e exploração de aventura."
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "type": "Game",
+      "aliases": [
+        "GTA V"
+      ],
+      "description": "Jogo do qual Grand Theft Auto Online é o componente online."
+    },
+    {
+      "name": "PlayStation 3",
+      "type": "Platform",
+      "aliases": [
+        "PS3"
+      ],
+      "description": "Console da Sony de sétima geração."
+    },
+    {
+      "name": "Xbox 360",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de sétima geração."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony de oitava geração."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de oitava geração."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [
+        "PS5"
+      ],
+      "description": "Console da Sony de nona geração."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Consoles da Microsoft de nona geração."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "HAS_GENRE",
+      "target": "Action-adventure",
+      "evidence": "is an online multiplayer action-adventure game developed by Rockstar North and published by Rockstar Games"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "DEVELOPED_BY",
+      "target": "Rockstar North",
+      "evidence": "is an online multiplayer action-adventure game developed by Rockstar North and published by Rockstar Games"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "PUBLISHED_BY",
+      "target": "Rockstar Games",
+      "evidence": "is an online multiplayer action-adventure game developed by Rockstar North and published by Rockstar Games"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "BASED_ON",
+      "target": "Grand Theft Auto V",
+      "evidence": "The game is the online component of Grand Theft Auto V."
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 3",
+      "evidence": "1 October 2013 for the PlayStation 3 and Xbox 360"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox 360",
+      "evidence": "1 October 2013 for the PlayStation 3 and Xbox 360"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "18 November 2014 for the PlayStation 4 and Xbox One"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "18 November 2014 for the PlayStation 4 and Xbox One"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "14 April 2015 for Windows"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "15 March 2022 for the PlayStation 5 and Xbox Series X/S"
+    },
+    {
+      "source": "Grand Theft Auto Online",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "15 March 2022 for the PlayStation 5 and Xbox Series X/S"
+    }
+  ]
+}

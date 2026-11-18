@@ -1,0 +1,291 @@
+{
+  "doc_id": "pubg-battlegrounds",
+  "subject": "PUBG: Battlegrounds",
+  "entities": [
+    {
+      "name": "PUBG: Battlegrounds",
+      "type": "Game",
+      "aliases": [
+        "PlayerUnknown's Battlegrounds",
+        "PUBG"
+      ],
+      "description": "Battle royale de 2017 que popularizou o genero."
+    },
+    {
+      "name": "Krafton",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora sul-coreana dona da PUBG Studios."
+    },
+    {
+      "name": "PUBG Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estudio da Krafton que desenvolve PUBG."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero em que jogadores lutam ate restar o ultimo sobrevivente."
+    },
+    {
+      "name": "Battle Royale (film)",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Filme japones de 2000 que inspirou o jogo."
+    },
+    {
+      "name": "Brendan Greene",
+      "type": "Person",
+      "aliases": [
+        "PlayerUnknown"
+      ],
+      "description": "Criador dos mods que originaram PUBG."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modding"
+      ],
+      "description": "Modificacao de um jogo criada pela comunidade."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "Steam",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Loja e plataforma digital de distribuicao de jogos da Valve."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [
+        "early access"
+      ],
+      "description": "Lancamento do jogo ainda em desenvolvimento para o publico."
+    },
+    {
+      "name": "Microsoft Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Divisao de jogos da Microsoft que lancou PUBG no Xbox One."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Microsoft."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Sony."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [
+        "Xbox Series X and S"
+      ],
+      "description": "Consoles de nona geracao da Microsoft."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de nona geracao da Sony."
+    },
+    {
+      "name": "Stadia",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma de streaming de jogos do Google."
+    },
+    {
+      "name": "PUBG Mobile",
+      "type": "Game",
+      "aliases": [],
+      "description": "Versao movel de PUBG: Battlegrounds."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel do Google."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel da Apple."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "live service"
+      ],
+      "description": "Modelo de jogo mantido com atualizacoes continuas."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport"
+      ],
+      "description": "Competicao organizada de jogos eletronicos."
+    }
+  ],
+  "relations": [
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "PUBLISHED_BY",
+      "target": "Krafton",
+      "evidence": "published by Krafton and developed by Krafton's PUBG Studios"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "DEVELOPED_BY",
+      "target": "PUBG Studios",
+      "evidence": "published by Krafton and developed by Krafton's PUBG Studios"
+    },
+    {
+      "source": "PUBG Studios",
+      "type": "SUBSIDIARY_OF",
+      "target": "Krafton",
+      "evidence": "developed by Krafton's PUBG Studios"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "is a 2017 battle royale game"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "BASED_ON",
+      "target": "Battle Royale (film)",
+      "evidence": "Inspired by the Japanese film Battle Royale (2000)"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "BASED_ON",
+      "target": "Mod",
+      "evidence": "the game is based on mods created by Brendan \"PlayerUnknown\" Greene"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "CREATED_BY",
+      "target": "Brendan Greene",
+      "evidence": "based on mods created by Brendan \"PlayerUnknown\" Greene and was developed under his creative direction"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "first released for Windows via Steam's early access beta program in March 2017"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "AVAILABLE_ON",
+      "target": "Steam",
+      "evidence": "first released for Windows via Steam's early access beta program in March 2017"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "first released for Windows via Steam's early access beta program in March 2017"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "PUBLISHED_BY",
+      "target": "Microsoft Studios",
+      "evidence": "Microsoft Studios released it for the Xbox One via the Xbox Game Preview program"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "Microsoft Studios released it for the Xbox One via the Xbox Game Preview program"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "ported to the PlayStation 4, Xbox Series X/S and PlayStation 5 consoles, and the Stadia streaming platform"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "ported to the PlayStation 4, Xbox Series X/S and PlayStation 5 consoles, and the Stadia streaming platform"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "ported to the PlayStation 4, Xbox Series X/S and PlayStation 5 consoles, and the Stadia streaming platform"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "AVAILABLE_ON",
+      "target": "Stadia",
+      "evidence": "ported to the PlayStation 4, Xbox Series X/S and PlayStation 5 consoles, and the Stadia streaming platform"
+    },
+    {
+      "source": "PUBG Mobile",
+      "type": "BASED_ON",
+      "target": "PUBG: Battlegrounds",
+      "evidence": "has also spawned a mobile version, PUBG Mobile, for Android and iOS"
+    },
+    {
+      "source": "PUBG Mobile",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "has also spawned a mobile version, PUBG Mobile, for Android and iOS"
+    },
+    {
+      "source": "PUBG Mobile",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "has also spawned a mobile version, PUBG Mobile, for Android and iOS"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "has been free-to-play for all platforms since January 2022"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "continuously developed under the games as a service model"
+    },
+    {
+      "source": "PUBG: Battlegrounds",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "they wish for it to become a popular esport title"
+    }
+  ]
+}

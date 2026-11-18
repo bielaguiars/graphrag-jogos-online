@@ -1,0 +1,186 @@
+{
+  "doc_id": "heroes-of-the-storm",
+  "subject": "Heroes of the Storm",
+  "entities": [
+    {
+      "name": "Heroes of the Storm",
+      "type": "Game",
+      "aliases": [
+        "Heroes"
+      ],
+      "description": "MOBA da Blizzard com herois de suas franquias."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Desenvolvedora e publicadora americana de jogos."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Genero de batalha entre equipes em arena."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "BlizzCon",
+      "type": "Event",
+      "aliases": [
+        "Blizzcon"
+      ],
+      "description": "Convencao anual da Blizzard Entertainment."
+    },
+    {
+      "name": "Warcraft",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie de jogos de fantasia da Blizzard."
+    },
+    {
+      "name": "Diablo",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie de RPGs de acao da Blizzard."
+    },
+    {
+      "name": "StarCraft",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie de estrategia em tempo real da Blizzard."
+    },
+    {
+      "name": "Defense of the Ancients",
+      "type": "Game",
+      "aliases": [
+        "DotA"
+      ],
+      "description": "Mod comunitario de Warcraft III que inspirou o genero MOBA."
+    },
+    {
+      "name": "Warcraft III",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de estrategia da Blizzard Entertainment."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransactions"
+      ],
+      "description": "Compras de itens dentro do jogo com dinheiro real."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Heroes of the Storm",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "multiplayer online battle arena video game developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "PUBLISHED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "multiplayer online battle arena video game developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "Heroes of the Storm is a multiplayer online battle arena video game"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "it was released on June 2, 2015, for macOS and Windows"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "it was released on June 2, 2015, for macOS and Windows"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "FEATURED_IN",
+      "target": "BlizzCon",
+      "evidence": "Announced at BlizzCon 2010"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "BASED_ON",
+      "target": "Warcraft",
+      "evidence": "different battlegrounds based on Warcraft, Diablo, StarCraft, and Overwatch universes"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "BASED_ON",
+      "target": "Diablo",
+      "evidence": "different battlegrounds based on Warcraft, Diablo, StarCraft, and Overwatch universes"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "BASED_ON",
+      "target": "StarCraft",
+      "evidence": "different battlegrounds based on Warcraft, Diablo, StarCraft, and Overwatch universes"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "BASED_ON",
+      "target": "Defense of the Ancients",
+      "evidence": "Heroes of the Storm is inspired by Defense of the Ancients"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "BASED_ON",
+      "target": "Warcraft III",
+      "evidence": "Defense of the Ancients, a community-created mod for Warcraft III"
+    },
+    {
+      "source": "Warcraft III",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "Warcraft III, another video game developed by Blizzard Entertainment"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Heroes of the Storm is free-to-play"
+    },
+    {
+      "source": "Heroes of the Storm",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "supported by microtransactions which can be used to purchase heroes"
+    }
+  ]
+}

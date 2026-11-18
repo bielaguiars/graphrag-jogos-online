@@ -1,0 +1,249 @@
+{
+  "doc_id": "genshin-impact",
+  "subject": "Genshin Impact",
+  "entities": [
+    {
+      "name": "Genshin Impact",
+      "type": "Game",
+      "aliases": [
+        "原神",
+        "Yuánshén"
+      ],
+      "description": "RPG de ação em mundo aberto de 2020 da miHoYo."
+    },
+    {
+      "name": "Action role-playing game",
+      "type": "Genre",
+      "aliases": [
+        "action role-playing"
+      ],
+      "description": "Gênero de RPG com combate em tempo real."
+    },
+    {
+      "name": "miHoYo",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Genshin Impact."
+    },
+    {
+      "name": "Cognosphere",
+      "type": "Company",
+      "aliases": [
+        "HoYoverse"
+      ],
+      "description": "Subsidiária internacional da miHoYo que distribui Genshin Impact fora da China."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Gacha",
+      "type": "Concept",
+      "aliases": [
+        "gacha mechanics"
+      ],
+      "description": "Monetização por sorteio aleatório de itens e personagens."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "game as a service"
+      ],
+      "description": "Modelo em que o jogo recebe atualizações contínuas após o lançamento."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Android."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma iOS."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 4."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation 5."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox Series X/S."
+    },
+    {
+      "name": "HarmonyOS NEXT",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma HarmonyOS NEXT."
+    },
+    {
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo que inspirou Genshin Impact."
+    },
+    {
+      "name": "Open world",
+      "type": "Concept",
+      "aliases": [
+        "open-world"
+      ],
+      "description": "Ambiente de mundo aberto explorável."
+    },
+    {
+      "name": "The Game Awards 2021",
+      "type": "Event",
+      "aliases": [
+        "Game Awards 2021"
+      ],
+      "description": "Premiação em que Genshin Impact venceu Melhor Jogo Mobile."
+    },
+    {
+      "name": "2023 Golden Joystick Awards",
+      "type": "Event",
+      "aliases": [],
+      "description": "Premiação em que Genshin Impact recebeu o Still Playing Award."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Genshin Impact",
+      "type": "HAS_GENRE",
+      "target": "Action role-playing game",
+      "evidence": "is a 2020 action role-playing video game developed and published by miHoYo"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "DEVELOPED_BY",
+      "target": "miHoYo",
+      "evidence": "is a 2020 action role-playing video game developed and published by miHoYo"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "PUBLISHED_BY",
+      "target": "miHoYo",
+      "evidence": "is a 2020 action role-playing video game developed and published by miHoYo"
+    },
+    {
+      "source": "Cognosphere",
+      "type": "SUBSIDIARY_OF",
+      "target": "miHoYo",
+      "evidence": "miHoYo's international subsidiary Cognosphere, also known as HoYoverse"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "PUBLISHED_BY",
+      "target": "Cognosphere",
+      "evidence": "It is distributed outside China by miHoYo's international subsidiary Cognosphere"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Genshin Impact is a free-to-play game monetized through gacha mechanics"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "HAS_FEATURE",
+      "target": "Gacha",
+      "evidence": "Genshin Impact is a free-to-play game monetized through gacha mechanics"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "which is updated regularly using the games as a service model"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "It was originally released for Android, iOS, PlayStation 4, and Windows"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "It was originally released for Android, iOS, PlayStation 4, and Windows"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "It was originally released for Android, iOS, PlayStation 4, and Windows"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "It was originally released for Android, iOS, PlayStation 4, and Windows"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "followed by the PlayStation 5 in 2021"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "and Xbox Series X/S in 2024"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "AVAILABLE_ON",
+      "target": "HarmonyOS NEXT",
+      "evidence": "a native port for HarmonyOS NEXT was released in September 2025"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "BASED_ON",
+      "target": "The Legend of Zelda: Breath of the Wild",
+      "evidence": "including the game The Legend of Zelda: Breath of the Wild"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "HAS_FEATURE",
+      "target": "Open world",
+      "evidence": "an anime style, open-world environment"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "FEATURED_IN",
+      "target": "The Game Awards 2021",
+      "evidence": "including Best Mobile Game at the Game Awards 2021"
+    },
+    {
+      "source": "Genshin Impact",
+      "type": "FEATURED_IN",
+      "target": "2023 Golden Joystick Awards",
+      "evidence": "Still Playing Award at the 2023 Golden Joystick Awards"
+    }
+  ]
+}

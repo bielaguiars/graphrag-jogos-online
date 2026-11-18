@@ -1,0 +1,66 @@
+{
+  "doc_id": "league-of-legends-world-championship",
+  "subject": "League of Legends World Championship",
+  "entities": [
+    {
+      "name": "League of Legends World Championship",
+      "type": "Event",
+      "aliases": [
+        "Worlds"
+      ],
+      "description": "Campeonato mundial anual de League of Legends organizado pela Riot Games, o evento de esports mais assistido do mundo."
+    },
+    {
+      "name": "Riot Games",
+      "type": "Company",
+      "aliases": [
+        "Riot"
+      ],
+      "description": "Empresa que organiza o League of Legends World Championship."
+    },
+    {
+      "name": "League of Legends",
+      "type": "Game",
+      "aliases": [
+        "LoL",
+        "League"
+      ],
+      "description": "Jogo disputado no League of Legends World Championship."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport",
+        "e-sports"
+      ],
+      "description": "Competição profissional de jogos eletrônicos."
+    },
+    {
+      "name": "T1",
+      "type": "Company",
+      "aliases": [],
+      "description": "Equipe sul-coreana, a mais vitoriosa do torneio, com seis títulos mundiais."
+    },
+    {
+      "name": "Summoner's Cup",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Troféu de 22 libras entregue ao campeão do mundial."
+    }
+  ],
+  "relations": [
+    {
+      "source": "League of Legends World Championship",
+      "type": "ORGANIZED_BY",
+      "target": "Riot Games",
+      "evidence": "world championship tournament hosted by Riot Games"
+    },
+    {
+      "source": "League of Legends",
+      "type": "FEATURED_IN",
+      "target": "League of Legends World Championship",
+      "evidence": "the annual professional League of Legends world championship tournament"
+    }
+  ]
+}

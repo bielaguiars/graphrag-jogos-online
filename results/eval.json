@@ -1,0 +1,586 @@
+{
+  "rows": [
+    {
+      "id": "q01",
+      "hops": 1,
+      "question": "Quem desenvolveu o Dota 2?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6456,
+        "ms": 5813,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1959,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q02",
+      "hops": 1,
+      "question": "Quem criou o Minecraft?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7207,
+        "ms": 299,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2457,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q03",
+      "hops": 1,
+      "question": "Quais jogos usam o motor Source?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6636,
+        "ms": 356,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1949,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q04",
+      "hops": 1,
+      "question": "Quais modos e jogos derivam do Fortnite?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7766,
+        "ms": 534,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2847,
+        "ms": 21,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q05",
+      "hops": 1,
+      "question": "Quem organiza o campeonato The International?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6658,
+        "ms": 350,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2068,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q06",
+      "hops": 1,
+      "question": "A Mojang Studios é subsidiária de qual empresa?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7326,
+        "ms": 230,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2404,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q07",
+      "hops": 1,
+      "question": "Quem criou o PUBG: Battlegrounds?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7474,
+        "ms": 384,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 0.0,
+        "full": false,
+        "ctx_chars": 2613,
+        "ms": 14,
+        "abstains": false,
+        "missing": [
+          "Brendan Greene"
+        ]
+      }
+    },
+    {
+      "id": "q08",
+      "hops": 1,
+      "question": "Em quais competições o Mobile Legends: Bang Bang aparece?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7960,
+        "ms": 324,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2809,
+        "ms": 17,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q09",
+      "hops": 1,
+      "question": "Quais jogos surgiram como mods do Half-Life?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7048,
+        "ms": 238,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1931,
+        "ms": 17,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q10",
+      "hops": 1,
+      "question": "Quais expansões o Final Fantasy XIV recebeu?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7727,
+        "ms": 237,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2721,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q11",
+      "hops": 1,
+      "question": "Quem criou o RuneScape?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6957,
+        "ms": 244,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2354,
+        "ms": 17,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q12",
+      "hops": 1,
+      "question": "Em quais plataformas o Genshin Impact está disponível?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6644,
+        "ms": 271,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2293,
+        "ms": 19,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q13",
+      "hops": 2,
+      "question": "Que jogo da Valve surgiu de um mod de Warcraft III?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7528,
+        "ms": 315,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 0.667,
+        "full": false,
+        "ctx_chars": 2381,
+        "ms": 14,
+        "abstains": false,
+        "missing": [
+          "Dota 2"
+        ]
+      }
+    },
+    {
+      "id": "q14",
+      "hops": 2,
+      "question": "Quem criou o mod do qual o Dota 2 é sequência?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6965,
+        "ms": 384,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2119,
+        "ms": 18,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q15",
+      "hops": 2,
+      "question": "Que jogo militar deu origem ao mod que virou o DayZ, e quem criou esse mod?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6932,
+        "ms": 336,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 0.667,
+        "full": false,
+        "ctx_chars": 2212,
+        "ms": 15,
+        "abstains": false,
+        "missing": [
+          "DayZ mod"
+        ]
+      }
+    },
+    {
+      "id": "q16",
+      "hops": 2,
+      "question": "De qual empresa a Psyonix é subsidiária e que campeonato ela organiza?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6895,
+        "ms": 271,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2517,
+        "ms": 14,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q17",
+      "hops": 2,
+      "question": "Em qual jogo o Fortnite Battle Royale se inspirou, e quem criou esse jogo?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7985,
+        "ms": 340,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 0.5,
+        "full": false,
+        "ctx_chars": 3067,
+        "ms": 13,
+        "abstains": false,
+        "missing": [
+          "Brendan Greene"
+        ]
+      }
+    },
+    {
+      "id": "q18",
+      "hops": 2,
+      "question": "De quais jogos o Teamfight Tactics deriva e quem desenvolveu cada um deles?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6898,
+        "ms": 355,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 0.75,
+        "full": false,
+        "ctx_chars": 2251,
+        "ms": 15,
+        "abstains": false,
+        "missing": [
+          "Drodo Studio"
+        ]
+      }
+    },
+    {
+      "id": "q19",
+      "hops": 3,
+      "question": "O League of Legends se inspirou em qual mod, e esse mod foi feito para qual jogo?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7130,
+        "ms": 488,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1990,
+        "ms": 15,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q20",
+      "hops": 2,
+      "question": "Que grupo controla a Moonton e qual liga a Moonton organiza?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 7338,
+        "ms": 211,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2368,
+        "ms": 12,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "q21",
+      "hops": 2,
+      "question": "O Counter-Strike é um mod de qual jogo, e quem são os criadores do mod?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6800,
+        "ms": 339,
+        "abstains": false,
+        "missing": []
+      },
+      "vector": {
+        "recall": 0.333,
+        "full": false,
+        "ctx_chars": 2073,
+        "ms": 14,
+        "abstains": false,
+        "missing": [
+          "Minh Le",
+          "Jess Cliffe"
+        ]
+      }
+    },
+    {
+      "id": "o01",
+      "hops": 0,
+      "question": "Qual a receita de bolo de cenoura?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6276,
+        "ms": 303,
+        "abstains": true,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1982,
+        "ms": 12,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "o02",
+      "hops": 0,
+      "question": "Qual é a capital da França?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6925,
+        "ms": 363,
+        "abstains": true,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 2746,
+        "ms": 14,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "o03",
+      "hops": 0,
+      "question": "Quem ganhou a Copa do Mundo de 2002?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6367,
+        "ms": 187,
+        "abstains": true,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1967,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "o04",
+      "hops": 0,
+      "question": "Como funciona a fotossíntese?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6600,
+        "ms": 273,
+        "abstains": true,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1993,
+        "ms": 15,
+        "abstains": false,
+        "missing": []
+      }
+    },
+    {
+      "id": "o05",
+      "hops": 0,
+      "question": "Qual a melhor dieta para emagrecer?",
+      "graph": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 6519,
+        "ms": 241,
+        "abstains": true,
+        "missing": []
+      },
+      "vector": {
+        "recall": 1.0,
+        "full": true,
+        "ctx_chars": 1964,
+        "ms": 13,
+        "abstains": false,
+        "missing": []
+      }
+    }
+  ],
+  "summary": {
+    "graph": {
+      "recall_mean": 1.0,
+      "full_support_rate": 1.0,
+      "recall_multihop": 1.0,
+      "recall_1hop": 1.0,
+      "ctx_chars_mean": 7159,
+      "latency_ms_median": 320,
+      "ood_abstention_rate": 1.0,
+      "false_abstention_rate": 0.0
+    },
+    "vector": {
+      "recall_mean": 0.853,
+      "full_support_rate": 0.714,
+      "recall_multihop": 0.769,
+      "recall_1hop": 0.917,
+      "ctx_chars_mean": 2352,
+      "latency_ms_median": 14,
+      "ood_abstention_rate": 0.0,
+      "false_abstention_rate": 0.0
+    }
+  },
+  "llm": false
+}

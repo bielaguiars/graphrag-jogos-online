@@ -1,0 +1,208 @@
+{
+  "doc_id": "arena-of-valor",
+  "subject": "Arena of Valor",
+  "entities": [
+    {
+      "name": "Arena of Valor",
+      "type": "Game",
+      "aliases": [
+        "Strike of Kings",
+        "Realm of Valor",
+        "RoV",
+        "AoV",
+        "Liên Quân Mobile"
+      ],
+      "description": "Adaptação internacional do MOBA mobile Honor of Kings."
+    },
+    {
+      "name": "Honor of Kings",
+      "type": "Game",
+      "aliases": [],
+      "description": "MOBA chinês do qual Arena of Valor é adaptação."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Gênero de batalha em arena online entre equipes multijogador."
+    },
+    {
+      "name": "TiMi Studio Group",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estúdio desenvolvedor de Arena of Valor."
+    },
+    {
+      "name": "Level Infinite",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de Arena of Valor fora da China continental."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Android."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma iOS."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Nintendo Switch."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Competições profissionais de videogame."
+    },
+    {
+      "name": "2018 Asian Games",
+      "type": "Event",
+      "aliases": [],
+      "description": "Jogos Asiáticos de 2018, com Arena of Valor como modalidade de esports."
+    },
+    {
+      "name": "2019 Southeast Asian Games",
+      "type": "Event",
+      "aliases": [],
+      "description": "Jogos do Sudeste Asiático de 2019 com Arena of Valor."
+    },
+    {
+      "name": "2021 Asian Indoor and Martial Arts Games",
+      "type": "Event",
+      "aliases": [],
+      "description": "Jogos Asiáticos Indoor e de Artes Marciais de 2021 com Arena of Valor."
+    },
+    {
+      "name": "2021 SEA Games",
+      "type": "Event",
+      "aliases": [],
+      "description": "Jogos do Sudeste Asiático de 2021 com Arena of Valor."
+    },
+    {
+      "name": "Garena",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora regional de Arena of Valor."
+    },
+    {
+      "name": "DeNA",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora regional de Arena of Valor."
+    },
+    {
+      "name": "Actoz SG",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora regional de Arena of Valor."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Arena of Valor",
+      "type": "BASED_ON",
+      "target": "Honor of Kings",
+      "evidence": "is an international adaptation of Honor of Kings"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "a multiplayer online battle arena developed by TiMi Studio Group and published by Level Infinite"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "DEVELOPED_BY",
+      "target": "TiMi Studio Group",
+      "evidence": "a multiplayer online battle arena developed by TiMi Studio Group and published by Level Infinite"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "PUBLISHED_BY",
+      "target": "Level Infinite",
+      "evidence": "a multiplayer online battle arena developed by TiMi Studio Group and published by Level Infinite"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "published by Level Infinite for Android, iOS and Nintendo Switch"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "published by Level Infinite for Android, iOS and Nintendo Switch"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "published by Level Infinite for Android, iOS and Nintendo Switch"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "Arena of Valor was one of the esports titles featured at the 2018 Asian Games"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "FEATURED_IN",
+      "target": "2018 Asian Games",
+      "evidence": "2018 Asian Games, 2019 Southeast Asian Games, 2021 Asian Indoor and Martial Arts Games, and 2021 SEA Games"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "FEATURED_IN",
+      "target": "2019 Southeast Asian Games",
+      "evidence": "2018 Asian Games, 2019 Southeast Asian Games, 2021 Asian Indoor and Martial Arts Games, and 2021 SEA Games"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "FEATURED_IN",
+      "target": "2021 Asian Indoor and Martial Arts Games",
+      "evidence": "2018 Asian Games, 2019 Southeast Asian Games, 2021 Asian Indoor and Martial Arts Games, and 2021 SEA Games"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "FEATURED_IN",
+      "target": "2021 SEA Games",
+      "evidence": "2018 Asian Games, 2019 Southeast Asian Games, 2021 Asian Indoor and Martial Arts Games, and 2021 SEA Games"
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "PUBLISHED_BY",
+      "target": "Garena",
+      "evidence": "Arena of Valor was published in other regions by Garena, DeNA, Actoz SG, and TiMi Studio Group."
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "PUBLISHED_BY",
+      "target": "DeNA",
+      "evidence": "Arena of Valor was published in other regions by Garena, DeNA, Actoz SG, and TiMi Studio Group."
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "PUBLISHED_BY",
+      "target": "Actoz SG",
+      "evidence": "Arena of Valor was published in other regions by Garena, DeNA, Actoz SG, and TiMi Studio Group."
+    },
+    {
+      "source": "Arena of Valor",
+      "type": "PUBLISHED_BY",
+      "target": "TiMi Studio Group",
+      "evidence": "Arena of Valor was published in other regions by Garena, DeNA, Actoz SG, and TiMi Studio Group."
+    }
+  ]
+}

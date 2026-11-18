@@ -1,0 +1,201 @@
+{
+  "doc_id": "among-us",
+  "subject": "Among Us",
+  "entities": [
+    {
+      "name": "Among Us",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo multiplayer online de dedução social de 2018 da Innersloth, que explodiu em popularidade em 2020."
+    },
+    {
+      "name": "Innersloth",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estúdio americano que desenvolveu e publicou Among Us."
+    },
+    {
+      "name": "Social deduction",
+      "type": "Genre",
+      "aliases": [
+        "social deduction game"
+      ],
+      "description": "Gênero em que jogadores precisam descobrir quem são os traidores escondidos no grupo."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-platform multiplayer",
+        "crossplay"
+      ],
+      "description": "Recurso que permite jogadores de plataformas diferentes jogarem juntos."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional móvel da Apple."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional móvel do Google."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console híbrido da Nintendo."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony de oitava geração."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [
+        "PS5"
+      ],
+      "description": "Console da Sony de nona geração."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de oitava geração."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Consoles da Microsoft de nona geração."
+    },
+    {
+      "name": "Mafia",
+      "type": "Game",
+      "aliases": [
+        "Mafia party game"
+      ],
+      "description": "Jogo de festa de dedução social que inspirou Among Us."
+    },
+    {
+      "name": "Among Us 3D",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo derivado de Among Us lançado em 2022."
+    },
+    {
+      "name": "Among Us Story: On Guard",
+      "type": "Game",
+      "aliases": [],
+      "description": "Spin-off de Among Us em desenvolvimento em 2026."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Among Us",
+      "type": "HAS_GENRE",
+      "target": "Social deduction",
+      "evidence": "online multiplayer social deduction game developed and published by the American game studio Innersloth"
+    },
+    {
+      "source": "Among Us",
+      "type": "DEVELOPED_BY",
+      "target": "Innersloth",
+      "evidence": "online multiplayer social deduction game developed and published by the American game studio Innersloth"
+    },
+    {
+      "source": "Among Us",
+      "type": "PUBLISHED_BY",
+      "target": "Innersloth",
+      "evidence": "online multiplayer social deduction game developed and published by the American game studio Innersloth"
+    },
+    {
+      "source": "Among Us",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "The game allows for cross-platform play"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "it was released on iOS and Android devices in June 2018"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "it was released on iOS and Android devices in June 2018"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "on Windows later that year in November"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "It was ported to the Nintendo Switch in December 2020"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "on the PlayStation 4, PlayStation 5, Xbox One and Xbox Series X/S in December 2021"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "on the PlayStation 4, PlayStation 5, Xbox One and Xbox Series X/S in December 2021"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "on the PlayStation 4, PlayStation 5, Xbox One and Xbox Series X/S in December 2021"
+    },
+    {
+      "source": "Among Us",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "on the PlayStation 4, PlayStation 5, Xbox One and Xbox Series X/S in December 2021"
+    },
+    {
+      "source": "Among Us",
+      "type": "BASED_ON",
+      "target": "Mafia",
+      "evidence": "The game was inspired by the party game Mafia"
+    },
+    {
+      "source": "Among Us 3D",
+      "type": "BASED_ON",
+      "target": "Among Us",
+      "evidence": "spawned a multimedia franchise, with Among Us 3D launching in 2022"
+    },
+    {
+      "source": "Among Us Story: On Guard",
+      "type": "BASED_ON",
+      "target": "Among Us",
+      "evidence": "a spinoff game, Among Us Story: On Guard, in development"
+    }
+  ]
+}

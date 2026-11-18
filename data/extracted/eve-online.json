@@ -1,0 +1,137 @@
+{
+  "doc_id": "eve-online",
+  "subject": "Eve Online",
+  "entities": [
+    {
+      "name": "Eve Online",
+      "type": "Game",
+      "aliases": [
+        "EVE Online"
+      ],
+      "description": "MMORPG espacial de mundo persistente lancado em 2003."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "RPG online massivamente multijogador."
+    },
+    {
+      "name": "Fenris Creations",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Eve Online."
+    },
+    {
+      "name": "Simon & Schuster Interactive",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicou Eve Online na America do Norte em 2003."
+    },
+    {
+      "name": "Crucial Entertainment",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicou Eve Online no Reino Unido em 2003."
+    },
+    {
+      "name": "CCP",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa que comprou os direitos de Eve Online e passou a autopublica-lo."
+    },
+    {
+      "name": "Steam",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma de distribuicao digital de jogos da Valve."
+    },
+    {
+      "name": "Atari",
+      "type": "Company",
+      "aliases": [],
+      "description": "Lancou Eve Online em versao fisica em 2009."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play",
+        "F2P"
+      ],
+      "description": "Modelo em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Subscription",
+      "type": "Concept",
+      "aliases": [
+        "subscribers"
+      ],
+      "description": "Modelo de assinatura paga para jogar."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Eve Online",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "massively-multiplayer online role-playing game (MMORPG) developed and published by Fenris Creations"
+    },
+    {
+      "source": "Eve Online",
+      "type": "DEVELOPED_BY",
+      "target": "Fenris Creations",
+      "evidence": "developed and published by Fenris Creations"
+    },
+    {
+      "source": "Eve Online",
+      "type": "PUBLISHED_BY",
+      "target": "Fenris Creations",
+      "evidence": "developed and published by Fenris Creations"
+    },
+    {
+      "source": "Eve Online",
+      "type": "PUBLISHED_BY",
+      "target": "Simon & Schuster Interactive",
+      "evidence": "published from May to December 2003 by Simon & Schuster Interactive in North America"
+    },
+    {
+      "source": "Eve Online",
+      "type": "PUBLISHED_BY",
+      "target": "Crucial Entertainment",
+      "evidence": "by Crucial Entertainment in the United Kingdom"
+    },
+    {
+      "source": "Eve Online",
+      "type": "PUBLISHED_BY",
+      "target": "CCP",
+      "evidence": "CCP purchased the rights and began to self-publish"
+    },
+    {
+      "source": "Eve Online",
+      "type": "AVAILABLE_ON",
+      "target": "Steam",
+      "evidence": "Eve Online would be distributed via Steam"
+    },
+    {
+      "source": "Eve Online",
+      "type": "PUBLISHED_BY",
+      "target": "Atari",
+      "evidence": "the game was again made available in boxed form in stores, released by Atari"
+    },
+    {
+      "source": "Eve Online",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Eve Online added a limited free-to-play version"
+    },
+    {
+      "source": "Eve Online",
+      "type": "HAS_FEATURE",
+      "target": "Subscription",
+      "evidence": "Eve Online reached over 500,000 subscribers"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "doc_id": "brawl-stars",
+  "subject": "Brawl Stars",
+  "entities": [
+    {
+      "name": "Brawl Stars",
+      "type": "Game",
+      "aliases": [],
+      "description": "MOBA e hero shooter mobile da Supercell lancado em 2018."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Genero de arena de batalha online com times."
+    },
+    {
+      "name": "Hero shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com personagens de habilidades unicas."
+    },
+    {
+      "name": "Supercell",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa finlandesa de jogos mobile."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional mobile da Apple."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional mobile do Google."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Brawl Stars",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "Brawl Stars is a multiplayer online battle arena and hero shooter video game"
+    },
+    {
+      "source": "Brawl Stars",
+      "type": "HAS_GENRE",
+      "target": "Hero shooter",
+      "evidence": "Brawl Stars is a multiplayer online battle arena and hero shooter video game"
+    },
+    {
+      "source": "Brawl Stars",
+      "type": "DEVELOPED_BY",
+      "target": "Supercell",
+      "evidence": "developed and published by Finnish video game company Supercell"
+    },
+    {
+      "source": "Brawl Stars",
+      "type": "PUBLISHED_BY",
+      "target": "Supercell",
+      "evidence": "developed and published by Finnish video game company Supercell"
+    },
+    {
+      "source": "Brawl Stars",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "on iOS and Android platforms"
+    },
+    {
+      "source": "Brawl Stars",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "on iOS and Android platforms"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "doc_id": "starcraft-ii-wings-of-liberty",
+  "subject": "StarCraft II: Wings of Liberty",
+  "entities": [
+    {
+      "name": "StarCraft II: Wings of Liberty",
+      "type": "Game",
+      "aliases": [
+        "Wings of Liberty"
+      ],
+      "description": "Jogo de estrategia em tempo real da Blizzard lancado em 2010."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Empresa desenvolvedora e publicadora de jogos."
+    },
+    {
+      "name": "Real-time strategy",
+      "type": "Genre",
+      "aliases": [
+        "RTS"
+      ],
+      "description": "Genero de estrategia em tempo real."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [
+        "OS X",
+        "Mac OS X"
+      ],
+      "description": "Sistema operacional da Apple."
+    },
+    {
+      "name": "StarCraft",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de estrategia em tempo real de 1998 da Blizzard."
+    },
+    {
+      "name": "StarCraft: Brood War",
+      "type": "Game",
+      "aliases": [
+        "Brood War"
+      ],
+      "description": "Pacote de expansao de StarCraft de 1998."
+    },
+    {
+      "name": "StarCraft II",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Conjunto formado por Wings of Liberty e suas expansoes."
+    },
+    {
+      "name": "StarCraft II: Heart of the Swarm",
+      "type": "Game",
+      "aliases": [
+        "Heart of the Swarm"
+      ],
+      "description": "Expansao de StarCraft II focada nos Zerg."
+    },
+    {
+      "name": "StarCraft II: Legacy of the Void",
+      "type": "Game",
+      "aliases": [
+        "Legacy of the Void"
+      ],
+      "description": "Expansao de StarCraft II focada nos Protoss."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play",
+        "F2P"
+      ],
+      "description": "Modelo em que o jogo e gratuito para jogar."
+    }
+  ],
+  "relations": [
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "real-time strategy video game developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "PUBLISHED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "real-time strategy video game developed and published by Blizzard Entertainment"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "HAS_GENRE",
+      "target": "Real-time strategy",
+      "evidence": "is a science fiction real-time strategy video game"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "released worldwide in July 2010 for Microsoft Windows and Mac OS X"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "released worldwide in July 2010 for Microsoft Windows and Mac OS X"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "SEQUEL_OF",
+      "target": "StarCraft",
+      "evidence": "A sequel to the 1998 video game StarCraft and the Brood War expansion pack"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "SEQUEL_OF",
+      "target": "StarCraft: Brood War",
+      "evidence": "A sequel to the 1998 video game StarCraft and the Brood War expansion pack"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "PART_OF",
+      "target": "StarCraft II",
+      "evidence": "the original installment of StarCraft II which was later followed by a number of expansion packs"
+    },
+    {
+      "source": "StarCraft II: Wings of Liberty",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Wings of Liberty has been free-to-play since November 2017"
+    },
+    {
+      "source": "StarCraft II: Heart of the Swarm",
+      "type": "SEQUEL_OF",
+      "target": "StarCraft II: Wings of Liberty",
+      "evidence": "while the expansions, Heart of the Swarm and Legacy of the Void, would focus on the Zerg and Protoss"
+    },
+    {
+      "source": "StarCraft II: Legacy of the Void",
+      "type": "SEQUEL_OF",
+      "target": "StarCraft II: Wings of Liberty",
+      "evidence": "while the expansions, Heart of the Swarm and Legacy of the Void, would focus on the Zerg and Protoss"
+    }
+  ]
+}

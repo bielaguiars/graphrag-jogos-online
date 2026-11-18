@@ -1,0 +1,218 @@
+{
+  "doc_id": "rust-video-game",
+  "subject": "Rust",
+  "entities": [
+    {
+      "name": "Rust",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de sobrevivencia multijogador da Facepunch Studios."
+    },
+    {
+      "name": "Facepunch Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora britanica de Rust."
+    },
+    {
+      "name": "Survival game",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero focado em sobreviver coletando recursos."
+    },
+    {
+      "name": "Early access",
+      "type": "Concept",
+      "aliases": [
+        "early access"
+      ],
+      "description": "Lancamento do jogo ainda em desenvolvimento para o publico."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Sony."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Microsoft."
+    },
+    {
+      "name": "Double Eleven",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estudio que co-desenvolveu as versoes de console de Rust."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de nona geracao da Sony."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [
+        "Xbox Series X and S"
+      ],
+      "description": "Consoles de nona geracao da Microsoft."
+    },
+    {
+      "name": "DayZ",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de sobrevivencia surgido como mod de Arma 2."
+    },
+    {
+      "name": "Arma 2",
+      "type": "Game",
+      "aliases": [
+        "ARMA 2"
+      ],
+      "description": "Simulador de tiro tatico de 2009 da Bohemia Interactive."
+    },
+    {
+      "name": "Minecraft",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de construcao e sobrevivencia com sistema de crafting."
+    },
+    {
+      "name": "Unity",
+      "type": "Engine",
+      "aliases": [
+        "Unity 5"
+      ],
+      "description": "Motor grafico multiplataforma."
+    },
+    {
+      "name": "Steam",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Loja e plataforma digital de distribuicao de jogos da Valve."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modding"
+      ],
+      "description": "Modificacao de um jogo criada pela comunidade."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Rust",
+      "type": "DEVELOPED_BY",
+      "target": "Facepunch Studios",
+      "evidence": "a 2018 multiplayer survival video game developed by Facepunch Studios"
+    },
+    {
+      "source": "Rust",
+      "type": "HAS_GENRE",
+      "target": "Survival game",
+      "evidence": "a 2018 multiplayer survival video game developed by Facepunch Studios"
+    },
+    {
+      "source": "Rust",
+      "type": "HAS_FEATURE",
+      "target": "Early access",
+      "evidence": "It was first released in early access in December 2013"
+    },
+    {
+      "source": "Rust",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "Rust is available on Windows and macOS."
+    },
+    {
+      "source": "Rust",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "Rust is available on Windows and macOS."
+    },
+    {
+      "source": "Rust",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "Console versions for PlayStation 4 and Xbox One developed in conjunction with Double Eleven"
+    },
+    {
+      "source": "Rust",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "Console versions for PlayStation 4 and Xbox One developed in conjunction with Double Eleven"
+    },
+    {
+      "source": "Rust",
+      "type": "DEVELOPED_BY",
+      "target": "Double Eleven",
+      "evidence": "Console versions for PlayStation 4 and Xbox One developed in conjunction with Double Eleven"
+    },
+    {
+      "source": "Rust",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "Native versions for PlayStation 5 and Xbox Series X/S were released in June 2025."
+    },
+    {
+      "source": "Rust",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "Native versions for PlayStation 5 and Xbox Series X/S were released in June 2025."
+    },
+    {
+      "source": "Rust",
+      "type": "BASED_ON",
+      "target": "DayZ",
+      "evidence": "Rust was initially created as a clone of DayZ, a popular mod for ARMA 2"
+    },
+    {
+      "source": "DayZ",
+      "type": "BASED_ON",
+      "target": "Arma 2",
+      "evidence": "DayZ, a popular mod for ARMA 2"
+    },
+    {
+      "source": "Rust",
+      "type": "BASED_ON",
+      "target": "Minecraft",
+      "evidence": "with crafting elements akin to those in Minecraft"
+    },
+    {
+      "source": "Rust",
+      "type": "USES_ENGINE",
+      "target": "Unity",
+      "evidence": "Rust was ported to the Unity 5 game engine"
+    },
+    {
+      "source": "Rust",
+      "type": "AVAILABLE_ON",
+      "target": "Steam",
+      "evidence": "Rust was first released in December 2013 to the Steam Early Access program."
+    },
+    {
+      "source": "Rust",
+      "type": "HAS_FEATURE",
+      "target": "Mod",
+      "evidence": "Rust supports modded servers which can add additional content."
+    }
+  ]
+}

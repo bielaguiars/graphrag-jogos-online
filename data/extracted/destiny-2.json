@@ -1,0 +1,168 @@
+{
+  "doc_id": "destiny-2",
+  "subject": "Destiny 2",
+  "entities": [
+    {
+      "name": "Destiny 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de tiro online gratuito da Bungie, sequencia de Destiny."
+    },
+    {
+      "name": "Bungie",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora americana da serie Destiny."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro em primeira pessoa."
+    },
+    {
+      "name": "Destiny",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de 2014 da Bungie, antecessor de Destiny 2."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Sony."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de oitava geracao da Microsoft."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "Stadia",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma de streaming de jogos do Google."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console de nona geracao da Sony."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [
+        "Xbox Series X and S"
+      ],
+      "description": "Consoles de nona geracao da Microsoft."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "live service"
+      ],
+      "description": "Modelo de jogo mantido com atualizacoes continuas."
+    },
+    {
+      "name": "Sony Interactive Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Sony"
+      ],
+      "description": "Empresa controladora da Bungie."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Destiny 2",
+      "type": "DEVELOPED_BY",
+      "target": "Bungie",
+      "evidence": "online first-person shooter video game developed by Bungie"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "Destiny 2 is a free-to-play online first-person shooter video game"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Destiny 2 is a free-to-play online first-person shooter video game"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "SEQUEL_OF",
+      "target": "Destiny",
+      "evidence": "The sequel to 2014's Destiny and its subsequent expansions"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "originally released as a paid title in 2017 for PlayStation 4, Xbox One, and Windows"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "originally released as a paid title in 2017 for PlayStation 4, Xbox One, and Windows"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "originally released as a paid title in 2017 for PlayStation 4, Xbox One, and Windows"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "AVAILABLE_ON",
+      "target": "Stadia",
+      "evidence": "followed by the game's release on Stadia the following month"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "then PlayStation 5 and Xbox Series X/S platforms in December 2020"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "then PlayStation 5 and Xbox Series X/S platforms in December 2020"
+    },
+    {
+      "source": "Destiny 2",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "transitioning to a free-to-play live service game under the New Light title"
+    },
+    {
+      "source": "Bungie",
+      "type": "SUBSIDIARY_OF",
+      "target": "Sony Interactive Entertainment",
+      "evidence": "due to a financial loss for parent company Sony, Bungie refocused their efforts"
+    }
+  ]
+}

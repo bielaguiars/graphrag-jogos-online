@@ -1,0 +1,92 @@
+{
+  "doc_id": "maplestory",
+  "subject": "MapleStory",
+  "entities": [
+    {
+      "name": "MapleStory",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMORPG 2D de rolagem lateral sul-coreano."
+    },
+    {
+      "name": "Wizet",
+      "type": "Company",
+      "aliases": [],
+      "description": "Empresa sul-coreana que desenvolveu MapleStory."
+    },
+    {
+      "name": "Nexon",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora sul-coreana de MapleStory."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "RPG online massivamente multijogador."
+    },
+    {
+      "name": "MapleStory 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequencia de MapleStory com graficos 3D."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransactions"
+      ],
+      "description": "Compras de itens dentro do jogo com dinheiro real."
+    }
+  ],
+  "relations": [
+    {
+      "source": "MapleStory",
+      "type": "DEVELOPED_BY",
+      "target": "Wizet",
+      "evidence": "developed by South Korean company Wizet and published by Nexon"
+    },
+    {
+      "source": "MapleStory",
+      "type": "PUBLISHED_BY",
+      "target": "Nexon",
+      "evidence": "developed by South Korean company Wizet and published by Nexon"
+    },
+    {
+      "source": "MapleStory",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "is a free-to-play, 2D, side-scrolling massively multiplayer online role-playing game"
+    },
+    {
+      "source": "MapleStory",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "is a free-to-play, 2D, side-scrolling massively multiplayer online role-playing game"
+    },
+    {
+      "source": "MapleStory 2",
+      "type": "SEQUEL_OF",
+      "target": "MapleStory",
+      "evidence": "Its sequel, MapleStory 2, was released in July 2015"
+    },
+    {
+      "source": "MapleStory",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "purchase a variety of character appearances or gameplay enhancements with real money"
+    }
+  ]
+}

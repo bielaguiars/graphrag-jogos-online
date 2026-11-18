@@ -1,0 +1,108 @@
+{
+  "doc_id": "new-world-video-game",
+  "subject": "New World",
+  "entities": [
+    {
+      "name": "New World",
+      "type": "Game",
+      "aliases": [
+        "New World: Aeternum"
+      ],
+      "description": "MMORPG buy-to-play da Amazon Games lançado em 2021, com encerramento previsto para janeiro de 2027."
+    },
+    {
+      "name": "Amazon Games Orange County",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estúdio que desenvolveu New World."
+    },
+    {
+      "name": "Amazon Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de New World."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game",
+        "MMO"
+      ],
+      "description": "RPG online massivamente multiplayer."
+    },
+    {
+      "name": "Buy-to-play",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Modelo em que se compra o jogo uma vez, sem mensalidade obrigatória."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransaction",
+        "in-game purchases"
+      ],
+      "description": "Pequenas compras com dinheiro real dentro do jogo."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [
+        "PS5"
+      ],
+      "description": "Console da Sony de nona geração."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Consoles da Microsoft de nona geração."
+    }
+  ],
+  "relations": [
+    {
+      "source": "New World",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "is a massively multiplayer online role-playing game (MMORPG) developed by Amazon Games Orange County and published by Amazon Games"
+    },
+    {
+      "source": "New World",
+      "type": "DEVELOPED_BY",
+      "target": "Amazon Games Orange County",
+      "evidence": "is a massively multiplayer online role-playing game (MMORPG) developed by Amazon Games Orange County and published by Amazon Games"
+    },
+    {
+      "source": "New World",
+      "type": "PUBLISHED_BY",
+      "target": "Amazon Games",
+      "evidence": "is a massively multiplayer online role-playing game (MMORPG) developed by Amazon Games Orange County and published by Amazon Games"
+    },
+    {
+      "source": "New World",
+      "type": "HAS_FEATURE",
+      "target": "Buy-to-play",
+      "evidence": "it currently employs the standard business model of a buy-to-play game"
+    },
+    {
+      "source": "New World",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "The game also offers microtransactions in the form of skins"
+    },
+    {
+      "source": "New World",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "PlayStation 5 and Xbox Series X/S versions of the game, under the title New World: Aeternum"
+    },
+    {
+      "source": "New World",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "PlayStation 5 and Xbox Series X/S versions of the game, under the title New World: Aeternum"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "doc_id": "fortnite-battle-royale",
+  "subject": "Fortnite Battle Royale",
+  "entities": [
+    {
+      "name": "Fortnite Battle Royale",
+      "type": "Game",
+      "aliases": [],
+      "description": "Battle royale gratuito de 2017 da Epic Games com sistema de construção."
+    },
+    {
+      "name": "Epic Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Produtora e lançadora de Fortnite Battle Royale."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Gênero em que vários jogadores competem até restar o último."
+    },
+    {
+      "name": "Fortnite",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Plataforma Fortnite, da qual o modo battle royale faz parte."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Compras dentro do jogo com dinheiro real."
+    },
+    {
+      "name": "Battle pass",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Sistema de recompensas por níveis comprado por temporada."
+    },
+    {
+      "name": "Zero Build",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Modo de Fortnite que remove a mecânica de construção."
+    },
+    {
+      "name": "PUBG: Battlegrounds",
+      "type": "Game",
+      "aliases": [
+        "PlayerUnknown's Battlegrounds",
+        "PUBG"
+      ],
+      "description": "Battle royale cuja popularidade motivou Fortnite Battle Royale."
+    },
+    {
+      "name": "Fortnite: Save the World",
+      "type": "Game",
+      "aliases": [
+        "Save the World"
+      ],
+      "description": "Jogo cujos assets foram usados para construir Fortnite Battle Royale."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-play"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "Unreal Engine",
+      "type": "Engine",
+      "aliases": [],
+      "description": "Motor gráfico usado em versão mais nova por Fortnite Battle Royale."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Competições profissionais de videogame."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "DEVELOPED_BY",
+      "target": "Epic Games",
+      "evidence": "Fortnite Battle Royale is a 2017 battle royale video game produced by Epic Games."
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "PUBLISHED_BY",
+      "target": "Epic Games",
+      "evidence": "Epic Games launched the mode after two months of development"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "Fortnite Battle Royale is a 2017 battle royale video game"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "PART_OF",
+      "target": "Fortnite",
+      "evidence": "Part of the overall Fortnite platform"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "Players may purchase an in-game currency, V-Bucks, through the in-game Item Shop, to buy cosmetic items"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Battle pass",
+      "evidence": "A seasonal \"Battle Pass\", also purchased with V-Bucks"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Zero Build",
+      "evidence": "including Zero Build, which removes building mechanics"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "BASED_ON",
+      "target": "PUBG: Battlegrounds",
+      "evidence": "Development began in mid-2017, following the popularity of PlayerUnknown's Battlegrounds."
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "BASED_ON",
+      "target": "Fortnite: Save the World",
+      "evidence": "Built using assets from Fortnite: Save the World"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "was released separately as a free title"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "later introduced cross-platform play"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "USES_ENGINE",
+      "target": "Unreal Engine",
+      "evidence": "moved to a newer version of Unreal Engine"
+    },
+    {
+      "source": "Fortnite Battle Royale",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "appearing in live events such as esports"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "doc_id": "the-elder-scrolls-online",
+  "subject": "The Elder Scrolls Online",
+  "entities": [
+    {
+      "name": "The Elder Scrolls Online",
+      "type": "Game",
+      "aliases": [
+        "ESO",
+        "The Elder Scrolls Online: Tamriel Unlimited"
+      ],
+      "description": "MMORPG de 2014 da ZeniMax Online Studios ambientado em Tamriel, parte da série Elder Scrolls."
+    },
+    {
+      "name": "ZeniMax Online Studios",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora de The Elder Scrolls Online."
+    },
+    {
+      "name": "Bethesda Softworks",
+      "type": "Company",
+      "aliases": [
+        "Bethesda"
+      ],
+      "description": "Publicadora de The Elder Scrolls Online."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game",
+        "MMO"
+      ],
+      "description": "RPG online massivamente multiplayer."
+    },
+    {
+      "name": "The Elder Scrolls",
+      "type": "Franchise",
+      "aliases": [
+        "Elder Scrolls"
+      ],
+      "description": "Série de RPGs da qual The Elder Scrolls Online faz parte."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores Mac."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony de oitava geração."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de oitava geração."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [
+        "PS5"
+      ],
+      "description": "Console da Sony de nona geração."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Consoles da Microsoft de nona geração."
+    },
+    {
+      "name": "Buy-to-play",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Modelo em que se compra o jogo uma vez, sem mensalidade obrigatória."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransaction",
+        "in-game purchases"
+      ],
+      "description": "Pequenas compras com dinheiro real dentro do jogo."
+    },
+    {
+      "name": "Subscription",
+      "type": "Concept",
+      "aliases": [
+        "subscription model"
+      ],
+      "description": "Modelo de assinatura mensal paga para jogar."
+    }
+  ],
+  "relations": [
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "is a massively multiplayer online role-playing game (MMORPG) developed by ZeniMax Online Studios and published by Bethesda Softworks"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "DEVELOPED_BY",
+      "target": "ZeniMax Online Studios",
+      "evidence": "is a massively multiplayer online role-playing game (MMORPG) developed by ZeniMax Online Studios and published by Bethesda Softworks"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "PUBLISHED_BY",
+      "target": "Bethesda Softworks",
+      "evidence": "is a massively multiplayer online role-playing game (MMORPG) developed by ZeniMax Online Studios and published by Bethesda Softworks"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "PART_OF",
+      "target": "The Elder Scrolls",
+      "evidence": "The game is a part of the Elder Scrolls series."
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "It was released for Windows and macOS in April 2014"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "It was released for Windows and macOS in April 2014"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "for PlayStation 4 and Xbox One in June 2015"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "for PlayStation 4 and Xbox One in June 2015"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "for PlayStation 5 and Xbox Series X/S in June 2021"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "for PlayStation 5 and Xbox Series X/S in June 2021"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "HAS_FEATURE",
+      "target": "Buy-to-play",
+      "evidence": "transitioning to a buy-to-play model with microtransactions and an optional subscription"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "transitioning to a buy-to-play model with microtransactions and an optional subscription"
+    },
+    {
+      "source": "The Elder Scrolls Online",
+      "type": "HAS_FEATURE",
+      "target": "Subscription",
+      "evidence": "launched with a mandatory monthly subscription model"
+    }
+  ]
+}

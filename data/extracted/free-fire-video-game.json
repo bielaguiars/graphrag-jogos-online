@@ -1,0 +1,128 @@
+{
+  "doc_id": "free-fire-video-game",
+  "subject": "Free Fire",
+  "entities": [
+    {
+      "name": "Free Fire",
+      "type": "Game",
+      "aliases": [
+        "Garena Free Fire"
+      ],
+      "description": "Battle royale movel gratuito da Garena."
+    },
+    {
+      "name": "Garena",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Free Fire."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero em que jogadores lutam ate restar o ultimo sobrevivente."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel do Google."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel da Apple."
+    },
+    {
+      "name": "Free Fire Max",
+      "type": "Game",
+      "aliases": [],
+      "description": "Versao aprimorada de Free Fire com graficos melhores."
+    },
+    {
+      "name": "Free Fire World Series",
+      "type": "Event",
+      "aliases": [],
+      "description": "Competicao anual oficial de esports de Free Fire."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport"
+      ],
+      "description": "Competicao organizada de jogos eletronicos."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Free Fire",
+      "type": "DEVELOPED_BY",
+      "target": "Garena",
+      "evidence": "developed and published by Garena for Android and iOS"
+    },
+    {
+      "source": "Free Fire",
+      "type": "PUBLISHED_BY",
+      "target": "Garena",
+      "evidence": "developed and published by Garena for Android and iOS"
+    },
+    {
+      "source": "Free Fire",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "developed and published by Garena for Android and iOS"
+    },
+    {
+      "source": "Free Fire",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "developed and published by Garena for Android and iOS"
+    },
+    {
+      "source": "Free Fire",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "a free-to-play battle royale game"
+    },
+    {
+      "source": "Free Fire",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "a free-to-play battle royale game"
+    },
+    {
+      "source": "Free Fire Max",
+      "type": "BASED_ON",
+      "target": "Free Fire",
+      "evidence": "Garena launched Free Fire Max, an enhanced version"
+    },
+    {
+      "source": "Free Fire Max",
+      "type": "PUBLISHED_BY",
+      "target": "Garena",
+      "evidence": "Garena launched Free Fire Max, an enhanced version"
+    },
+    {
+      "source": "Free Fire",
+      "type": "FEATURED_IN",
+      "target": "Free Fire World Series",
+      "evidence": "The game’s official annual esports competition, the Free Fire World Series"
+    },
+    {
+      "source": "Free Fire",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "The game’s official annual esports competition, the Free Fire World Series"
+    }
+  ]
+}

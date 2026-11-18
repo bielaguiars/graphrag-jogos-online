@@ -1,0 +1,32 @@
+{
+  "doc_id": "call-of-duty-warzone",
+  "subject": "Call of Duty: Warzone",
+  "entities": [
+    {
+      "name": "Call of Duty: Warzone",
+      "type": "Game",
+      "aliases": [
+        "Call of Duty: Warzone (2020 video game)",
+        "Warzone"
+      ],
+      "description": "Versão original de Call of Duty: Warzone, lançada em 2020."
+    },
+    {
+      "name": "Call of Duty: Warzone 2.0",
+      "type": "Game",
+      "aliases": [
+        "Call of Duty: Warzone (2022 video game)",
+        "Warzone 2.0"
+      ],
+      "description": "Segunda versão de Call of Duty: Warzone, lançada em 2022."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Call of Duty: Warzone 2.0",
+      "type": "SEQUEL_OF",
+      "target": "Call of Duty: Warzone",
+      "evidence": "Call of Duty: Warzone (2022 video game), the second version of Call of Duty: Warzone"
+    }
+  ]
+}

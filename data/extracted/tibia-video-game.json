@@ -1,0 +1,96 @@
+{
+  "doc_id": "tibia-video-game",
+  "subject": "Tibia",
+  "entities": [
+    {
+      "name": "Tibia",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMORPG 2D de 1997, um dos mais antigos em atividade."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "Gênero de RPG online massivamente multijogador."
+    },
+    {
+      "name": "CipSoft",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Tibia."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Premium account",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Conta paga com vantagens em um jogo gratuito."
+    },
+    {
+      "name": "Pixel art",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Estilo gráfico baseado em pixels."
+    },
+    {
+      "name": "Top-down perspective",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Câmera com visão de cima para baixo."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Tibia",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "Tibia is a multiplayer online role-playing game (MMORPG) released in January, 1997."
+    },
+    {
+      "source": "Tibia",
+      "type": "DEVELOPED_BY",
+      "target": "CipSoft",
+      "evidence": "It was developed and published by CipSoft."
+    },
+    {
+      "source": "Tibia",
+      "type": "PUBLISHED_BY",
+      "target": "CipSoft",
+      "evidence": "It was developed and published by CipSoft."
+    },
+    {
+      "source": "Tibia",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "The Tibia MMORPG is free to play but players are able to pay to upgrade to a premium account."
+    },
+    {
+      "source": "Tibia",
+      "type": "HAS_FEATURE",
+      "target": "Premium account",
+      "evidence": "The Tibia MMORPG is free to play but players are able to pay to upgrade to a premium account."
+    },
+    {
+      "source": "Tibia",
+      "type": "HAS_FEATURE",
+      "target": "Pixel art",
+      "evidence": "Tibia is a two-dimensional tile-based game set in a fantasy world with pixel art graphics and a top-down perspective."
+    },
+    {
+      "source": "Tibia",
+      "type": "HAS_FEATURE",
+      "target": "Top-down perspective",
+      "evidence": "Tibia is a two-dimensional tile-based game set in a fantasy world with pixel art graphics and a top-down perspective."
+    }
+  ]
+}

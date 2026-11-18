@@ -1,0 +1,146 @@
+{
+  "doc_id": "arma-2",
+  "subject": "Arma 2",
+  "entities": [
+    {
+      "name": "Arma 2",
+      "type": "Game",
+      "aliases": [
+        "ARMA 2"
+      ],
+      "description": "Simulador de tiro tatico de 2009 da Bohemia Interactive."
+    },
+    {
+      "name": "Bohemia Interactive",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora da serie Arma."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "Tactical shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com enfase em tatica e realismo."
+    },
+    {
+      "name": "Arma",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie de simuladores militares da Bohemia Interactive."
+    },
+    {
+      "name": "Arma: Armed Assault",
+      "type": "Game",
+      "aliases": [],
+      "description": "Antecessor de Arma 2 na serie Arma."
+    },
+    {
+      "name": "DayZ",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de sobrevivencia surgido como mod de Arma 2."
+    },
+    {
+      "name": "Survival game",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Genero focado em sobreviver coletando recursos."
+    },
+    {
+      "name": "Arma 2: Operation Arrowhead",
+      "type": "Game",
+      "aliases": [],
+      "description": "Pacote de expansao de Arma 2 lancado em 2010."
+    },
+    {
+      "name": "Arma 3",
+      "type": "Game",
+      "aliases": [],
+      "description": "Sequencia de Arma 2 lancada em 2013."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modding"
+      ],
+      "description": "Modificacao de um jogo criada pela comunidade."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Arma 2",
+      "type": "DEVELOPED_BY",
+      "target": "Bohemia Interactive",
+      "evidence": "developed and published by Bohemia Interactive for Microsoft Windows"
+    },
+    {
+      "source": "Arma 2",
+      "type": "PUBLISHED_BY",
+      "target": "Bohemia Interactive",
+      "evidence": "developed and published by Bohemia Interactive for Microsoft Windows"
+    },
+    {
+      "source": "Arma 2",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "developed and published by Bohemia Interactive for Microsoft Windows"
+    },
+    {
+      "source": "Arma 2",
+      "type": "HAS_GENRE",
+      "target": "Tactical shooter",
+      "evidence": "Arma 2 is a 2009 tactical shooter simulation video game"
+    },
+    {
+      "source": "Arma 2",
+      "type": "PART_OF",
+      "target": "Arma",
+      "evidence": "It is the second main entry in the Arma series"
+    },
+    {
+      "source": "Arma 2",
+      "type": "SEQUEL_OF",
+      "target": "Arma: Armed Assault",
+      "evidence": "like its predecessor Arma: Armed Assault"
+    },
+    {
+      "source": "Arma 2",
+      "type": "HAS_FEATURE",
+      "target": "Mod",
+      "evidence": "Arma 2 maintains a significant modding community"
+    },
+    {
+      "source": "DayZ",
+      "type": "BASED_ON",
+      "target": "Arma 2",
+      "evidence": "well-known as the origin of DayZ, a survival game conversion that was later developed into its own standalone game in 2018"
+    },
+    {
+      "source": "DayZ",
+      "type": "HAS_GENRE",
+      "target": "Survival game",
+      "evidence": "DayZ, a survival game conversion"
+    },
+    {
+      "source": "Arma 2: Operation Arrowhead",
+      "type": "BASED_ON",
+      "target": "Arma 2",
+      "evidence": "An expansion pack, Arma 2: Operation Arrowhead, was released in 2010."
+    },
+    {
+      "source": "Arma 3",
+      "type": "SEQUEL_OF",
+      "target": "Arma 2",
+      "evidence": "The game's sequel, Arma 3, was released in 2013."
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "doc_id": "apex-legends",
+  "subject": "Apex Legends",
+  "entities": [
+    {
+      "name": "Apex Legends",
+      "type": "Game",
+      "aliases": [],
+      "description": "Battle royale hero shooter free-to-play de 2019 da Respawn, no universo de Titanfall."
+    },
+    {
+      "name": "Respawn Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Respawn"
+      ],
+      "description": "Estúdio que desenvolveu Apex Legends e a série Titanfall."
+    },
+    {
+      "name": "Electronic Arts",
+      "type": "Company",
+      "aliases": [
+        "EA"
+      ],
+      "description": "Publicadora de Apex Legends."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Gênero em que muitos jogadores ou esquadrões lutam até restar um vencedor."
+    },
+    {
+      "name": "Hero shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com personagens pré-definidos de habilidades únicas."
+    },
+    {
+      "name": "Titanfall series",
+      "type": "Franchise",
+      "aliases": [
+        "Titanfall"
+      ],
+      "description": "Série de ficção científica da Respawn cujo universo é compartilhado por Apex Legends."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play",
+        "F2P"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito e monetizado por compras opcionais."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "GaaS"
+      ],
+      "description": "Modelo em que o jogo recebe atualizações contínuas após o lançamento."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-platform multiplayer",
+        "crossplay"
+      ],
+      "description": "Recurso que permite jogadores de plataformas diferentes jogarem juntos."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony de oitava geração."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de oitava geração."
+    },
+    {
+      "name": "Nintendo Switch",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console híbrido da Nintendo."
+    },
+    {
+      "name": "Nintendo Switch 2",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sucessor do Nintendo Switch."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [
+        "PS5"
+      ],
+      "description": "Console da Sony de nona geração."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Consoles da Microsoft de nona geração."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Apex Legends",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "Apex Legends is a 2019 battle royale-hero shooter video game developed by Respawn Entertainment"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "HAS_GENRE",
+      "target": "Hero shooter",
+      "evidence": "Apex Legends is a 2019 battle royale-hero shooter video game developed by Respawn Entertainment"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "DEVELOPED_BY",
+      "target": "Respawn Entertainment",
+      "evidence": "Apex Legends is a 2019 battle royale-hero shooter video game developed by Respawn Entertainment"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "PUBLISHED_BY",
+      "target": "Electronic Arts",
+      "evidence": "published by Electronic Arts"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "PART_OF",
+      "target": "Titanfall series",
+      "evidence": "set in the same science fiction universe as Respawn's Titanfall series"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "It is offered free-to-play"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "continuously updated under the games as a service model"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "All versions support cross-platform multiplayer."
+    },
+    {
+      "source": "Apex Legends",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "originally released for PlayStation 4, Windows, and Xbox One in February 2019"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "originally released for PlayStation 4, Windows, and Xbox One in February 2019"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "originally released for PlayStation 4, Windows, and Xbox One in February 2019"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch",
+      "evidence": "followed by versions for Nintendo Switch in 2021"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "both PlayStation 5 and Xbox Series X/S in 2022"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "both PlayStation 5 and Xbox Series X/S in 2022"
+    },
+    {
+      "source": "Apex Legends",
+      "type": "AVAILABLE_ON",
+      "target": "Nintendo Switch 2",
+      "evidence": "and Nintendo Switch 2 in 2025"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "doc_id": "titanfall-2",
+  "subject": "Titanfall 2",
+  "entities": [
+    {
+      "name": "Titanfall 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "FPS de 2016 da Respawn, sequência de Titanfall."
+    },
+    {
+      "name": "First-person shooter",
+      "type": "Genre",
+      "aliases": [
+        "FPS"
+      ],
+      "description": "Gênero de tiro em primeira pessoa."
+    },
+    {
+      "name": "Respawn Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Respawn"
+      ],
+      "description": "Desenvolvedora de Titanfall 2."
+    },
+    {
+      "name": "Electronic Arts",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de Titanfall 2."
+    },
+    {
+      "name": "Titanfall",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de 2014 do qual Titanfall 2 é sequência."
+    },
+    {
+      "name": "PlayStation",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma PlayStation."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Xbox One."
+    },
+    {
+      "name": "Half-Life",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo que inspirou a campanha e a narrativa de Titanfall 2."
+    },
+    {
+      "name": "Source",
+      "type": "Engine",
+      "aliases": [
+        "Source engine"
+      ],
+      "description": "Motor da Valve, em versão modificada, usado em Titanfall 2."
+    },
+    {
+      "name": "Stephen Barton",
+      "type": "Person",
+      "aliases": [],
+      "description": "Compositor da trilha de Titanfall e Titanfall 2."
+    },
+    {
+      "name": "Apex Legends",
+      "type": "Game",
+      "aliases": [],
+      "description": "Battle royale gratuito de 2019, spin-off da franquia Titanfall."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito para jogar."
+    },
+    {
+      "name": "Battle royale",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Gênero em que vários jogadores competem até restar o último."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Titanfall 2",
+      "type": "HAS_GENRE",
+      "target": "First-person shooter",
+      "evidence": "Titanfall 2 is a 2016 first-person shooter game developed by Respawn Entertainment and published by Electronic Arts."
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "DEVELOPED_BY",
+      "target": "Respawn Entertainment",
+      "evidence": "Titanfall 2 is a 2016 first-person shooter game developed by Respawn Entertainment and published by Electronic Arts."
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "PUBLISHED_BY",
+      "target": "Electronic Arts",
+      "evidence": "Titanfall 2 is a 2016 first-person shooter game developed by Respawn Entertainment and published by Electronic Arts."
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "SEQUEL_OF",
+      "target": "Titanfall",
+      "evidence": "A sequel to 2014's Titanfall"
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation",
+      "evidence": "for PlayStation, Windows, and Xbox One"
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "for PlayStation, Windows, and Xbox One"
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "for PlayStation, Windows, and Xbox One"
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "BASED_ON",
+      "target": "Half-Life",
+      "evidence": "as well as the video game Half-Life inspired the game's campaign and narrative"
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "USES_ENGINE",
+      "target": "Source",
+      "evidence": "A heavily modified version of Valve's Source engine powers the game."
+    },
+    {
+      "source": "Titanfall 2",
+      "type": "CREATED_BY",
+      "target": "Stephen Barton",
+      "evidence": "Stephen Barton, who composed Titanfall's soundtrack, returned to compose music for its successor."
+    },
+    {
+      "source": "Apex Legends",
+      "type": "BASED_ON",
+      "target": "Titanfall 2",
+      "evidence": "The game was followed by Apex Legends, a spin-off of the franchise and a free-to-play battle royale game, in 2019."
+    },
+    {
+      "source": "Apex Legends",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "The game was followed by Apex Legends, a spin-off of the franchise and a free-to-play battle royale game, in 2019."
+    },
+    {
+      "source": "Apex Legends",
+      "type": "HAS_GENRE",
+      "target": "Battle royale",
+      "evidence": "The game was followed by Apex Legends, a spin-off of the franchise and a free-to-play battle royale game, in 2019."
+    }
+  ]
+}

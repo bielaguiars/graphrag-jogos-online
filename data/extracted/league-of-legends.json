@@ -1,0 +1,147 @@
+{
+  "doc_id": "league-of-legends",
+  "subject": "League of Legends",
+  "entities": [
+    {
+      "name": "League of Legends",
+      "type": "Game",
+      "aliases": [
+        "LoL",
+        "League"
+      ],
+      "description": "MOBA free-to-play da Riot Games lançado em 2009, considerado o maior esport do mundo."
+    },
+    {
+      "name": "Riot Games",
+      "type": "Company",
+      "aliases": [
+        "Riot"
+      ],
+      "description": "Desenvolvedora e publicadora de League of Legends."
+    },
+    {
+      "name": "Multiplayer online battle arena",
+      "type": "Genre",
+      "aliases": [
+        "MOBA"
+      ],
+      "description": "Gênero de arena de batalha online em que dois times disputam a destruição da base inimiga."
+    },
+    {
+      "name": "Defense of the Ancients",
+      "type": "Game",
+      "aliases": [
+        "DotA"
+      ],
+      "description": "Mapa customizado de Warcraft III que inspirou a criação de League of Legends."
+    },
+    {
+      "name": "Warcraft III",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de estratégia para o qual Defense of the Ancients foi criado como mapa customizado."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free to play",
+        "F2P"
+      ],
+      "description": "Modelo de negócio em que o jogo é gratuito e monetizado por compras opcionais."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores Mac."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport",
+        "e-sports"
+      ],
+      "description": "Competição profissional de jogos eletrônicos."
+    },
+    {
+      "name": "League of Legends World Championship",
+      "type": "Event",
+      "aliases": [
+        "Worlds"
+      ],
+      "description": "Campeonato mundial anual que encerra a temporada competitiva de League of Legends."
+    }
+  ],
+  "relations": [
+    {
+      "source": "League of Legends",
+      "type": "HAS_GENRE",
+      "target": "Multiplayer online battle arena",
+      "evidence": "is a multiplayer online battle arena video game developed and published by Riot Games"
+    },
+    {
+      "source": "League of Legends",
+      "type": "DEVELOPED_BY",
+      "target": "Riot Games",
+      "evidence": "is a multiplayer online battle arena video game developed and published by Riot Games"
+    },
+    {
+      "source": "League of Legends",
+      "type": "PUBLISHED_BY",
+      "target": "Riot Games",
+      "evidence": "is a multiplayer online battle arena video game developed and published by Riot Games"
+    },
+    {
+      "source": "League of Legends",
+      "type": "BASED_ON",
+      "target": "Defense of the Ancients",
+      "evidence": "Inspired by Defense of the Ancients, a custom map for Warcraft III"
+    },
+    {
+      "source": "Defense of the Ancients",
+      "type": "BASED_ON",
+      "target": "Warcraft III",
+      "evidence": "Defense of the Ancients, a custom map for Warcraft III"
+    },
+    {
+      "source": "League of Legends",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "League has been free-to-play and is monetized through purchasable character customization"
+    },
+    {
+      "source": "League of Legends",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "The game is available for Windows and macOS."
+    },
+    {
+      "source": "League of Legends",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "The game is available for Windows and macOS."
+    },
+    {
+      "source": "League of Legends",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "League of Legends is the world's largest esport"
+    },
+    {
+      "source": "League of Legends",
+      "type": "FEATURED_IN",
+      "target": "League of Legends World Championship",
+      "evidence": "culminates in an annual League of Legends World Championship"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "doc_id": "runescape",
+  "subject": "RuneScape",
+  "entities": [
+    {
+      "name": "RuneScape",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMORPG de fantasia da Jagex lancado em 2001."
+    },
+    {
+      "name": "Jagex",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora britanica de jogos."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "RPG online massivamente multijogador."
+    },
+    {
+      "name": "Andrew Gower",
+      "type": "Person",
+      "aliases": [],
+      "description": "Criador do RuneScape."
+    },
+    {
+      "name": "Paul Gower",
+      "type": "Person",
+      "aliases": [],
+      "description": "Irmao de Andrew Gower que ajudou a criar o RuneScape."
+    },
+    {
+      "name": "Old School RuneScape",
+      "type": "Game",
+      "aliases": [
+        "OSRS"
+      ],
+      "description": "Versao do RuneScape baseada em um backup de 2007, mantida a parte."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel da Apple."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel do Google."
+    },
+    {
+      "name": "Steam",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Loja e plataforma digital de distribuicao de jogos da Valve."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransactions"
+      ],
+      "description": "Compras de itens dentro do jogo com dinheiro real."
+    }
+  ],
+  "relations": [
+    {
+      "source": "RuneScape",
+      "type": "DEVELOPED_BY",
+      "target": "Jagex",
+      "evidence": "developed and published by Jagex"
+    },
+    {
+      "source": "RuneScape",
+      "type": "PUBLISHED_BY",
+      "target": "Jagex",
+      "evidence": "developed and published by Jagex"
+    },
+    {
+      "source": "RuneScape",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "massively multiplayer online role-playing game (MMORPG)"
+    },
+    {
+      "source": "RuneScape",
+      "type": "CREATED_BY",
+      "target": "Andrew Gower",
+      "evidence": "Created by Andrew Gower with assistance from his brother Paul Gower"
+    },
+    {
+      "source": "RuneScape",
+      "type": "CREATED_BY",
+      "target": "Paul Gower",
+      "evidence": "Created by Andrew Gower with assistance from his brother Paul Gower"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "BASED_ON",
+      "target": "RuneScape",
+      "evidence": "Old School RuneScape, a separate game based on an August 2007 build"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "Old School RuneScape was released for iOS and Android in 2018"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "Old School RuneScape was released for iOS and Android in 2018"
+    },
+    {
+      "source": "RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "Steam",
+      "evidence": "the main RuneScape game was released on Steam in 2020 and on iOS and Android in 2021"
+    },
+    {
+      "source": "RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "the main RuneScape game was released on Steam in 2020 and on iOS and Android in 2021"
+    },
+    {
+      "source": "RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "the main RuneScape game was released on Steam in 2020 and on iOS and Android in 2021"
+    },
+    {
+      "source": "RuneScape",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "criticism over changes to trading, player-versus-player combat and microtransactions"
+    }
+  ]
+}

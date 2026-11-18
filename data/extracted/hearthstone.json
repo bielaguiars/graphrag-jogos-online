@@ -1,0 +1,174 @@
+{
+  "doc_id": "hearthstone",
+  "subject": "Hearthstone",
+  "entities": [
+    {
+      "name": "Hearthstone",
+      "type": "Game",
+      "aliases": [
+        "Heroes of Warcraft"
+      ],
+      "description": "Jogo digital de cartas colecionaveis da Blizzard."
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "type": "Company",
+      "aliases": [
+        "Blizzard"
+      ],
+      "description": "Desenvolvedora e publicadora americana de jogos."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Collectible card game",
+      "type": "Genre",
+      "aliases": [
+        "digital collectible card game"
+      ],
+      "description": "Jogo de cartas colecionaveis."
+    },
+    {
+      "name": "Warcraft",
+      "type": "Franchise",
+      "aliases": [],
+      "description": "Serie de jogos de fantasia da Blizzard."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel da Apple."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel do Google."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "crossplay"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport"
+      ],
+      "description": "Competicao organizada de jogos eletronicos."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [
+        "microtransactions"
+      ],
+      "description": "Compras de itens dentro do jogo com dinheiro real."
+    },
+    {
+      "name": "World of Warcraft Trading Card Game",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de cartas fisico que inspirou Hearthstone."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Hearthstone",
+      "type": "DEVELOPED_BY",
+      "target": "Blizzard Entertainment",
+      "evidence": "Hearthstone is a 2014 free-to-play digital collectible card video game produced by Blizzard Entertainment"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "Hearthstone is a 2014 free-to-play digital collectible card video game produced by Blizzard Entertainment"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "HAS_GENRE",
+      "target": "Collectible card game",
+      "evidence": "Hearthstone is a 2014 free-to-play digital collectible card video game produced by Blizzard Entertainment"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "PART_OF",
+      "target": "Warcraft",
+      "evidence": "builds upon the existing lore of the Warcraft series"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "available on the Windows, macOS, iOS and Android platforms, featuring cross-platform play"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "available on the Windows, macOS, iOS and Android platforms, featuring cross-platform play"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "available on the Windows, macOS, iOS and Android platforms, featuring cross-platform play"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "available on the Windows, macOS, iOS and Android platforms, featuring cross-platform play"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "available on the Windows, macOS, iOS and Android platforms, featuring cross-platform play"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "the game has become popular as an esport, with cash prize tournaments hosted by Blizzard"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "buy packs of new cards through gold or microtransactions"
+    },
+    {
+      "source": "Hearthstone",
+      "type": "BASED_ON",
+      "target": "World of Warcraft Trading Card Game",
+      "evidence": "Many of the concepts as well as art assets were based on those previously published in the physical World of Warcraft Trading Card Game."
+    }
+  ]
+}

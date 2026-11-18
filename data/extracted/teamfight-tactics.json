@@ -1,0 +1,174 @@
+{
+  "doc_id": "teamfight-tactics",
+  "subject": "Teamfight Tactics",
+  "entities": [
+    {
+      "name": "Teamfight Tactics",
+      "type": "Game",
+      "aliases": [
+        "TFT"
+      ],
+      "description": "Auto battler da Riot Games derivado de League of Legends."
+    },
+    {
+      "name": "Riot Games",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora de Teamfight Tactics."
+    },
+    {
+      "name": "Auto battler",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Gênero de batalha automática com montagem de equipe."
+    },
+    {
+      "name": "League of Legends",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo do qual Teamfight Tactics é um spinoff."
+    },
+    {
+      "name": "Dota Auto Chess",
+      "type": "Game",
+      "aliases": [
+        "Auto Chess"
+      ],
+      "description": "Mod de Dota 2 que serviu de base para Teamfight Tactics."
+    },
+    {
+      "name": "Dota 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo para o qual Dota Auto Chess foi criado como mod."
+    },
+    {
+      "name": "Mod",
+      "type": "Concept",
+      "aliases": [
+        "modification"
+      ],
+      "description": "Modificação de um jogo criada por usuários."
+    },
+    {
+      "name": "Mahjong",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo de peças que inspirou Dota Auto Chess."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Plataforma Windows."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma macOS."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma Android."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Plataforma iOS."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "cross-play"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Teamfight Tactics",
+      "type": "DEVELOPED_BY",
+      "target": "Riot Games",
+      "evidence": "an auto battler game developed and published by Riot Games"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "PUBLISHED_BY",
+      "target": "Riot Games",
+      "evidence": "an auto battler game developed and published by Riot Games"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "HAS_GENRE",
+      "target": "Auto battler",
+      "evidence": "Teamfight Tactics (TFT) is an auto battler game"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "BASED_ON",
+      "target": "League of Legends",
+      "evidence": "The game is a spinoff of League of Legends"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "BASED_ON",
+      "target": "Dota Auto Chess",
+      "evidence": "is based on Dota Auto Chess, a mod for Dota 2"
+    },
+    {
+      "source": "Dota Auto Chess",
+      "type": "BASED_ON",
+      "target": "Dota 2",
+      "evidence": "Dota Auto Chess, a mod for Dota 2"
+    },
+    {
+      "source": "Dota Auto Chess",
+      "type": "HAS_FEATURE",
+      "target": "Mod",
+      "evidence": "Dota Auto Chess, a mod for Dota 2"
+    },
+    {
+      "source": "Dota Auto Chess",
+      "type": "BASED_ON",
+      "target": "Mahjong",
+      "evidence": "which in turn was inspired by Mahjong"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "as a League of Legends game mode for Windows and macOS in June 2019"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "as a League of Legends game mode for Windows and macOS in June 2019"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "as a standalone game for Android and iOS in March 2020"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "as a standalone game for Android and iOS in March 2020"
+    },
+    {
+      "source": "Teamfight Tactics",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "featuring cross-platform play between them"
+    }
+  ]
+}

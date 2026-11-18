@@ -1,0 +1,234 @@
+{
+  "doc_id": "tom-clancy-s-rainbow-six-siege",
+  "subject": "Tom Clancy's Rainbow Six Siege",
+  "entities": [
+    {
+      "name": "Tom Clancy's Rainbow Six Siege",
+      "type": "Game",
+      "aliases": [
+        "Rainbow Six Siege",
+        "Siege",
+        "R6S"
+      ],
+      "description": "Tactical shooter de 2015 da Ubisoft focado em destruição de cenário e cooperação entre jogadores."
+    },
+    {
+      "name": "Ubisoft Montreal",
+      "type": "Company",
+      "aliases": [],
+      "description": "Estúdio que desenvolveu Rainbow Six Siege."
+    },
+    {
+      "name": "Ubisoft",
+      "type": "Company",
+      "aliases": [],
+      "description": "Publicadora de Rainbow Six Siege."
+    },
+    {
+      "name": "Tactical shooter",
+      "type": "Genre",
+      "aliases": [],
+      "description": "Jogo de tiro com ênfase em tática e trabalho em equipe."
+    },
+    {
+      "name": "Rainbow Six",
+      "type": "Franchise",
+      "aliases": [
+        "Tom Clancy's Rainbow Six"
+      ],
+      "description": "Série de jogos de tiro tático da qual Siege faz parte."
+    },
+    {
+      "name": "Tom Clancy's Rainbow 6: Patriots",
+      "type": "Game",
+      "aliases": [
+        "Rainbow 6: Patriots",
+        "Patriots"
+      ],
+      "description": "Tactical shooter cancelado, focado em narrativa, antecessor de Siege."
+    },
+    {
+      "name": "AnvilNext 2.0",
+      "type": "Engine",
+      "aliases": [],
+      "description": "Motor gráfico que roda Rainbow Six Siege."
+    },
+    {
+      "name": "Games as a service",
+      "type": "Concept",
+      "aliases": [
+        "GaaS"
+      ],
+      "description": "Modelo em que o jogo recebe atualizações contínuas após o lançamento."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [
+        "esport",
+        "e-sports"
+      ],
+      "description": "Competição profissional de jogos eletrônicos."
+    },
+    {
+      "name": "PlayStation 4",
+      "type": "Platform",
+      "aliases": [
+        "PS4"
+      ],
+      "description": "Console da Sony de oitava geração."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional da Microsoft para PC."
+    },
+    {
+      "name": "Xbox One",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Console da Microsoft de oitava geração."
+    },
+    {
+      "name": "PlayStation 5",
+      "type": "Platform",
+      "aliases": [
+        "PS5"
+      ],
+      "description": "Console da Sony de nona geração."
+    },
+    {
+      "name": "Xbox Series X/S",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Consoles da Microsoft de nona geração."
+    },
+    {
+      "name": "Google Stadia",
+      "type": "Platform",
+      "aliases": [
+        "Stadia"
+      ],
+      "description": "Serviço de jogos em nuvem do Google."
+    },
+    {
+      "name": "Rainbow Six Extraction",
+      "type": "Game",
+      "aliases": [],
+      "description": "Spin-off de 2022 com personagens de Siege."
+    },
+    {
+      "name": "Rainbow Six Tactics",
+      "type": "Game",
+      "aliases": [],
+      "description": "Spin-off de 2027 com personagens de Siege."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "HAS_GENRE",
+      "target": "Tactical shooter",
+      "evidence": "Tom Clancy's Rainbow Six Siege is a 2015 tactical shooter game developed by Ubisoft Montreal and published by Ubisoft."
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "DEVELOPED_BY",
+      "target": "Ubisoft Montreal",
+      "evidence": "Tom Clancy's Rainbow Six Siege is a 2015 tactical shooter game developed by Ubisoft Montreal and published by Ubisoft."
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "PUBLISHED_BY",
+      "target": "Ubisoft",
+      "evidence": "Tom Clancy's Rainbow Six Siege is a 2015 tactical shooter game developed by Ubisoft Montreal and published by Ubisoft."
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "PART_OF",
+      "target": "Rainbow Six",
+      "evidence": "Siege is an entry in the Rainbow Six series"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "SEQUEL_OF",
+      "target": "Tom Clancy's Rainbow 6: Patriots",
+      "evidence": "the successor to Tom Clancy's Rainbow 6: Patriots"
+    },
+    {
+      "source": "Tom Clancy's Rainbow 6: Patriots",
+      "type": "HAS_GENRE",
+      "target": "Tactical shooter",
+      "evidence": "Tom Clancy's Rainbow 6: Patriots, a tactical shooter that had a larger focus on narrative"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "USES_ENGINE",
+      "target": "AnvilNext 2.0",
+      "evidence": "Powered by AnvilNext 2.0"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 4",
+      "evidence": "It was released for PlayStation 4, Windows, and Xbox One in December 2015"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "It was released for PlayStation 4, Windows, and Xbox One in December 2015"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox One",
+      "evidence": "It was released for PlayStation 4, Windows, and Xbox One in December 2015"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "AVAILABLE_ON",
+      "target": "PlayStation 5",
+      "evidence": "PlayStation 5 and Xbox Series X/S in December 2020"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "AVAILABLE_ON",
+      "target": "Xbox Series X/S",
+      "evidence": "PlayStation 5 and Xbox Series X/S in December 2020"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "AVAILABLE_ON",
+      "target": "Google Stadia",
+      "evidence": "Google Stadia in June 2021"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "HAS_FEATURE",
+      "target": "Games as a service",
+      "evidence": "Ubisoft adopted a \"games as a service\" model for the game"
+    },
+    {
+      "source": "Tom Clancy's Rainbow Six Siege",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "The company partnered with ESL to make Siege an esports game."
+    },
+    {
+      "source": "Rainbow Six Extraction",
+      "type": "BASED_ON",
+      "target": "Tom Clancy's Rainbow Six Siege",
+      "evidence": "Rainbow Six Extraction and Rainbow Six Tactics, spin-off games featuring Siege characters"
+    },
+    {
+      "source": "Rainbow Six Tactics",
+      "type": "BASED_ON",
+      "target": "Tom Clancy's Rainbow Six Siege",
+      "evidence": "Rainbow Six Extraction and Rainbow Six Tactics, spin-off games featuring Siege characters"
+    }
+  ]
+}

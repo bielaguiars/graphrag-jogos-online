@@ -1,0 +1,94 @@
+{
+  "doc_id": "the-international-esports",
+  "subject": "The International",
+  "entities": [
+    {
+      "name": "The International",
+      "type": "Event",
+      "aliases": [
+        "TI"
+      ],
+      "description": "Campeonato mundial anual de Dota 2 produzido pela Valve."
+    },
+    {
+      "name": "Esports",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Competições profissionais de videogame."
+    },
+    {
+      "name": "Dota 2",
+      "type": "Game",
+      "aliases": [],
+      "description": "Jogo cinco contra cinco disputado em The International."
+    },
+    {
+      "name": "Valve",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora de Dota 2 e produtora de The International."
+    },
+    {
+      "name": "Microtransactions",
+      "type": "Concept",
+      "aliases": [],
+      "description": "Compras dentro do jogo com dinheiro real."
+    },
+    {
+      "name": "Gamescom",
+      "type": "Event",
+      "aliases": [],
+      "description": "Feira onde The International foi realizado pela primeira vez, em 2011."
+    },
+    {
+      "name": "Team Spirit",
+      "type": "Company",
+      "aliases": [],
+      "description": "Equipe de esports tricampeã de The International."
+    },
+    {
+      "name": "OG",
+      "type": "Company",
+      "aliases": [],
+      "description": "Equipe de esports bicampeã de The International."
+    },
+    {
+      "name": "Team Liquid",
+      "type": "Company",
+      "aliases": [],
+      "description": "Equipe de esports bicampeã de The International."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Dota 2",
+      "type": "FEATURED_IN",
+      "target": "The International",
+      "evidence": "The International (TI) is an annual esports world championship for the five-on-five video game Dota 2."
+    },
+    {
+      "source": "Dota 2",
+      "type": "HAS_FEATURE",
+      "target": "Esports",
+      "evidence": "The International (TI) is an annual esports world championship for the five-on-five video game Dota 2."
+    },
+    {
+      "source": "The International",
+      "type": "ORGANIZED_BY",
+      "target": "Valve",
+      "evidence": "Produced by the game's developer Valve"
+    },
+    {
+      "source": "Dota 2",
+      "type": "DEVELOPED_BY",
+      "target": "Valve",
+      "evidence": "Produced by the game's developer Valve"
+    },
+    {
+      "source": "Dota 2",
+      "type": "HAS_FEATURE",
+      "target": "Microtransactions",
+      "evidence": "The tournament's prize pool has been crowdfunded via transactions within the game since 2013"
+    }
+  ]
+}

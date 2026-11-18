@@ -1,0 +1,138 @@
+{
+  "doc_id": "old-school-runescape",
+  "subject": "Old School RuneScape",
+  "entities": [
+    {
+      "name": "Old School RuneScape",
+      "type": "Game",
+      "aliases": [
+        "OSRS"
+      ],
+      "description": "Versao do RuneScape baseada em um backup de 2007, mantida a parte."
+    },
+    {
+      "name": "Jagex",
+      "type": "Company",
+      "aliases": [],
+      "description": "Desenvolvedora e publicadora britanica de jogos."
+    },
+    {
+      "name": "MMORPG",
+      "type": "Genre",
+      "aliases": [
+        "massively multiplayer online role-playing game"
+      ],
+      "description": "RPG online massivamente multijogador."
+    },
+    {
+      "name": "Windows",
+      "type": "Platform",
+      "aliases": [
+        "Microsoft Windows"
+      ],
+      "description": "Sistema operacional Microsoft Windows para PC."
+    },
+    {
+      "name": "macOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional da Apple para computadores."
+    },
+    {
+      "name": "RuneScape",
+      "type": "Game",
+      "aliases": [],
+      "description": "MMORPG original da Jagex do qual OSRS deriva."
+    },
+    {
+      "name": "Free-to-play",
+      "type": "Concept",
+      "aliases": [
+        "free-to-play"
+      ],
+      "description": "Modelo de negocio em que o jogo e gratuito para jogar."
+    },
+    {
+      "name": "Android",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel do Google."
+    },
+    {
+      "name": "iOS",
+      "type": "Platform",
+      "aliases": [],
+      "description": "Sistema operacional movel da Apple."
+    },
+    {
+      "name": "Cross-platform play",
+      "type": "Concept",
+      "aliases": [
+        "crossplay"
+      ],
+      "description": "Partidas entre jogadores de plataformas diferentes."
+    }
+  ],
+  "relations": [
+    {
+      "source": "Old School RuneScape",
+      "type": "DEVELOPED_BY",
+      "target": "Jagex",
+      "evidence": "developed and published by Jagex"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "PUBLISHED_BY",
+      "target": "Jagex",
+      "evidence": "developed and published by Jagex"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "HAS_GENRE",
+      "target": "MMORPG",
+      "evidence": "massively multiplayer online role-playing game (MMORPG)"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "Windows",
+      "evidence": "It was released for Windows and macOS on 22 February 2013"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "macOS",
+      "evidence": "It was released for Windows and macOS on 22 February 2013"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "BASED_ON",
+      "target": "RuneScape",
+      "evidence": "as a version of RuneScape based on an August 2007 backup found in Jagex's archives"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "HAS_FEATURE",
+      "target": "Free-to-play",
+      "evidence": "The game has a limited free-to-play mode"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "Android",
+      "evidence": "A mobile version for Android and iOS was released in October 2018"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "AVAILABLE_ON",
+      "target": "iOS",
+      "evidence": "A mobile version for Android and iOS was released in October 2018"
+    },
+    {
+      "source": "Old School RuneScape",
+      "type": "HAS_FEATURE",
+      "target": "Cross-platform play",
+      "evidence": "supports cross-platform play with the desktop version"
+    }
+  ]
+}
